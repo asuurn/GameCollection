@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import ee.taltech.gamecollection.baila.BailaActivity
 import ee.taltech.gamecollection.paranoia.ParanoiaActivity
 
 class MainActivity : AppCompatActivity() {
@@ -14,17 +15,17 @@ class MainActivity : AppCompatActivity() {
 
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
 
-        val paranoiaButton: Button = findViewById(R.id.buttonToBaila)
+        val paranoiaButton: Button = findViewById(R.id.buttonToParanoia)
         paranoiaButton.setOnClickListener {
             it.startAnimation(bounceAnimation)
             val intent = Intent(this, ParanoiaActivity::class.java)
             startActivity(intent)
         }
 
-        val customButton: Button = findViewById(R.id.buttonToBaila)
-        customButton.setOnClickListener {
+        val buttonToBaila: Button = findViewById(R.id.buttonToBaila)
+        buttonToBaila.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            val intent = Intent(this, ParanoiaActivity::class.java)
+            val intent = Intent(this, BailaActivity::class.java)
             startActivity(intent)
         }
     }
