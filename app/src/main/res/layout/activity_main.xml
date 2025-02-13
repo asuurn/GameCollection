@@ -7,6 +7,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToParanoia"
+        android:layout_width="176dp"
+        android:layout_height="109dp"
+        android:background="@drawable/paranoia_button"
+        android:fontFamily="serif"
+        android:text="Paranoia"
+        android:textColor="@color/paranoiaButtonTextColour"
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToBaila"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
     <TextView
         android:id="@+id/textViewWelcome"
         android:layout_width="387dp"
@@ -36,22 +53,21 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToParanoia"
+        android:id="@+id/buttonToBaila"
         android:layout_width="176dp"
-        android:layout_height="129dp"
-        android:background="@drawable/custom_button"
+        android:layout_height="109dp"
         android:fontFamily="serif"
-        android:text="Paranoia"
-        android:textColor="@color/buttonTextColour"
+        android:text="Baila"
+        android:background="@drawable/baila_button"
+        android:textColor="@color/bailaButtonTextColour"
 
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.483" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToParanoia" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

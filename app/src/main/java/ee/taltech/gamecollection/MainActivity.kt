@@ -12,8 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val customButton: Button = findViewById(R.id.buttonToParanoia)
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
+
+        val paranoiaButton: Button = findViewById(R.id.buttonToBaila)
+        paranoiaButton.setOnClickListener {
+            it.startAnimation(bounceAnimation)
+            val intent = Intent(this, ParanoiaActivity::class.java)
+            startActivity(intent)
+        }
+
+        val customButton: Button = findViewById(R.id.buttonToBaila)
         customButton.setOnClickListener {
             it.startAnimation(bounceAnimation)
             val intent = Intent(this, ParanoiaActivity::class.java)
