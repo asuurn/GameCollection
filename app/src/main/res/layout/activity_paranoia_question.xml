@@ -22,8 +22,8 @@
 
     <TextView
         android:id="@+id/textViewQuestion"
-        android:layout_width="329dp"
-        android:layout_height="169dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
         android:fontFamily="serif"

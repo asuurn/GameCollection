@@ -16,7 +16,7 @@
         android:textAlignment="center"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonStart"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRules"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,11 +32,11 @@
         android:textColor="@color/paranoiaButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonRules"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSuggest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ParanoiaTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonRules" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonRules"
@@ -48,11 +48,11 @@
         android:textColor="@color/paranoiaButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSuggest"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+        app:layout_constraintTop_toBottomOf="@+id/ParanoiaTextView" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSuggest"
@@ -61,15 +61,14 @@
         android:background="@drawable/paranoia_button"
         android:fontFamily="serif"
         android:text="Suggest questions"
-
         android:textColor="@color/paranoiaButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBackFromParanoia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRules" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
 
     <TextView
         android:id="@+id/textView4"
@@ -83,5 +82,20 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonSuggest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBackFromParanoia"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:text="Back"
+        android:background="@drawable/paranoia_button"
+        android:textColor="@color/paranoiaButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSuggest" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
