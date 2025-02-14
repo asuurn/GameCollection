@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".paranoia.ParanoiaQuestionActivity">
 
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="-45"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eye" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -22,10 +33,10 @@
 
     <TextView
         android:id="@+id/textViewQuestion"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:fontFamily="serif"
         android:text="Question field"
         android:textAlignment="center"
@@ -72,7 +83,7 @@
         android:id="@+id/button"
         android:layout_width="160dp"
         android:layout_height="80dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/paranoia_button"
         android:fontFamily="serif"
         android:text="Back"
@@ -84,5 +95,237 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="60dp"
+        android:rotation="71"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView22"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="60dp"
+        android:rotation="101"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView41"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="86"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView41"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="240"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="-48"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="60dp"
+        android:rotation="-60"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="60dp"
+        android:rotation="-74"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView36"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/imageView34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="-92"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView37"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView42"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="-92"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView38"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView36"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="60dp"
+        android:rotation="-124"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView37"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="60dp"
+        android:rotation="252"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="-36"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="-141"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="-141"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="42"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="-232"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="101"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView21"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView22"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="-240"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:rotation="31"
+        android:rotationX="-1"
+        android:rotationY="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/eye" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
