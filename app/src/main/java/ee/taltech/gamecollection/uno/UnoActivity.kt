@@ -20,5 +20,12 @@ class UnoActivity : AppCompatActivity() {
             val intent = Intent(this, UnoBasicActivity::class.java)
             startActivity(intent)
         }
+
+        val advancedButton: Button = findViewById(R.id.buttonUnoAdvanced)
+        advancedButton.setOnClickListener {
+            it.startAnimation(bounceAnimation)
+            val intent = Intent(this, UnoAdvancedActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
