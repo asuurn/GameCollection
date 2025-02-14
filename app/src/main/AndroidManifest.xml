@@ -13,6 +13,18 @@
         android:theme="@style/Theme.GameCollection"
         tools:targetApi="31">
         <activity
+            android:name=".uno.UnoDrinkingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uno.UnoAdvancedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uno.UnoBasicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uno.UnoActivity"
+            android:exported="false" />
+        <activity
             android:name=".baila.BailaActivity"
             android:exported="false" />
         <activity

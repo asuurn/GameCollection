@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 
 class ParanoiaActivity : AppCompatActivity() {
@@ -30,6 +31,13 @@ class ParanoiaActivity : AppCompatActivity() {
         buttonRules.setOnClickListener {
             it.startAnimation(bounceAnimation)
             intent = Intent(this, ParanoiaRulesActivity::class.java)
+            startActivity(intent)
+        }
+
+        val back: Button = findViewById(R.id.buttonBackFromParanoia)
+        back.setOnClickListener {
+            it.startAnimation(bounceAnimation)
+            intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 

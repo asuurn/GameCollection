@@ -5,98 +5,95 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".paranoia.ParanoiaActivity">
+    tools:context=".uno.UnoActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUnoDrinking"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:background="@drawable/uno_button"
+        android:fontFamily="serif"
+        android:text="DRINKING"
+        android:textColor="@color/unoButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBackFromUno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUnoAdvanced" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUnoBasic"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:background="@drawable/uno_button"
+        android:fontFamily="serif"
+        android:text="Basic"
+        android:textColor="@color/unoButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonUnoAdvanced"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUnoAdvanced"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:background="@drawable/uno_button"
+        android:fontFamily="serif"
+        android:text="ADVANCED"
+        android:textColor="@color/unoButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonUnoDrinking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUnoBasic" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="157dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uno" />
 
     <TextView
-        android:id="@+id/ParanoiaTextView"
-        android:layout_width="309dp"
-        android:layout_height="106dp"
-        android:fontFamily="serif"
-        android:text="WELCOME TO PARANOIA!"
-        android:textAlignment="center"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonStart"
-        android:layout_width="172dp"
-        android:layout_height="78dp"
-        android:background="@drawable/paranoia_button"
-        android:fontFamily="serif"
-        android:text="Start game"
-        android:textColor="@color/paranoiaButtonTextColour"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonRules"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ParanoiaTextView" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonRules"
-        android:layout_width="172dp"
-        android:layout_height="78dp"
-        android:background="@drawable/paranoia_button"
-        android:fontFamily="serif"
-        android:text="Read rules"
-        android:textColor="@color/paranoiaButtonTextColour"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSuggest"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonSuggest"
-        android:layout_width="172dp"
-        android:layout_height="78dp"
-        android:background="@drawable/paranoia_button"
-        android:fontFamily="serif"
-        android:text="Suggest questions"
-        android:textColor="@color/paranoiaButtonTextColour"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBackFromParanoia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRules" />
-
-    <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="serif"
-        android:text="Coming soon ;)"
-        android:textSize="16sp"
+        android:text="RULES HUB"
+        android:textAlignment="center"
+        android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSuggest"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonBackFromParanoia"
+        android:id="@+id/buttonBackFromUno"
         android:layout_width="172dp"
         android:layout_height="78dp"
-        android:background="@drawable/paranoia_button"
+        android:background="@drawable/uno_button"
         android:fontFamily="serif"
         android:text="Back"
-        android:textColor="@color/paranoiaButtonTextColour"
+        android:textColor="@color/unoButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSuggest" />
-
+        app:layout_constraintTop_toBottomOf="@+id/buttonUnoDrinking" />
 </androidx.constraintlayout.widget.ConstraintLayout>
