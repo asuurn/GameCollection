@@ -13,7 +13,7 @@
         android:theme="@style/Theme.GameCollection"
         tools:targetApi="31">
         <activity
-            android:name=".uno.UnoDrinkingActivity"
+            android:name=".uno.UnoDrunkActivity"
             android:exported="false" />
         <activity
             android:name=".uno.UnoAdvancedActivity"
