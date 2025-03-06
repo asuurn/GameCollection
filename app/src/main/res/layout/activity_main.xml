@@ -9,18 +9,19 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonToParanoia"
-        android:layout_width="176dp"
+        android:layout_width="0dp"
         android:layout_height="109dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/paranoia_button"
         android:fontFamily="serif"
+
         android:text="Paranoia"
         android:textColor="@color/paranoiaButtonTextColour"
-
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buttonToBaila"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -54,37 +55,83 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonToBaila"
-        android:layout_width="176dp"
+        android:layout_width="0dp"
         android:layout_height="109dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/baila_button"
+
         android:fontFamily="serif"
         android:text="Baila"
-
         android:textColor="@color/bailaButtonTextColour"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buttonToUno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonToParanoia" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToUno"
-        android:layout_width="176dp"
+        android:id="@+id/buttonToTwister"
+        android:layout_width="0dp"
         android:layout_height="109dp"
-        android:background="@drawable/uno_button"
-        android:fontFamily="serif"
-        android:text="UNO"
-        android:textColor="@color/unoButtonTextColour"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
 
-        android:textSize="24sp"
+        android:background="@drawable/twister_button"
+        android:fontFamily="serif"
+        android:text="Twister"
+        android:textColor="@color/twisterButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToSoundboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToSoundboard"
+        android:layout_width="0dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/soundboard_button"
+        android:fontFamily="serif"
+        android:text="Soundboard"
+        android:textColor="@color/soundboardButtonTextColour"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToTwister" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToUno"
+        android:layout_width="0dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/uno_button"
+        android:fontFamily="serif"
+
+        android:text="UNO"
+        android:textColor="@color/unoButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonToBaila" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
