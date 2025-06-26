@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.baila.BailaActivity
 import ee.taltech.gamecollection.paranoia.ParanoiaActivity
 import ee.taltech.gamecollection.soundboard.SoundboardActivity
+import ee.taltech.gamecollection.twister.TwisterActivity
 import ee.taltech.gamecollection.uno.UnoActivity
 
 class MainActivity : AppCompatActivity() {
@@ -42,6 +43,13 @@ class MainActivity : AppCompatActivity() {
         buttonToSoundboard.setOnClickListener {
             it.startAnimation(bounceAnimation)
             val intent = Intent(this, SoundboardActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonToTwister: Button = findViewById(R.id.buttonToTwister)
+        buttonToTwister.setOnClickListener {
+            it.startAnimation(bounceAnimation)
+            val intent = Intent(this, TwisterActivity::class.java)
             startActivity(intent)
         }
     }

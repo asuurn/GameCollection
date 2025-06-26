@@ -18,6 +18,9 @@
         android:theme="@style/Theme.GameCollection"
         tools:targetApi="31">
         <activity
+            android:name=".twister.TwisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".soundboard.SoundboardActivity"
             android:exported="false" />
         <activity

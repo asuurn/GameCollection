@@ -1,5 +1,4 @@
-package ee.taltech.gamecollection.soundboard
-
+import android.media.MediaPlayer
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -20,58 +19,90 @@ class SoundboardActivity : AppCompatActivity() {
         Manifest.permission.READ_EXTERNAL_STORAGE
     )
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_soundboard)
+    private var mediaPlayer: MediaPlayer? = null
 
-        val buttonIds = listOf(
-            R.id.buttonSB1, R.id.buttonSB2, R.id.buttonSB3,
-            R.id.buttonSB4, R.id.buttonSB5, R.id.buttonSB6,
-            R.id.buttonSB7, R.id.buttonSB8, R.id.buttonSB9,
-            R.id.buttonSB10, R.id.buttonSB11, R.id.buttonSB12,
-            R.id.buttonBackFromSoundboard, R.id.buttonRecord, R.id.buttonRename
-        )
+/*private val buttonSoundMap = mapOf(
+     R.id.buttonSB1 to R.raw.sound1,
+     R.id.buttonSB2 to R.raw.sound2,
+     R.id.buttonSB3 to R.raw.sound3,
+     R.id.buttonSB4 to R.raw.sound4,
+     R.id.buttonSB5 to R.raw.sound5,
+     R.id.buttonSB6 to R.raw.sound6,
+     R.id.buttonSB7 to R.raw.sound7,
+     R.id.buttonSB8 to R.raw.sound8,
+     R.id.buttonSB9 to R.raw.sound9,
+     R.id.buttonSB10 to R.raw.sound10,
+     R.id.buttonSB11 to R.raw.sound11,
+     R.id.buttonSB12 to R.raw.sound12
+ )*/
 
-        addBounce(buttonIds)
+ override fun onCreate(savedInstanceState: Bundle?) {
+     super.onCreate(savedInstanceState)
+     setContentView(R.layout.activity_soundboard)
 
-        if (!hasPermissions()) {
-            requestPermissionsLauncher.launch(requiredPermissions)
-        }
-    }
+     /*val allButtons = buttonSoundMap.keys + listOf(
+         R.id.buttonBackFromSoundboard, R.id.buttonRecord, R.id.buttonRename
+     )
+     addBounce(allButtons)
 
-    private fun addBounce(buttonIds: List<Int>) {
-        val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
+     setSoundListeners()**/
 
-        buttonIds.forEach { id ->
-            findViewById<Button>(id).apply {
-                setOnClickListener {
-                    startAnimation(bounceAnimation)
-                }
-            }
-        }
-    }
+     if (!hasPermissions()) {
+         requestPermissionsLauncher.launch(requiredPermissions)
+     }
+ }
 
-    fun backFromSoundboard(view: View) {
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-    }
+ /*private fun setSoundListeners() {
+     for ((buttonId, soundResId) in buttonSoundMap) {
+         findViewById<Button>(buttonId).setOnClickListener {
+             playSound(soundResId)
+         }
+     }
+ }
+*/
+ private fun playSound(soundResId: Int) {
+     mediaPlayer?.release()
+     mediaPlayer = MediaPlayer.create(this, soundResId)
+     mediaPlayer?.start()
+ }
 
-    fun onClickRecordSound(view: View) {
-    }
+ private fun addBounce(buttonIds: List<Int>) {
+     val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
+     buttonIds.forEach { id ->
+         findViewById<Button>(id).apply {
+             setOnClickListener {
+                 startAnimation(bounceAnimation)
+             }
+         }
+     }
+ }
 
-    private fun hasPermissions(): Boolean {
-        return requiredPermissions.all {
-            ContextCompat.checkSelfPermission(this, it) == PackageManager.PERMISSION_GRANTED
-        }
-    }
+ override fun onDestroy() {
+     mediaPlayer?.release()
+     mediaPlayer = null
+     super.onDestroy()
+ }
 
-    private val requestPermissionsLauncher =
-        registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
-            val deniedPermissions = permissions.filter { !it.value }.keys
-            if (deniedPermissions.isNotEmpty()) {
-                Toast.makeText(this, "Permissions denied: $deniedPermissions", Toast.LENGTH_LONG).show()
-            } else {
-                Toast.makeText(this, "All permissions granted!", Toast.LENGTH_SHORT).show()
-            }
-        }
+ fun backFromSoundboard(view: View) {
+     val intent = Intent(this, MainActivity::class.java)
+     startActivity(intent)
+ }
+
+ fun onClickRecordSound(view: View) {}
+
+ private fun hasPermissions(): Boolean {
+     return requiredPermissions.all {
+         ContextCompat.checkSelfPermission(this, it) == PackageManager.PERMISSION_GRANTED
+     }
+ }
+
+ private val requestPermissionsLauncher =
+     registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
+         val deniedPermissions = permissions.filter { !it.value }.keys
+         if (deniedPermissions.isNotEmpty()) {
+             Toast.makeText(this, "Permissions denied: $deniedPermissions", Toast.LENGTH_LONG).show()
+         } else {
+             Toast.makeText(this, "All permissions granted!", Toast.LENGTH_SHORT).show()
+         }
+     }
 }
