@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
 
     <application
         android:allowBackup="true"
@@ -18,10 +21,17 @@
         android:theme="@style/Theme.GameCollection"
         tools:targetApi="31">
         <activity
-            android:name=".twister.TwisterActivity"
+            android:name=".cardgames.CroatianPickRules"
+            android:exported="false"
+            android:theme="@style/Theme.GameCollection" />
+        <activity
+            android:name=".cardgames.CroatianPick"
             android:exported="false" />
         <activity
-            android:name=".soundboard.SoundboardActivity"
+            android:name=".cardgames.CardGamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".twister.TwisterActivity"
             android:exported="false" />
         <activity
             android:name=".uno.UnoDrunkActivity"

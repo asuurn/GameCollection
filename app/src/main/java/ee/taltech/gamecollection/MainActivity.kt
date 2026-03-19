@@ -6,8 +6,8 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.baila.BailaActivity
+import ee.taltech.gamecollection.cardgames.CardGamesActivity
 import ee.taltech.gamecollection.paranoia.ParanoiaActivity
-import ee.taltech.gamecollection.soundboard.SoundboardActivity
 import ee.taltech.gamecollection.twister.TwisterActivity
 import ee.taltech.gamecollection.uno.UnoActivity
 
@@ -39,10 +39,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonToSoundboard: Button = findViewById(R.id.buttonToSoundboard)
+        val buttonToSoundboard: Button = findViewById(R.id.buttonToCardGames)
         buttonToSoundboard.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            val intent = Intent(this, SoundboardActivity::class.java)
+            val intent = Intent(this, CardGamesActivity::class.java)
             startActivity(intent)
         }
 

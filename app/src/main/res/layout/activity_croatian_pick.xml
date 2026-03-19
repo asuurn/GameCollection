@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paranoia.ParanoiaActivity">
+
+    <TextView
+        android:id="@+id/CroatianPickTextView"
+        android:layout_width="357dp"
+        android:layout_height="48dp"
+        android:fontFamily="serif"
+        android:text="CROATIAN PICK"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCroatianPickRules"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:background="@drawable/card_game_button"
+        android:fontFamily="serif"
+        android:text="Rules"
+        android:textColor="@color/cardGameButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBackFromCroatianPick"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddPlayer"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBackFromCroatianPick"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:background="@drawable/card_game_button"
+        android:fontFamily="serif"
+        android:text="Back"
+        android:textColor="@color/cardGameButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCroatianPickRules"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddPlayer" />
+
+    <Button
+        android:id="@+id/buttonAddPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add player"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBackFromCroatianPick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="409dp"
+        android:layout_height="443dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CroatianPickTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

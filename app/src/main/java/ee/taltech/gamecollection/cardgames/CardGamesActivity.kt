@@ -1,4 +1,4 @@
-package ee.taltech.gamecollection.paranoia
+package ee.taltech.gamecollection.cardgames
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,37 +8,33 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
+import ee.taltech.gamecollection.paranoia.ParanoiaRulesActivity
 
-class ParanoiaActivity : AppCompatActivity() {
+class CardGamesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_paranoia)
+        setContentView(R.layout.activity_card_games)
 
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
-        val buttonStart: Button = findViewById(R.id.buttonStart)
-        buttonStart.setOnClickListener {
+        val buttonCroatianPick: Button = findViewById(R.id.buttonCroatianPick)
+        buttonCroatianPick.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            intent = Intent(this, ParanoiaQuestionActivity::class.java)
-            intent.putExtra("reset_questions", true)
+            intent = Intent(this, CroatianPick::class.java)
             startActivity(intent)
         }
 
-        val buttonRules: Button = findViewById(R.id.buttonRules)
-        buttonRules.setOnClickListener {
-            it.startAnimation(bounceAnimation)
-            intent = Intent(this, ParanoiaRulesActivity::class.java)
-            startActivity(intent)
-        }
-
-        val back: Button = findViewById(R.id.buttonBackFromParanoia)
-        back.setOnClickListener {
+        val buttonTups: Button = findViewById(R.id.buttonTups)
+        buttonTups.setOnClickListener {
             it.startAnimation(bounceAnimation)
             intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        val suggestButton = findViewById<AppCompatButton>(R.id.buttonSuggest)
-        suggestButton.isEnabled = false
-        suggestButton.isClickable = false
+        val buttonBackFromCardGames: Button = findViewById(R.id.buttonBackFromCardGames)
+        buttonBackFromCardGames.setOnClickListener {
+            it.startAnimation(bounceAnimation)
+            intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

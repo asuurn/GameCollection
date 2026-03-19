@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F2FA"
+    android:fillViewport="true"
+    tools:context=".cardgames.CroatianPickRules">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewCroatianPickRuleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Rules for Croatian Pick"
+            android:textColor="#3F3A46"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Setup -->
+        <TextView
+            android:id="@+id/textViewSetupHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Setup"
+            android:textColor="#4A4453"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewSetupBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:text="• Each player starts with 5 cards\n• The remaining cards form the draw pile\n• One card starts in the discard pile\n\nCard values:\n• Ace = 1\n• Number cards = face value\n• J, Q, K = 10"
+            android:textColor="#3F3A46"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Turn -->
+        <TextView
+            android:id="@+id/textViewTurnHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="On Your Turn"
+            android:textColor="#4A4453"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTurnBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:text="• Take a card from the discard pile\n• Or draw from the deck, then discard 1 card\n\nYou must discard at least 1 card.\nYou may discard:\n• 2+ cards of the same rank\n• 3+ consecutive cards of the same suit"
+            android:textColor="#3F3A46"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Scoring -->
+        <TextView
+            android:id="@+id/textViewScoringHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Scoring"
+            android:textColor="#4A4453"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewScoringBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:text="• If your hand value is 7 or less, wait 1 round\n• Then you may call at the start of your turn\n• All players reveal and total their cards\n• The lowest score wins the round\n• If someone has a score equal to or lower than the caller, they win and score 0"
+            android:textColor="#3F3A46"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Winning / Losing -->
+        <TextView
+            android:id="@+id/textViewWinningHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Winning / Losing"
+            android:textColor="#4A4453"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewWinningBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:text="• The game is played over multiple rounds\n• A player loses if they reach 100 points\n• Special rule: if a player reaches exactly 99 points, their score resets to 50"
+            android:textColor="#3F3A46"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonBackToCroatianPickRules"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/card_game_button"
+            android:text="Back"
+            android:textColor="@color/cardGameButtonTextColour"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
