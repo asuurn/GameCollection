@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#F7F2FA"
     android:fillViewport="true"
-    tools:context=".cardgames.CroatianPickRules">
+    tools:context=".cardgames.CroatianPick.CroatianPickRules">
 
     <LinearLayout
         android:layout_width="match_parent"

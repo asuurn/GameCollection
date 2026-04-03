@@ -1,4 +1,4 @@
-package ee.taltech.gamecollection.cardgames
+package ee.taltech.gamecollection.cardgames.CroatianPick
 
 import android.view.LayoutInflater
 import android.view.View

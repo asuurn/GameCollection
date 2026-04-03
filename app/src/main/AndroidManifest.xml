@@ -24,11 +24,11 @@
             android:name=".twister.TwisterActivity"
             android:exported="false" />
         <activity
-            android:name=".cardgames.CroatianPickRules"
+            android:name=".cardgames.CroatianPick.CroatianPickRules"
             android:exported="false"
             android:theme="@style/Theme.GameCollection" />
         <activity
-            android:name=".cardgames.CroatianPick"
+            android:name=".cardgames.CroatianPick.CroatianPick"
             android:exported="false" />
         <activity
             android:name=".cardgames.CardGamesActivity"
@@ -50,9 +50,6 @@
             android:exported="false" />
         <activity
             android:name=".paranoia.ParanoiaCoinFlipActivity"
-            android:exported="false" />
-        <activity
-            android:name=".paranoia.ParanoiaSuggestActivity"
             android:exported="false" />
         <activity
             android:name=".paranoia.ParanoiaRulesActivity"

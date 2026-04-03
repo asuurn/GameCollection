@@ -36,9 +36,5 @@ class ParanoiaActivity : AppCompatActivity() {
             intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
-        val suggestButton = findViewById<AppCompatButton>(R.id.buttonSuggest)
-        suggestButton.isEnabled = false
-        suggestButton.isClickable = false
     }
 }

@@ -98,13 +98,13 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/card_game_button"
         android:fontFamily="serif"
-        android:text="Card games"
+        android:text="CROATIAN PICK"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/buttonToTwister" />
 

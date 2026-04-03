@@ -5,10 +5,9 @@ import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatButton
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
-import ee.taltech.gamecollection.paranoia.ParanoiaRulesActivity
+import ee.taltech.gamecollection.cardgames.CroatianPick.CroatianPick
 
 class CardGamesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package ee.taltech.gamecollection.cardgames
+package ee.taltech.gamecollection.cardgames.CroatianPick
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ee.taltech.gamecollection.R
+import ee.taltech.gamecollection.cardgames.CardGamesActivity
 import org.json.JSONArray
 import org.json.JSONObject
 

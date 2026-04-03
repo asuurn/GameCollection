@@ -99,7 +99,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/card_game_button"
         android:fontFamily="serif"
-        android:text="Card games"
+        android:text="CROATIAN PICK"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"

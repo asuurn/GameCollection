@@ -48,40 +48,11 @@
         android:textColor="@color/paranoiaButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSuggest"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonSuggest"
-        android:layout_width="172dp"
-        android:layout_height="78dp"
-        android:background="@drawable/paranoia_button"
-        android:fontFamily="serif"
-        android:text="Suggest questions"
-        android:textColor="@color/paranoiaButtonTextColour"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buttonBackFromParanoia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRules" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="serif"
-        android:text="Coming soon ;)"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSuggest"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonBackFromParanoia"
@@ -97,6 +68,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSuggest" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonRules" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
