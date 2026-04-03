@@ -21,33 +21,28 @@ class SpinnerView @JvmOverloads constructor(
 ) : View(context, attrs) {
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-        val width = MeasureSpec.getSize(widthMeasureSpec)
-        val height = MeasureSpec.getSize(heightMeasureSpec)
-
-        val size = minOf(width, height)
-
+        val size = minOf(
+            MeasureSpec.getSize(widthMeasureSpec),
+            MeasureSpec.getSize(heightMeasureSpec)
+        )
         setMeasuredDimension(size, size)
     }
 
-    private val armBitmap: Bitmap =
+    private val armBitmap =
         BitmapFactory.decodeResource(context.resources, R.drawable.arm)
 
-    private val legBitmap: Bitmap =
+    private val legBitmap =
         BitmapFactory.decodeResource(context.resources, R.drawable.foot)
 
-    data class DisplayInfo(
+    private data class DisplayInfo(
         val side: String,
         val bitmap: Bitmap
     )
 
     private fun parseSector(label: String): DisplayInfo {
         val parts = label.split(" ")
-
         val side = if (parts[0] == "Left") "L" else "R"
-        val limb = parts[1]
-
-        val bitmap = if (limb == "Hand") armBitmap else legBitmap
-
+        val bitmap = if (parts[1] == "Hand") armBitmap else legBitmap
         return DisplayInfo(side, bitmap)
     }
 
@@ -71,7 +66,6 @@ class SpinnerView @JvmOverloads constructor(
         SpinnerSector("Right Leg Blue", Color.BLUE),
         SpinnerSector("Right Leg Green", Color.GREEN),
         SpinnerSector("Right Leg Yellow", Color.YELLOW),
-
     )
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -84,6 +78,8 @@ class SpinnerView @JvmOverloads constructor(
 
     private var angle = 0f
     private var resultListener: ((String) -> Unit)? = null
+
+    var isSpinning = false
 
     fun setOnResultListener(listener: (String) -> Unit) {
         resultListener = listener
@@ -106,7 +102,6 @@ class SpinnerView @JvmOverloads constructor(
             val sector = sectors[i]
             val startAngle = i * sweepAngle
 
-            // Draw slice
             paint.color = sector.color
             canvas.drawArc(rect, startAngle, sweepAngle, true, paint)
 
@@ -115,8 +110,8 @@ class SpinnerView @JvmOverloads constructor(
             val midAngle = startAngle + sweepAngle / 2f
             val angleRad = Math.toRadians(midAngle.toDouble())
 
-            val iconRadius = radius * 0.82f   // near outer edge
-            val textRadius = radius * 0.62f   // slightly inward
+            val iconRadius = radius * 0.82f
+            val textRadius = radius * 0.62f
 
             val iconX = centerX + (iconRadius * kotlin.math.cos(angleRad)).toFloat()
             val iconY = centerY + (iconRadius * kotlin.math.sin(angleRad)).toFloat()
@@ -127,12 +122,12 @@ class SpinnerView @JvmOverloads constructor(
             canvas.save()
             canvas.rotate(midAngle, iconX, iconY)
 
-            val size = radius * 0.22f
+            val sizeBmp = radius * 0.22f
             val rectBmp = RectF(
-                iconX - size / 2,
-                iconY - size / 2,
-                iconX + size / 2,
-                iconY + size / 2
+                iconX - sizeBmp / 2,
+                iconY - sizeBmp / 2,
+                iconX + sizeBmp / 2,
+                iconY + sizeBmp / 2
             )
             canvas.drawBitmap(display.bitmap, null, rectBmp, null)
 
@@ -140,9 +135,7 @@ class SpinnerView @JvmOverloads constructor(
 
             canvas.save()
             canvas.rotate(midAngle, textX, textY)
-
             canvas.drawText(display.side, textX, textY + 10f, textPaint)
-
             canvas.restore()
         }
 
@@ -159,6 +152,9 @@ class SpinnerView @JvmOverloads constructor(
     }
 
     fun spin() {
+        if (isSpinning) return
+        isSpinning = true
+
         val randomDegree = Random.nextInt(720, 1440)
 
         val animator = ValueAnimator.ofFloat(angle, angle + randomDegree).apply {
@@ -171,6 +167,7 @@ class SpinnerView @JvmOverloads constructor(
             }
 
             doOnEnd {
+                isSpinning = false
                 resultListener?.invoke(getResult())
             }
         }
