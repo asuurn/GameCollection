@@ -21,6 +21,9 @@
         android:theme="@style/Theme.GameCollection"
         tools:targetApi="31">
         <activity
+            android:name=".twister.TwisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".cardgames.CroatianPickRules"
             android:exported="false"
             android:theme="@style/Theme.GameCollection" />
@@ -29,9 +32,6 @@
             android:exported="false" />
         <activity
             android:name=".cardgames.CardGamesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".twister.TwisterActivity"
             android:exported="false" />
         <activity
             android:name=".uno.UnoDrunkActivity"
