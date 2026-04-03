@@ -1,234 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".uno.UnoAdvancedActivity">
+    android:background="#F7F2FA"
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/textView38"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="serif"
-        android:text="ADVANCED UNO"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView39"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <TextView
-        android:id="@+id/textView39"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="serif"
-        android:text="All the basic rules apply with some added fun."
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView43"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="ADVANCED UNO"
+            android:textColor="#3F3A46"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/textView40"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="serif"
-        android:text="Draw Two and Wild draw fours can be stacked, accumulating the penalty"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView41"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="All the basic rules apply with some added fun."
+            android:textColor="#6D6875"
+            android:textSize="14sp"/>
 
-    <TextView
-        android:id="@+id/textView41"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Jump-in rule"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView42"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+        <!-- Stacking -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stacking"
+            android:textColor="#4A4453"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
 
-    <TextView
-        android:id="@+id/textView42"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="serif"
-        android:text="If a player has the exact same card (same number and color) as the one on top of the discard pile, they can “jump in” and play it out of turn. Play resumes from the jumper's position, skipping others."
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView44"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginBottom="18dp">
 
-    <TextView
-        android:id="@+id/textView43"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Stacking"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView40"
-        app:layout_constraintEnd_toStartOf="@+id/imageView11"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/uno_stacking"/>
 
-    <TextView
-        android:id="@+id/textView44"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Seven-O rule"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView45"
-        app:layout_constraintEnd_toStartOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Draw Two and Wild Draw Four cards can be stacked, increasing the total penalty."
+                android:textColor="#3F3A46"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView45"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="serif"
-        android:text="If a 7 is played, the player who played it must swap hands with another player of their choice."
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView46"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+        <!-- Jump-in -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jump-in rule"
+            android:textColor="#4A4453"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
 
-    <TextView
-        android:id="@+id/textView46"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="serif"
-        android:text="If a 0 is played, all players pass their hands in the direction of play."
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView47"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginBottom="18dp">
 
-    <TextView
-        android:id="@+id/textView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Draw Until You Can Play"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView48"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/uno_jump_in"/>
 
-    <TextView
-        android:id="@+id/textView48"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="serif"
-        android:text="If a player cannot play a card, they must continue drawing from the draw pile until they can play a card."
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="If you have the exact same card as the top card, you can play it instantly out of turn. Play continues from you."
+                android:textColor="#3F3A46"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="99dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView40"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView43"
-        app:layout_constraintTop_toBottomOf="@+id/textView39"
-        app:srcCompat="@drawable/uno_stacking" />
+        <!-- Seven-O -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seven-O rule"
+            android:textColor="#4A4453"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="135dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView45"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView44"
-        app:layout_constraintTop_toBottomOf="@+id/textView42"
-        app:srcCompat="@drawable/uno_7_and_0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginBottom="18dp">
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="108dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView48"
-        app:layout_constraintEnd_toStartOf="@+id/textView47"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView46"
-        app:srcCompat="@drawable/uno_lots_of_cards" />
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/uno_7_and_0"/>
 
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="59dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView42"
-        app:layout_constraintEnd_toStartOf="@+id/textView41"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView40"
-        app:srcCompat="@drawable/uno_jump_in" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Playing a 7 lets you swap hands with another player. Playing a 0 makes everyone pass their hand in the current direction."
+                android:textColor="#3F3A46"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Draw Until You Can Play"
+            android:textColor="#4A4453"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/uno_lots_of_cards"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="If you cannot play, keep drawing cards until you get one you can play."
+                android:textColor="#3F3A46"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
