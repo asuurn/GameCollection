@@ -2,7 +2,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7F2FA"
     android:fillViewport="true">
 
     <LinearLayout
@@ -33,7 +32,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
             android:padding="14dp"
             android:text="Each player gets 7 cards. The top card of the remaining deck starts the discard pile."
             android:textColor="#3F3A46"
@@ -52,7 +50,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
             android:padding="14dp"
             android:text="Players take turns clockwise. Match the top card by color, number, or symbol. If you cannot play, draw a card."
             android:textColor="#3F3A46"
@@ -72,7 +69,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#FFFFFF"
             android:padding="14dp"
             android:layout_marginBottom="18dp">
 
@@ -205,7 +201,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
             android:padding="14dp"
             android:text="When you have one card left, you must say 'UNO'. If caught not saying it, draw 2 cards."
             android:textColor="#3F3A46"
@@ -224,7 +219,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
             android:padding="14dp"
             android:text="The round ends when a player plays their last card and wins."
             android:textColor="#3F3A46"

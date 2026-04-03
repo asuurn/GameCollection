@@ -4,12 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF">
-
-    <!-- HEADER -->
-
-    <!-- RESULT -->
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textViewTwisterHeader"
@@ -22,12 +17,6 @@
         app:layout_constraintEnd_toStartOf="@+id/spinnerView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- SPINNER -->
-
-    <!-- CONTROLS GROUP -->
-
-    <!-- BUTTON -->
 
     <TextView
         android:id="@+id/textViewTwisterResult"

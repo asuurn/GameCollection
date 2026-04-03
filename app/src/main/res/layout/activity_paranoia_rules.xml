@@ -2,7 +2,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7F2FA"
     android:fillViewport="true">
 
     <LinearLayout
@@ -36,7 +35,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
             android:padding="14dp"
             android:text="The host starts as the 'answerer' and the player to their right is the 'partner in crime'. A question is shown only to them. They may discuss it, but the answerer gives the final answer. The chosen person must be someone from the group."
             android:textColor="#3F3A46"
@@ -57,7 +55,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
             android:padding="14dp"
             android:text="After revealing the name, press 'Reveal your fate'. A coin flip decides whether the question is revealed. If yes, the answerer shares it. If not, it stays secret. Then pass the device left and continue."
             android:textColor="#3F3A46"
@@ -80,7 +77,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="18dp"
-            android:background="#FFFFFF"
             android:lineSpacingExtra="4dp"
             android:padding="14dp"
             android:text="When answering, be vague or misleading. Hint around the question instead of being direct. This keeps others guessing and increases the paranoia."
@@ -99,7 +95,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
             android:padding="14dp"
             android:text="The mix of questions makes players overthink everything. Do they like me? Hate me? Think I'm weird or funny? That's what creates the paranoia."
             android:textColor="#3F3A46"
