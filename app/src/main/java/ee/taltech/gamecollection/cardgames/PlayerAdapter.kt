@@ -10,8 +10,10 @@ import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import ee.taltech.gamecollection.R
 
-class PlayerAdapter(private val players: MutableList<Player>) :
-    RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder>() {
+class PlayerAdapter(
+    private val players: MutableList<Player>,
+    private val onDataChanged: () -> Unit
+) : RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder>() {
 
     class PlayerViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val name: TextView = view.findViewById(R.id.playerName)
@@ -34,30 +36,43 @@ class PlayerAdapter(private val players: MutableList<Player>) :
         holder.score.text = player.score.toString()
 
         holder.addButton.setOnClickListener {
+            val pos = holder.bindingAdapterPosition
+            if (pos == RecyclerView.NO_POSITION) return@setOnClickListener
+
             val amount = holder.amountInput.text.toString().toIntOrNull() ?: 0
-            player.score += amount
+            players[pos].score += amount
             holder.amountInput.text.clear()
-            notifyItemChanged(position)
+            notifyItemChanged(pos)
+            onDataChanged()
         }
 
         holder.subtractButton.setOnClickListener {
+            val pos = holder.bindingAdapterPosition
+            if (pos == RecyclerView.NO_POSITION) return@setOnClickListener
+
             val amount = holder.amountInput.text.toString().toIntOrNull() ?: 0
-            player.score -= amount
+            players[pos].score -= amount
             holder.amountInput.text.clear()
-            notifyItemChanged(position)
+            notifyItemChanged(pos)
+            onDataChanged()
         }
 
         holder.name.setOnClickListener {
             val context = holder.itemView.context
+            val pos = holder.bindingAdapterPosition
+            if (pos == RecyclerView.NO_POSITION) return@setOnClickListener
+
             val editText = EditText(context)
-            editText.setText(player.name)
+            editText.setText(players[pos].name)
 
             AlertDialog.Builder(context)
                 .setTitle("Edit Name")
                 .setView(editText)
                 .setPositiveButton("Save") { _, _ ->
-                    player.name = editText.text.toString().ifEmpty { player.name }
-                    notifyItemChanged(position)
+                    val newName = editText.text.toString().ifEmpty { players[pos].name }
+                    players[pos].name = newName
+                    notifyItemChanged(pos)
+                    onDataChanged()
                 }
                 .setNegativeButton("Cancel", null)
                 .show()
