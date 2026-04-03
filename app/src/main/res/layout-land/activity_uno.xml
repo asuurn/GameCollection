@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uno.UnoActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUnoDrunk"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:background="@drawable/uno_button"
+        android:fontFamily="serif"
+        android:text="DRUNK"
+        android:textColor="@color/unoButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonUnoAdvanced"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonUnoAdvanced"
+        app:layout_constraintTop_toTopOf="@+id/buttonUnoAdvanced" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUnoBasic"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:background="@drawable/uno_button"
+        android:fontFamily="serif"
+        android:text="Basic"
+        android:textColor="@color/unoButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonUnoAdvanced"
+        app:layout_constraintEnd_toStartOf="@+id/buttonUnoAdvanced"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonUnoAdvanced" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBackFromUno"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:background="@drawable/uno_button"
+        android:fontFamily="serif"
+        android:text="Back"
+        android:textColor="@color/unoButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUnoAdvanced" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="151dp"
+        android:layout_height="116dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uno" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUnoAdvanced"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:background="@drawable/uno_button"
+        android:fontFamily="serif"
+        android:text="ADVANCED"
+        android:textColor="@color/unoButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBackFromUno"
+        app:layout_constraintEnd_toStartOf="@+id/buttonUnoDrunk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonUnoBasic"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="RULES HUB"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonUnoAdvanced"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
