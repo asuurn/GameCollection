@@ -19,7 +19,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <LinearLayout
         android:id="@+id/headerRow"
@@ -73,7 +74,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"
-        android:layout_width="412dp"
+        android:layout_width="0dp"
         android:layout_height="255dp"
         app:layout_constraintBottom_toTopOf="@+id/historyHeader"
         app:layout_constraintEnd_toEndOf="parent"
@@ -180,6 +181,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buttonAddPlayer"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
