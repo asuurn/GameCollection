@@ -12,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 import ee.taltech.gamecollection.cardgames.CardGamesActivity
 import org.json.JSONArray
@@ -130,7 +131,7 @@ class CroatianPick : AppCompatActivity() {
         historyEntries.clear()
         historyAdapter.notifyDataSetChanged()
 
-        startActivity(Intent(this, CardGamesActivity::class.java))
+        startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
 
