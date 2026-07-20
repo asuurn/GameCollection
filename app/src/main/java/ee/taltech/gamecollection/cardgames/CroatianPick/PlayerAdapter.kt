@@ -12,7 +12,8 @@ import ee.taltech.gamecollection.R
 
 class PlayerAdapter(
     private val players: MutableList<Player>,
-    private val onDataChanged: () -> Unit
+    private val onDataChanged: () -> Unit,
+    private val onScoreChanged: (playerName: String, delta: Int, total: Int) -> Unit
 ) : RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder>() {
 
     class PlayerViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -43,6 +44,9 @@ class PlayerAdapter(
             players[pos].score += amount
             holder.amountInput.text.clear()
             notifyItemChanged(pos)
+            if (amount != 0) {
+                onScoreChanged(players[pos].name, amount, players[pos].score)
+            }
             onDataChanged()
         }
 
@@ -54,6 +58,9 @@ class PlayerAdapter(
             players[pos].score -= amount
             holder.amountInput.text.clear()
             notifyItemChanged(pos)
+            if (amount != 0) {
+                onScoreChanged(players[pos].name, -amount, players[pos].score)
+            }
             onDataChanged()
         }
 
