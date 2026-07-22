@@ -20,7 +20,7 @@
         android:textColor="@color/paranoiaButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonToBaila"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToCroatianPick"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToBaila"
+        android:id="@+id/buttonToCroatianPick"
         android:layout_width="0dp"
         android:layout_height="109dp"
         android:layout_marginStart="16dp"
@@ -62,7 +62,7 @@
         android:background="@drawable/baila_button"
 
         android:fontFamily="serif"
-        android:text="Baila"
+        android:text="Croatian pick"
         android:textColor="@color/bailaButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -98,7 +98,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/card_game_button"
         android:fontFamily="serif"
-        android:text="CROATIAN PICK"
+        android:text="Card games"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -124,7 +124,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonToBaila" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToCroatianPick" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"

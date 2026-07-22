@@ -26,10 +26,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonToBaila: Button = findViewById(R.id.buttonToBaila)
+        val buttonToBaila: Button = findViewById(R.id.buttonToCroatianPick)
         buttonToBaila.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            val intent = Intent(this, BailaActivity::class.java)
+            val intent = Intent(this, CroatianPick::class.java)
             startActivity(intent)
         }
 
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         val buttonToCardGames: Button = findViewById(R.id.buttonToCardGames)
         buttonToCardGames.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            val intent = Intent(this, CroatianPick::class.java)
+            val intent = Intent(this, CardGamesActivity::class.java)
             startActivity(intent)
         }
 

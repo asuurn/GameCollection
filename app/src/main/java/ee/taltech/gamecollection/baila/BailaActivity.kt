@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
+import ee.taltech.gamecollection.cardgames.CardGamesActivity
 import ee.taltech.gamecollection.paranoia.ParanoiaActivity
 
 class BailaActivity : AppCompatActivity() {
@@ -21,7 +22,7 @@ class BailaActivity : AppCompatActivity() {
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
         customButton.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, CardGamesActivity::class.java)
             startActivity(intent)
         }
     }

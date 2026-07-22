@@ -16,40 +16,40 @@
         android:textAlignment="center"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCroatianPick"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToBaila"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonCroatianPick"
+        android:id="@+id/buttonToBaila"
         android:layout_width="172dp"
         android:layout_height="78dp"
         android:background="@drawable/card_game_button"
         android:fontFamily="serif"
-        android:text="Croatian   Pick"
+        android:text="Baila"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonTups"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToPoker"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CroatianPickTextView" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonTups"
+        android:id="@+id/buttonToPoker"
         android:layout_width="172dp"
         android:layout_height="78dp"
         android:background="@drawable/card_game_button"
         android:fontFamily="serif"
-        android:text="Tups"
+        android:text="Poker"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buttonBackFromCardGames"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCroatianPick" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToBaila" />
 
     <TextView
         android:id="@+id/CardsNotIncluded"
@@ -77,6 +77,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonTups" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToPoker" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
