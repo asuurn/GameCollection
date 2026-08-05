@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import ee.taltech.gamecollection.MainActivity
@@ -30,11 +31,9 @@ class ParanoiaActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val back: Button = findViewById(R.id.buttonBackFromParanoia)
+        val back: ImageButton = findViewById(R.id.buttonBack)
         back.setOnClickListener {
-            it.startAnimation(bounceAnimation)
-            intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            finish()
         }
     }
 }

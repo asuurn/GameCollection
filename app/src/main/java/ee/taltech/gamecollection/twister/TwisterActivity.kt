@@ -2,6 +2,7 @@ package ee.taltech.gamecollection.twister
 
 import android.os.Bundle
 import android.os.Handler
+import android.widget.ImageButton
 import android.widget.SeekBar
 import android.widget.Switch
 import android.widget.TextView
@@ -87,6 +88,11 @@ class TwisterActivity : AppCompatActivity() {
                 handler.removeCallbacks(autoRunnable)
                 button.isEnabled = true
             }
+        }
+
+        val buttonBack: ImageButton = findViewById(R.id.buttonBack)
+        buttonBack.setOnClickListener {
+            finish()
         }
     }
 

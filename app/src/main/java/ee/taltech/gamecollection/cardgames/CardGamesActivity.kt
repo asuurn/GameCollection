@@ -4,11 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 import ee.taltech.gamecollection.baila.BailaActivity
-import ee.taltech.gamecollection.cardgames.CroatianPick.CroatianPick
 
 class CardGamesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,11 +30,9 @@ class CardGamesActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonBackFromCardGames: Button = findViewById(R.id.buttonBackFromCardGames)
-        buttonBackFromCardGames.setOnClickListener {
-            it.startAnimation(bounceAnimation)
-            intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+        val buttonBack: ImageButton = findViewById(R.id.buttonBack)
+        buttonBack.setOnClickListener {
+            finish()
         }
     }
 }

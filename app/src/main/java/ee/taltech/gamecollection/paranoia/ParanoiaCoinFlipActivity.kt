@@ -43,12 +43,6 @@ class ParanoiaCoinFlipActivity : AppCompatActivity() {
             it.startAnimation(bounceAnimation)
             onClickNewQuestion()
         }
-
-        val buttonToMain: Button = findViewById(R.id.buttonToMain)
-        buttonToMain.setOnClickListener {
-            it.startAnimation(bounceAnimation)
-            onClickBackToMain()
-        }
     }
 
     private fun flipCoin() {
@@ -77,12 +71,6 @@ class ParanoiaCoinFlipActivity : AppCompatActivity() {
     fun onClickNewQuestion() {
         hasFlipped = false
         intent = Intent(this, ParanoiaQuestionActivity::class.java)
-        startActivity(intent)
-    }
-
-    fun onClickBackToMain() {
-        hasFlipped = false
-        intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }

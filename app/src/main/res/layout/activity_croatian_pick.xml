@@ -20,12 +20,13 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <LinearLayout
         android:id="@+id/headerRow"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         android:paddingStart="8dp"
         android:paddingTop="8dp"
@@ -75,28 +76,12 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"
         android:layout_width="0dp"
-        android:layout_height="255dp"
+        android:layout_height="320dp"
         app:layout_constraintBottom_toTopOf="@+id/historyHeader"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headerRow" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonAddPlayer"
-        android:layout_width="200dp"
-        android:layout_height="78dp"
-        android:background="@drawable/card_game_button"
-        android:fontFamily="serif"
-        android:text="Add player"
-        android:textColor="@color/cardGameButtonTextColour"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bottomButtons"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/historyHeader" />
 
     <LinearLayout
         android:id="@+id/bottomButtons"
@@ -112,27 +97,27 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAddPlayer"
+            android:layout_width="200dp"
+            android:layout_height="78dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/card_game_button"
+            android:fontFamily="serif"
+            android:text="Add player"
+            android:textColor="@color/cardGameButtonTextColour"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonCroatianPickRules"
-            android:layout_width="0dp"
+            android:layout_width="200dp"
             android:layout_height="78dp"
             android:layout_weight="1"
             android:layout_marginEnd="12dp"
             android:background="@drawable/card_game_button"
             android:fontFamily="serif"
             android:text="Rules"
-            android:textColor="@color/cardGameButtonTextColour"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonBackFromCroatianPick"
-            android:layout_width="0dp"
-            android:layout_height="78dp"
-            android:layout_marginStart="12dp"
-            android:layout_weight="1"
-            android:background="@drawable/card_game_button"
-            android:fontFamily="serif"
-            android:text="Back"
             android:textColor="@color/cardGameButtonTextColour"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -172,6 +157,7 @@
         android:id="@+id/historyHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
         android:background="?attr/selectableItemBackground"
         android:fontFamily="serif"
         android:gravity="center"
@@ -179,8 +165,21 @@
         android:text="History ▼"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonAddPlayer"
+        app:layout_constraintBottom_toTopOf="@+id/bottomButtons"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
         tools:layout_editor_absoluteX="0dp" />
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:padding="8dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AlertDialog
@@ -66,9 +67,8 @@ class CroatianPick : AppCompatActivity() {
             startActivity(Intent(this, CroatianPickRules::class.java))
         }
 
-        val buttonBackFromCroatianPick: Button = findViewById(R.id.buttonBackFromCroatianPick)
-        buttonBackFromCroatianPick.setOnClickListener {
-            it.startAnimation(bounceAnimation)
+        val buttonBack: ImageButton = findViewById(R.id.buttonBack)
+        buttonBack.setOnClickListener {
             resetGameAndGoBack()
         }
 
@@ -131,7 +131,6 @@ class CroatianPick : AppCompatActivity() {
         historyEntries.clear()
         historyAdapter.notifyDataSetChanged()
 
-        startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
 
