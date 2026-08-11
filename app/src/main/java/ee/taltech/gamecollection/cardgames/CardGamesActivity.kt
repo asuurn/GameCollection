@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 import ee.taltech.gamecollection.cardgames.baila.BailaActivity
+import ee.taltech.gamecollection.cardgames.poker.PokerActivity
 import ee.taltech.gamecollection.cardgames.uno.UnoActivity
 
 class CardGamesActivity : AppCompatActivity() {
@@ -27,7 +28,7 @@ class CardGamesActivity : AppCompatActivity() {
         val buttonPoker: Button = findViewById(R.id.buttonToPoker)
         buttonPoker.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            intent = Intent(this, MainActivity::class.java)
+            intent = Intent(this, PokerActivity::class.java)
             startActivity(intent)
         }
 

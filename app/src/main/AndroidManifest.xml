@@ -21,12 +21,14 @@
         android:theme="@style/Theme.GameCollection"
         tools:targetApi="31">
         <activity
+            android:name=".cardgames.poker.PokerActivity"
+            android:exported="false" />
+        <activity
             android:name=".twister.TwisterActivity"
+            android:exported="false"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:exported="false"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".CroatianPick.CroatianPickRules"
             android:exported="false"
@@ -34,91 +36,79 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameCollection"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".CroatianPick.CroatianPick"
-            android:parentActivityName=".MainActivity"
             android:exported="false"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".cardgames.CardGamesActivity"
-            android:parentActivityName=".MainActivity"
             android:exported="false"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".cardgames.uno.UnoDrunkActivity"
-            android:parentActivityName=".cardgames.uno.UnoActivity"
             android:exported="false"
+            android:parentActivityName=".cardgames.uno.UnoActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".cardgames.uno.UnoAdvancedActivity"
-            android:parentActivityName=".cardgames.uno.UnoActivity"
             android:exported="false"
+            android:parentActivityName=".cardgames.uno.UnoActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".cardgames.uno.UnoBasicActivity"
-            android:parentActivityName=".cardgames.uno.UnoActivity"
             android:exported="false"
+            android:parentActivityName=".cardgames.uno.UnoActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".cardgames.uno.UnoActivity"
-            android:parentActivityName=".MainActivity"
             android:exported="false"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".cardgames.baila.BailaActivity"
-            android:parentActivityName=".cardgames.CardGamesActivity"
             android:exported="false"
+            android:parentActivityName=".cardgames.CardGamesActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".paranoia.ParanoiaCoinFlipActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".paranoia.ParanoiaRulesActivity"
-            android:parentActivityName=".paranoia.ParanoiaActivity"
             android:exported="false"
+            android:parentActivityName=".paranoia.ParanoiaActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".paranoia.ParanoiaQuestionActivity"
-            android:parentActivityName=".paranoia.ParanoiaActivity"
             android:exported="false"
+            android:parentActivityName=".paranoia.ParanoiaActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".paranoia.ParanoiaActivity"
-            android:parentActivityName=".MainActivity"
             android:exported="false"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
