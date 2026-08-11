@@ -8,8 +8,8 @@ import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
-import ee.taltech.gamecollection.baila.BailaActivity
-import ee.taltech.gamecollection.uno.UnoActivity
+import ee.taltech.gamecollection.cardgames.baila.BailaActivity
+import ee.taltech.gamecollection.cardgames.uno.UnoActivity
 
 class CardGamesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

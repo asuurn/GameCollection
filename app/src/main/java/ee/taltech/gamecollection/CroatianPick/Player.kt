@@ -1,4 +1,4 @@
-package ee.taltech.gamecollection.cardgames.CroatianPick
+package ee.taltech.gamecollection.CroatianPick
 
 data class Player(
     var name: String,

@@ -1,4 +1,4 @@
-package ee.taltech.gamecollection.baila
+package ee.taltech.gamecollection.cardgames.baila
 
 import android.content.Intent
 import android.os.Bundle

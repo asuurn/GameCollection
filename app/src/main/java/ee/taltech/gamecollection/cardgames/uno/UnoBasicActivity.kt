@@ -1,4 +1,4 @@
-package ee.taltech.gamecollection.uno
+package ee.taltech.gamecollection.cardgames.uno
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,9 +7,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import ee.taltech.gamecollection.R
 
-class UnoAdvancedActivity : AppCompatActivity() {
+class UnoBasicActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_uno_advanced)
+        setContentView(R.layout.activity_uno_basic)
     }
 }

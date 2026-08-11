@@ -1,4 +1,4 @@
-package ee.taltech.gamecollection.cardgames.CroatianPick
+package ee.taltech.gamecollection.CroatianPick
 
 import android.content.Intent
 import android.os.Bundle

@@ -28,15 +28,15 @@
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".cardgames.CroatianPick.CroatianPickRules"
+            android:name=".CroatianPick.CroatianPickRules"
             android:exported="false"
-            android:parentActivityName=".cardgames.CroatianPick.CroatianPick"
+            android:parentActivityName=".CroatianPick.CroatianPick"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameCollection"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".cardgames.CroatianPick.CroatianPick"
+            android:name=".CroatianPick.CroatianPick"
             android:parentActivityName=".MainActivity"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -50,35 +50,35 @@
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".uno.UnoDrunkActivity"
-            android:parentActivityName=".uno.UnoActivity"
+            android:name=".cardgames.uno.UnoDrunkActivity"
+            android:parentActivityName=".cardgames.uno.UnoActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".uno.UnoAdvancedActivity"
-            android:parentActivityName=".uno.UnoActivity"
+            android:name=".cardgames.uno.UnoAdvancedActivity"
+            android:parentActivityName=".cardgames.uno.UnoActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".uno.UnoBasicActivity"
-            android:parentActivityName=".uno.UnoActivity"
+            android:name=".cardgames.uno.UnoBasicActivity"
+            android:parentActivityName=".cardgames.uno.UnoActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".uno.UnoActivity"
+            android:name=".cardgames.uno.UnoActivity"
             android:parentActivityName=".MainActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".baila.BailaActivity"
+            android:name=".cardgames.baila.BailaActivity"
             android:parentActivityName=".cardgames.CardGamesActivity"
             android:exported="false"
             android:screenOrientation="portrait"

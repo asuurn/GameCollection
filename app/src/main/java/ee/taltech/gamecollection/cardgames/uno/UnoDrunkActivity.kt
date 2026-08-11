@@ -1,4 +1,4 @@
-package ee.taltech.gamecollection.uno
+package ee.taltech.gamecollection.cardgames.uno
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

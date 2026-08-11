@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import ee.taltech.gamecollection.baila.BailaActivity
 import ee.taltech.gamecollection.cardgames.CardGamesActivity
-import ee.taltech.gamecollection.cardgames.CroatianPick.CroatianPick
+import ee.taltech.gamecollection.CroatianPick.CroatianPick
 import ee.taltech.gamecollection.paranoia.ParanoiaActivity
 import ee.taltech.gamecollection.twister.TwisterActivity
-import ee.taltech.gamecollection.uno.UnoActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
