@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 import ee.taltech.gamecollection.baila.BailaActivity
+import ee.taltech.gamecollection.uno.UnoActivity
 
 class CardGamesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,10 +24,17 @@ class CardGamesActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonTups: Button = findViewById(R.id.buttonToPoker)
-        buttonTups.setOnClickListener {
+        val buttonPoker: Button = findViewById(R.id.buttonToPoker)
+        buttonPoker.setOnClickListener {
             it.startAnimation(bounceAnimation)
             intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonUno: Button = findViewById(R.id.buttonToUno)
+        buttonUno.setOnClickListener {
+            it.startAnimation(bounceAnimation)
+            intent = Intent(this, UnoActivity::class.java)
             startActivity(intent)
         }
 

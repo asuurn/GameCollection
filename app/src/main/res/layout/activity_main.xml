@@ -116,8 +116,8 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/uno_button"
         android:fontFamily="serif"
-
-        android:text="UNO"
+        android:text="Truth or
+        dare"
         android:textColor="@color/unoButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"

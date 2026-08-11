@@ -33,13 +33,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonToUno: Button = findViewById(R.id.buttonToUno)
-        buttonToUno.setOnClickListener {
-            it.startAnimation(bounceAnimation)
-            val intent = Intent(this, UnoActivity::class.java)
-            startActivity(intent)
-        }
-
         val buttonToCardGames: Button = findViewById(R.id.buttonToCardGames)
         buttonToCardGames.setOnClickListener {
             it.startAnimation(bounceAnimation)
