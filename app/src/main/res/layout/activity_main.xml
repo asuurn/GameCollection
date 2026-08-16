@@ -20,7 +20,7 @@
         android:textColor="@color/paranoiaButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonToCroatianPick"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToScoreBoard"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
