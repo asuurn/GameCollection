@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToCroatianPick"
+        android:id="@+id/buttonToScoreBoard"
         android:layout_width="0dp"
         android:layout_height="109dp"
         android:layout_marginStart="16dp"
@@ -62,7 +62,7 @@
         android:background="@drawable/baila_button"
 
         android:fontFamily="serif"
-        android:text="Croatian pick"
+        android:text="Scoreboard"
         android:textColor="@color/bailaButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -124,7 +124,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonToCroatianPick" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToScoreBoard" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"

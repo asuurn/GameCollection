@@ -1,4 +1,4 @@
-package ee.taltech.gamecollection.CroatianPick
+package ee.taltech.gamecollection.scoreboard
 
 import android.view.LayoutInflater
 import android.view.View

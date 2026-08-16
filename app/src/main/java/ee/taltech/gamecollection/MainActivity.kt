@@ -6,7 +6,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.cardgames.CardGamesActivity
-import ee.taltech.gamecollection.CroatianPick.CroatianPick
+import ee.taltech.gamecollection.scoreboard.Scoreboard
 import ee.taltech.gamecollection.paranoia.ParanoiaActivity
 import ee.taltech.gamecollection.twister.TwisterActivity
 
@@ -24,10 +24,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonToBaila: Button = findViewById(R.id.buttonToCroatianPick)
+        val buttonToBaila: Button = findViewById(R.id.buttonToScoreBoard)
         buttonToBaila.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            val intent = Intent(this, CroatianPick::class.java)
+            val intent = Intent(this, Scoreboard::class.java)
             startActivity(intent)
         }
 

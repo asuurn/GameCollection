@@ -6,12 +6,12 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/CroatianPickTextView"
+        android:id="@+id/ScoreboardTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="serif"
-        android:text="CROATIAN PICK"
+        android:text="SCOREBOARD"
         android:textAlignment="center"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CroatianPickTextView">
+        app:layout_constraintTop_toBottomOf="@+id/ScoreboardTextView">
 
         <TextView
             android:layout_width="0dp"
@@ -110,14 +110,14 @@
             android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonCroatianPickRules"
+            android:id="@+id/buttonNewGame"
             android:layout_width="200dp"
             android:layout_height="78dp"
             android:layout_weight="1"
             android:layout_marginEnd="12dp"
             android:background="@drawable/card_game_button"
             android:fontFamily="serif"
-            android:text="Rules"
+            android:text="New game"
             android:textColor="@color/cardGameButtonTextColour"
             android:textSize="20sp"
             android:textStyle="bold" />

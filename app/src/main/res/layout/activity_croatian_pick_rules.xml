@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".CroatianPick.CroatianPickRules">
+    tools:context=".cardgames.croatianPick.CroatianPickRules">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -112,7 +112,7 @@
             android:lineSpacingExtra="4dp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonBackToCroatianPickRules"
+            android:id="@+id/buttonBackToCardGames"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@drawable/card_game_button"

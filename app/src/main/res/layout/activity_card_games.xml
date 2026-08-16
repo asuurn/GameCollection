@@ -8,6 +8,23 @@
     tools:context=".paranoia.ParanoiaActivity">
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToCroatianPick"
+        android:layout_width="172dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/card_game_button"
+        android:fontFamily="serif"
+        android:text="Croatian pick"
+        android:textColor="@color/cardGameButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToUno" />
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonToUno"
         android:layout_width="172dp"
         android:layout_height="78dp"
@@ -17,7 +34,7 @@
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToCroatianPick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

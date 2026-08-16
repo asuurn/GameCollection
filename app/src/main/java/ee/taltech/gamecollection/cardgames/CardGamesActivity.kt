@@ -6,9 +6,9 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 import ee.taltech.gamecollection.cardgames.baila.BailaActivity
+import ee.taltech.gamecollection.cardgames.croatianPick.CroatianPickRules
 import ee.taltech.gamecollection.cardgames.poker.PokerActivity
 import ee.taltech.gamecollection.cardgames.uno.UnoActivity
 
@@ -36,6 +36,13 @@ class CardGamesActivity : AppCompatActivity() {
         buttonUno.setOnClickListener {
             it.startAnimation(bounceAnimation)
             intent = Intent(this, UnoActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonToCroatianPick: Button = findViewById(R.id.buttonToCroatianPick)
+        buttonToCroatianPick.setOnClickListener {
+            it.startAnimation(bounceAnimation)
+            intent = Intent(this, CroatianPickRules::class.java)
             startActivity(intent)
         }
 

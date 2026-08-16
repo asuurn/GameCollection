@@ -1,6 +1,5 @@
-package ee.taltech.gamecollection.CroatianPick
+package ee.taltech.gamecollection.scoreboard
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AnimationUtils
@@ -17,7 +16,7 @@ import ee.taltech.gamecollection.R
 import org.json.JSONArray
 import org.json.JSONObject
 
-class CroatianPick : AppCompatActivity() {
+class Scoreboard : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: PlayerAdapter
@@ -33,7 +32,7 @@ class CroatianPick : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_croatian_pick)
+        setContentView(R.layout.activity_score_board)
 
         loadPlayers()
         loadHistory()
@@ -59,10 +58,10 @@ class CroatianPick : AppCompatActivity() {
 
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
 
-        val buttonCroatianPickRules: Button = findViewById(R.id.buttonCroatianPickRules)
+        val buttonCroatianPickRules: Button = findViewById(R.id.buttonNewGame)
         buttonCroatianPickRules.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            startActivity(Intent(this, CroatianPickRules::class.java))
+            //TODO implement new game
         }
 
         val buttonBack: ImageButton = findViewById(R.id.buttonBack)

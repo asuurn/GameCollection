@@ -1,4 +1,4 @@
-package ee.taltech.gamecollection.CroatianPick
+package ee.taltech.gamecollection.cardgames.croatianPick
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.R
+import ee.taltech.gamecollection.cardgames.CardGamesActivity
 
 class CroatianPickRules : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,10 +14,10 @@ class CroatianPickRules : AppCompatActivity() {
         setContentView(R.layout.activity_croatian_pick_rules)
 
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
-        val buttonBackToCroatianPickRules: Button = findViewById(R.id.buttonBackToCroatianPickRules)
-        buttonBackToCroatianPickRules.setOnClickListener {
+        val buttonBackToCardGames: Button = findViewById(R.id.buttonBackToCardGames)
+        buttonBackToCardGames.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            intent = Intent(this, CroatianPick::class.java)
+            intent = Intent(this, CardGamesActivity::class.java)
             startActivity(intent)
         }
     }
