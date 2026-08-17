@@ -1,6 +1,7 @@
 package ee.taltech.gamecollection.cardgames.uno
 
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,5 +12,9 @@ class UnoBasicActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_uno_basic)
+        val back: ImageButton = findViewById(R.id.buttonBack)
+        back.setOnClickListener {
+            finish()
+        }
     }
 }

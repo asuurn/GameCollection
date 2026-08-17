@@ -12,8 +12,7 @@
         android:layout_height="wrap_content"
         android:text="ROYAL FLUSH"
         android:textSize="14sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black" />
+        android:textStyle="bold" />
 
     <LinearLayout
         android:id="@+id/cardsContainer"

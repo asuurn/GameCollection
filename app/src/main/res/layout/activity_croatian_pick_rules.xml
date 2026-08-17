@@ -12,16 +12,37 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
-            android:id="@+id/textViewCroatianPickRuleTitle"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:text="Rules for Croatian Pick"
-            android:textColor="#3F3A46"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:padding="8dp"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:id="@+id/textViewCroatianPickRuleTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Croatian Pick"
+                android:textColor="#3F3A46"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
 
         <!-- Setup -->
         <TextView
@@ -110,16 +131,6 @@
             android:textColor="#3F3A46"
             android:textSize="16sp"
             android:lineSpacingExtra="4dp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonBackToCardGames"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:background="@drawable/card_game_button"
-            android:text="Back"
-            android:textColor="@color/cardGameButtonTextColour"
-            android:textSize="18sp"
-            android:textStyle="bold" />
 
     </LinearLayout>
 </ScrollView>

@@ -3,6 +3,7 @@ package ee.taltech.gamecollection.paranoia
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,10 +14,10 @@ class ParanoiaRulesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_paranoia_rules)
-    }
 
-    fun onClickBackToMain(view: View) {
-        intent = Intent(this, ParanoiaActivity::class.java)
-        startActivity(intent)
+        val back: ImageButton = findViewById(R.id.buttonBack)
+        back.setOnClickListener {
+            finish()
+        }
     }
 }
