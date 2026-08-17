@@ -86,17 +86,11 @@
         <activity
             android:name=".paranoia.ParanoiaRulesActivity"
             android:exported="false"
-            android:parentActivityName=".paranoia.ParanoiaActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".paranoia.ParanoiaQuestionActivity"
-            android:exported="false"
-            android:parentActivityName=".paranoia.ParanoiaActivity"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity" />
-        <activity
-            android:name=".paranoia.ParanoiaActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"

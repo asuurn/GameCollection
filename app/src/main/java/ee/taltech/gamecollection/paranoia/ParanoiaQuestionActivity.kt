@@ -36,6 +36,13 @@ class ParanoiaQuestionActivity : AppCompatActivity() {
             onClickCoinFlip()
         }
 
+        val buttonRules: Button = findViewById(R.id.buttonRules)
+        buttonRules.setOnClickListener {
+            it.startAnimation(bounceAnimation)
+            intent = Intent(this, ParanoiaRulesActivity::class.java)
+            startActivity(intent)
+        }
+
         val button: ImageButton = findViewById(R.id.buttonBack)
         button.setOnClickListener {
             finish()

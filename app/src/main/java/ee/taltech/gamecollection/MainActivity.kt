@@ -6,8 +6,8 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.cardgames.CardGamesActivity
+import ee.taltech.gamecollection.paranoia.ParanoiaQuestionActivity
 import ee.taltech.gamecollection.scoreboard.Scoreboard
-import ee.taltech.gamecollection.paranoia.ParanoiaActivity
 import ee.taltech.gamecollection.twister.TwisterActivity
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val paranoiaButton: Button = findViewById(R.id.buttonToParanoia)
         paranoiaButton.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            val intent = Intent(this, ParanoiaActivity::class.java)
+            val intent = Intent(this, ParanoiaQuestionActivity::class.java)
             startActivity(intent)
         }
 

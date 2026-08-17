@@ -12,7 +12,6 @@ import androidx.core.view.WindowInsetsCompat
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 import ee.taltech.gamecollection.cardgames.CardGamesActivity
-import ee.taltech.gamecollection.paranoia.ParanoiaActivity
 
 class BailaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

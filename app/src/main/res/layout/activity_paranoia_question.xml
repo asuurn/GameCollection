@@ -64,6 +64,23 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRules"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:background="@drawable/paranoia_button"
+        android:fontFamily="serif"
+
+        android:text="Rules"
+        android:textColor="@color/paranoiaButtonTextColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCoinFlip" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
