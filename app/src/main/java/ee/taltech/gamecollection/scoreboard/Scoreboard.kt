@@ -1,7 +1,9 @@
 package ee.taltech.gamecollection.scoreboard
 
+import android.app.Dialog
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.EditText
@@ -50,23 +52,17 @@ class Scoreboard : AppCompatActivity() {
         )
         recyclerView.adapter = adapter
 
-        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                resetGameAndGoBack()
-            }
-        })
-
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
 
-        val buttonCroatianPickRules: Button = findViewById(R.id.buttonNewGame)
-        buttonCroatianPickRules.setOnClickListener {
+        val buttonNewGame: Button = findViewById(R.id.buttonNewGame)
+        buttonNewGame.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            //TODO implement new game
+            showNewGameDialog()
         }
 
         val buttonBack: ImageButton = findViewById(R.id.buttonBack)
         buttonBack.setOnClickListener {
-            resetGameAndGoBack()
+            finish()
         }
 
         val addButton: Button = findViewById(R.id.buttonAddPlayer)
@@ -115,7 +111,48 @@ class Scoreboard : AppCompatActivity() {
         historyRecyclerView.scrollToPosition(historyEntries.size - 1)
     }
 
-    private fun resetGameAndGoBack() {
+    private fun showNewGameDialog() {
+
+        val dialog = Dialog(this)
+
+        dialog.setContentView(R.layout.dialog_new_game)
+
+        dialog.window?.setBackgroundDrawableResource(
+            R.drawable.dialog_background
+        )
+
+        dialog.window?.setLayout(
+            (resources.displayMetrics.widthPixels * 0.90).toInt(),
+            WindowManager.LayoutParams.WRAP_CONTENT
+        )
+
+        val buttonNewGame: Button = dialog.findViewById(R.id.buttonNewGame)
+        val buttonSamePlayers: Button = dialog.findViewById(R.id.buttonSamePlayers)
+        val buttonCancel: Button = dialog.findViewById(R.id.buttonCancel)
+
+        buttonNewGame.setOnClickListener {
+            newGameFully()
+            dialog.dismiss()
+        }
+
+        buttonSamePlayers.setOnClickListener {
+            newGameSamePlayers()
+            dialog.dismiss()
+        }
+
+        buttonCancel.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        dialog.show()
+
+        dialog.window?.setLayout(
+            (resources.displayMetrics.widthPixels * 0.90).toInt(),
+            WindowManager.LayoutParams.WRAP_CONTENT
+        )
+    }
+
+    private fun newGameFully() {
         getSharedPreferences(prefsName, MODE_PRIVATE)
             .edit()
             .remove(playersKey)
@@ -127,8 +164,20 @@ class Scoreboard : AppCompatActivity() {
 
         historyEntries.clear()
         historyAdapter.notifyDataSetChanged()
+    }
 
-        finish()
+    private fun newGameSamePlayers() {
+        players.forEach { player ->
+            player.score = 0
+        }
+
+        adapter.notifyDataSetChanged()
+
+        historyEntries.clear()
+        historyAdapter.notifyDataSetChanged()
+
+        savePlayers()
+        saveHistory()
     }
 
     private fun addHistoryEntry(text: String) {
