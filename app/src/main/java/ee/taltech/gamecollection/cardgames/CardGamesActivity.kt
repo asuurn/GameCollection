@@ -32,7 +32,7 @@ class CardGamesActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonUno: Button = findViewById(R.id.buttonToUno)
+        val buttonUno: Button = findViewById(R.id.buttonToTruthOrDare)
         buttonUno.setOnClickListener {
             it.startAnimation(bounceAnimation)
             intent = Intent(this, UnoActivity::class.java)

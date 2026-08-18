@@ -20,10 +20,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonToUno" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToTruthOrDare" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToUno"
+        android:id="@+id/buttonToTruthOrDare"
         android:layout_width="172dp"
         android:layout_height="78dp"
         android:background="@drawable/card_game_button"
@@ -79,7 +79,7 @@
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonToUno"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToTruthOrDare"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

@@ -63,10 +63,10 @@
 
         android:fontFamily="serif"
         android:text="Scoreboard"
-        android:textColor="@color/bailaButtonTextColour"
+        android:textColor="@color/scoreBoardButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonToUno"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToTruthOrDare"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonToParanoia" />
@@ -109,16 +109,16 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonToTwister" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToUno"
+        android:id="@+id/buttonToTruthOrDare"
         android:layout_width="0dp"
         android:layout_height="109dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/uno_button"
+        android:background="@drawable/truth_or_dare_button"
         android:fontFamily="serif"
         android:text="Truth or
         dare"
-        android:textColor="@color/unoButtonTextColour"
+        android:textColor="@color/truthOrDareButtonTextColour"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

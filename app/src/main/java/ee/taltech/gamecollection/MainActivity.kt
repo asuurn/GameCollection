@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.cardgames.CardGamesActivity
 import ee.taltech.gamecollection.paranoia.ParanoiaQuestionActivity
 import ee.taltech.gamecollection.scoreboard.Scoreboard
+import ee.taltech.gamecollection.truthOrDare.TruthOrDareActivity
 import ee.taltech.gamecollection.twister.TwisterActivity
 
 class MainActivity : AppCompatActivity() {
@@ -42,6 +43,13 @@ class MainActivity : AppCompatActivity() {
         buttonToTwister.setOnClickListener {
             it.startAnimation(bounceAnimation)
             val intent = Intent(this, TwisterActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonToTruthOrDare: Button = findViewById(R.id.buttonToTruthOrDare)
+        buttonToTruthOrDare.setOnClickListener {
+            it.startAnimation(bounceAnimation)
+            val intent = Intent(this, TruthOrDareActivity::class.java)
             startActivity(intent)
         }
     }
