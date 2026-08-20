@@ -46,20 +46,20 @@ class TruthOrDareActivity : AppCompatActivity() {
         val thirdCard = getPreviewCard(CardType.TRUTH, 1)
 
         topCard = createCard(
-            40F,
-            40F,
+            0F,
+            0F,
             firstCard
         )
 
         middleCard = createCard(
-            20F,
-            20F,
+            -20F,
+            -20F,
             secondCard
         )
 
         backCard = createCard(
-            0F,
-            0F,
+            -40F,
+            -40F,
             thirdCard
         )
 
@@ -184,8 +184,8 @@ class TruthOrDareActivity : AppCompatActivity() {
                         maxVerticalMovement
                     )
 
-                    view.translationX = 40F + deltaX
-                    view.translationY = 40F + limitedDeltaY
+                    view.translationX = deltaX
+                    view.translationY = limitedDeltaY
                     view.rotation = deltaX * 0.05F
 
                     // RIGHT = TRUTH & LEFT = DARE
@@ -284,8 +284,8 @@ class TruthOrDareActivity : AppCompatActivity() {
                     getPreviewCard(CardType.TRUTH, 1)
                 )
 
-                backCard.translationX = 0F
-                backCard.translationY = 0F
+                backCard.translationX = -40F
+                backCard.translationY = -40F
                 backCard.rotation = 0F
 
                 cardStack.removeView(backCard)
@@ -296,22 +296,22 @@ class TruthOrDareActivity : AppCompatActivity() {
                 )
 
                 topCard.animate()
-                    .translationX(40F)
-                    .translationY(40F)
+                    .translationX(0F)
+                    .translationY(0F)
                     .rotation(0F)
                     .setDuration(200)
                     .start()
 
                 middleCard.animate()
-                    .translationX(20F)
-                    .translationY(20F)
+                    .translationX(-20F)
+                    .translationY(-20F)
                     .rotation(0F)
                     .setDuration(200)
                     .start()
 
                 backCard.animate()
-                    .translationX(0F)
-                    .translationY(0F)
+                    .translationX(-40F)
+                    .translationY(-40F)
                     .rotation(0F)
                     .setDuration(200)
                     .start()
@@ -324,8 +324,8 @@ class TruthOrDareActivity : AppCompatActivity() {
     // Cancel swipe
     private fun returnCard(card: View) {
         card.animate()
-            .translationX(40F)
-            .translationY(40F)
+            .translationX(0F)
+            .translationY(0F)
             .rotation(0F)
             .setDuration(200)
             .start()
@@ -336,8 +336,8 @@ class TruthOrDareActivity : AppCompatActivity() {
             getPreviewCard(CardType.TRUTH)
         )
 
-        middleCard.translationX = 20F
-        middleCard.translationY = 20F
+        middleCard.translationX = -20F
+        middleCard.translationY = -20F
         middleCard.rotation = 0F
     }
 
