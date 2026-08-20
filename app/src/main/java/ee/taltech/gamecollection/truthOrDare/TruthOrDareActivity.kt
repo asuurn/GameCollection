@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewConfiguration
 import android.view.ViewGroup
 import android.widget.FrameLayout
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.R
@@ -33,6 +34,11 @@ class TruthOrDareActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_truth_or_dare)
+
+        val buttonBack: ImageButton = findViewById(R.id.buttonBack)
+        buttonBack.setOnClickListener {
+            finish()
+        }
 
         cards =
             readFileAsLines(R.raw.truth, CardType.TRUTH) +
@@ -342,7 +348,6 @@ class TruthOrDareActivity : AppCompatActivity() {
     }
 
     private fun readFileAsLines(resourceId: Int, type: CardType): MutableList<CardData> {
-
         val cards = mutableListOf<CardData>()
 
         resources.openRawResource(resourceId).bufferedReader().useLines { lines ->
@@ -352,7 +357,7 @@ class TruthOrDareActivity : AppCompatActivity() {
                 }
             }
         }
-
+        cards.shuffle()
         return cards
     }
 }
