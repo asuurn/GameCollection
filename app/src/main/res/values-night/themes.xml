@@ -2,8 +2,10 @@
 
     <style name="Base.Theme.GameCollection"
         parent="Theme.Material3.DayNight.NoActionBar">
+
         <item name="android:windowBackground">@drawable/app_background</item>
         <item name="android:fontFamily">@font/caprasimo</item>
-        <item name="android:textColor">@color/mainTextColourLightMode</item>
+        <item name="android:textColor">@color/mainTextColourDarkMode</item>
+
     </style>
 </resources>
