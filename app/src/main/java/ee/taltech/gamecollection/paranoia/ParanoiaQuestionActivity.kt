@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 
 class ParanoiaQuestionActivity : AppCompatActivity() {
@@ -45,6 +46,8 @@ class ParanoiaQuestionActivity : AppCompatActivity() {
 
         val button: ImageButton = findViewById(R.id.buttonBack)
         button.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
             finish()
         }
     }

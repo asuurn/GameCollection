@@ -5,5 +5,6 @@
         <item name="android:windowBackground">@drawable/app_background</item>
         <item name="android:fontFamily">@font/caprasimo</item>
         <item name="android:textColor">@color/mainTextColourLightMode</item>
+        <item name="colorControlNormal">@color/mainTextColourLightMode</item>
     </style>
 </resources>
