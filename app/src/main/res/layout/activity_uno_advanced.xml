@@ -18,8 +18,8 @@
 
             <ImageButton
                 android:id="@+id/buttonBack"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Back"
                 android:padding="8dp"
@@ -31,7 +31,6 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="ADVANCED UNO"
-                android:textColor="#3F3A46"
                 android:textSize="30sp"
                 />
 
@@ -47,7 +46,6 @@
             android:layout_marginBottom="20dp"
             android:gravity="center"
             android:text="All the basic rules apply with some added fun."
-            android:textColor="#6D6875"
             android:textSize="14sp"/>
 
         <!-- Stacking -->
@@ -55,7 +53,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Stacking"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -77,7 +74,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Draw Two and Wild Draw Four cards can be stacked, increasing the total penalty."
-                android:textColor="#3F3A46"
                 android:textSize="16sp"
                 android:lineSpacingExtra="4dp"/>
         </LinearLayout>
@@ -87,7 +83,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jump-in rule"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -109,17 +104,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="If you have the exact same card as the top card, you can play it instantly out of turn. Play continues from you."
-                android:textColor="#3F3A46"
                 android:textSize="16sp"
                 android:lineSpacingExtra="4dp"/>
         </LinearLayout>
 
-        <!-- Seven-O -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Seven-O rule"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -141,7 +133,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Playing a 7 lets you swap hands with another player. Playing a 0 makes everyone pass their hand in the current direction."
-                android:textColor="#3F3A46"
                 android:textSize="16sp"
                 android:lineSpacingExtra="4dp"/>
         </LinearLayout>
@@ -150,7 +141,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Draw Until You Can Play"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -172,7 +162,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="If you cannot play, keep drawing cards until you get one you can play."
-                android:textColor="#3F3A46"
                 android:textSize="16sp"
                 android:lineSpacingExtra="4dp"/>
         </LinearLayout>

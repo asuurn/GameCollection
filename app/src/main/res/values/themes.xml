@@ -4,6 +4,7 @@
         parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/app_background</item>
         <item name="android:fontFamily">@font/caprasimo</item>
+        <item name="android:textColor">@color/mainTextColour</item>
     </style>
 
     <style name="Theme.GameCollection"

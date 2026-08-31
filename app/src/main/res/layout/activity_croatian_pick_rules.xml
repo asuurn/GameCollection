@@ -20,8 +20,8 @@
 
             <ImageButton
                 android:id="@+id/buttonBack"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Back"
                 android:padding="8dp"
@@ -34,7 +34,6 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Croatian Pick"
-                android:textColor="#3F3A46"
                 android:textSize="30sp"
                  />
 
@@ -51,7 +50,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="Setup"
-            android:textColor="#4A4453"
             android:textSize="20sp"
              />
 
@@ -62,7 +60,6 @@
             android:layout_marginBottom="18dp"
             android:padding="14dp"
             android:text="• Each player starts with 5 cards\n• The remaining cards form the draw pile\n• One card starts in the discard pile\n\nCard values:\n• Ace = 1\n• Number cards = face value\n• J, Q, K = 10"
-            android:textColor="#3F3A46"
             android:textSize="16sp"
             android:lineSpacingExtra="4dp" />
 
@@ -73,7 +70,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="On Your Turn"
-            android:textColor="#4A4453"
             android:textSize="20sp"
              />
 
@@ -95,7 +91,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="Scoring"
-            android:textColor="#4A4453"
             android:textSize="20sp"
              />
 
@@ -117,7 +112,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="Winning / Losing"
-            android:textColor="#4A4453"
             android:textSize="20sp"
              />
 

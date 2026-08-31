@@ -25,8 +25,8 @@
 
             <ImageButton
                 android:id="@+id/buttonBack"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Back"
                 android:padding="8dp"
@@ -38,7 +38,6 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="DRUNK UNO RULES"
-                android:textColor="#3F3A46"
                 android:textSize="30sp"
                  />
 
@@ -54,7 +53,6 @@
             android:layout_marginBottom="20dp"
             android:gravity="center"
             android:text="Start with one drink each!"
-            android:textColor="#6D6875"
             android:textSize="16sp" />
 
         <!-- Rule 1 -->
@@ -63,7 +61,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="Starting point"
-            android:textColor="#4A4453"
             android:textSize="20sp"
              />
 
@@ -81,7 +78,6 @@
                 android:gravity="center"
                 android:lineSpacingExtra="4dp"
                 android:text="Everyone begins with one drink."
-                android:textColor="#3F3A46"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -91,7 +87,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="2X Drinks"
-            android:textColor="#4A4453"
             android:textSize="20sp"
              />
 
@@ -124,7 +119,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="2X Drinks"
-                        android:textColor="#3F3A46"
                         android:textSize="34sp"
                          />
 
@@ -132,7 +126,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Drink twice."
-                        android:textColor="#3F3A46"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -144,7 +137,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="1X Player Chooses"
-            android:textColor="#4A4453"
             android:textSize="20sp"
              />
 
@@ -177,7 +169,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1X Player Chooses"
-                        android:textColor="#3F3A46"
                         android:textSize="30sp"
                          />
 
@@ -185,7 +176,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="The player chooses who drinks."
-                        android:textColor="#3F3A46"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -197,7 +187,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="Wild card"
-            android:textColor="#4A4453"
             android:textSize="20sp"
              />
 
@@ -230,7 +219,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Change the drinker"
-                        android:textColor="#3F3A46"
                         android:textSize="28sp"
                          />
 
@@ -238,7 +226,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pick a new player to drink."
-                        android:textColor="#3F3A46"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -250,7 +237,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="Skip card"
-            android:textColor="#4A4453"
             android:textSize="20sp"
              />
 
@@ -283,7 +269,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Next player skips"
-                        android:textColor="#3F3A46"
                         android:textSize="28sp"
                          />
 
@@ -291,7 +276,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="The next player does not drink."
-                        android:textColor="#3F3A46"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -303,7 +287,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="Final rule"
-            android:textColor="#4A4453"
             android:textSize="20sp"
              />
 
@@ -336,7 +319,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="3X Winner Chooses"
-                        android:textColor="#3F3A46"
                         android:textSize="28sp"
                          />
 
@@ -344,7 +326,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="The winner decides what happens."
-                        android:textColor="#3F3A46"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>

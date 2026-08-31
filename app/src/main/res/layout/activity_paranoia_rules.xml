@@ -18,8 +18,8 @@
 
             <ImageButton
                 android:id="@+id/buttonBack"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Back"
                 android:padding="8dp"
@@ -32,7 +32,6 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Game Rules"
-                android:textColor="#3F3A46"
                 android:textSize="30sp"
                  />
 
@@ -46,7 +45,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="How to play"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -55,7 +53,6 @@
             android:layout_height="wrap_content"
             android:padding="14dp"
             android:text="The host starts as the 'answerer' and the player to their right is the 'partner in crime'. A question is shown only to them. They may discuss it, but the answerer gives the final answer. The chosen person must be someone from the group."
-            android:textColor="#3F3A46"
             android:textSize="16sp"
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="18dp"/>
@@ -64,7 +61,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reveal round"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -73,7 +69,6 @@
             android:layout_height="wrap_content"
             android:padding="14dp"
             android:text="After revealing the name, press 'Reveal your fate'. A coin flip decides whether the question is revealed. If yes, the answerer shares it. If not, it stays secret. Then pass the device left and continue."
-            android:textColor="#3F3A46"
             android:textSize="16sp"
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="18dp"/>
@@ -82,7 +77,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add some spice"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -93,14 +87,12 @@
             android:lineSpacingExtra="4dp"
             android:padding="14dp"
             android:text="When answering, be vague or misleading. Hint around the question instead of being direct. This keeps others guessing and increases the paranoia."
-            android:textColor="#3F3A46"
             android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Why paranoia?"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -109,7 +101,6 @@
             android:layout_height="wrap_content"
             android:padding="14dp"
             android:text="The mix of questions makes players overthink everything. Do they like me? Hate me? Think I'm weird or funny? That's what creates the paranoia."
-            android:textColor="#3F3A46"
             android:textSize="16sp"
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="24dp"/>

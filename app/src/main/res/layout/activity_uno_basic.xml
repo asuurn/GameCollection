@@ -18,8 +18,8 @@
 
             <ImageButton
                 android:id="@+id/buttonBack"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Back"
                 android:padding="8dp"
@@ -32,7 +32,6 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="BASIC UNO RULES"
-                android:textColor="#3F3A46"
                 android:textSize="30sp"
                  />
 
@@ -46,7 +45,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Setup"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp" />
 
@@ -55,7 +53,6 @@
             android:layout_height="wrap_content"
             android:padding="14dp"
             android:text="Each player gets 7 cards. The top card of the remaining deck starts the discard pile."
-            android:textColor="#3F3A46"
             android:textSize="16sp"
             android:layout_marginBottom="18dp" />
 
@@ -63,7 +60,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gameplay"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp" />
 
@@ -72,7 +68,6 @@
             android:layout_height="wrap_content"
             android:padding="14dp"
             android:text="Players take turns clockwise. Match the top card by color, number, or symbol. If you cannot play, draw a card."
-            android:textColor="#3F3A46"
             android:textSize="16sp"
             android:layout_marginBottom="18dp" />
 
@@ -80,7 +75,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Special Cards"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp" />
 
@@ -212,7 +206,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="UNO Rule"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp" />
 
@@ -221,7 +214,6 @@
             android:layout_height="wrap_content"
             android:padding="14dp"
             android:text="When you have one card left, you must say 'UNO'. If caught not saying it, draw 2 cards."
-            android:textColor="#3F3A46"
             android:textSize="16sp"
             android:layout_marginBottom="18dp" />
 
@@ -229,7 +221,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Winning"
-            android:textColor="#4A4453"
             android:textSize="20sp"
             android:layout_marginBottom="8dp" />
 
@@ -238,7 +229,6 @@
             android:layout_height="wrap_content"
             android:padding="14dp"
             android:text="The round ends when a player plays their last card and wins."
-            android:textColor="#3F3A46"
             android:textSize="16sp"
             android:layout_marginBottom="24dp" />
 

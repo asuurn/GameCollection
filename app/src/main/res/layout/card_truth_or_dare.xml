@@ -16,7 +16,6 @@
         android:layout_gravity="top|center_horizontal"
         android:layout_marginTop="35dp"
         android:text="Truth or Dare"
-        android:textColor="@android:color/black"
         android:textSize="28sp"
          />
 
@@ -28,7 +27,6 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="What is your biggest secret?"
-        android:textColor="@android:color/black"
         android:textSize="25sp" />
 
     <TextView
@@ -38,7 +36,6 @@
         android:layout_marginBottom="35dp"
         android:layout_marginRight="35dp"
         android:text="Truth"
-        android:textColor="@android:color/black"
         android:textSize="25sp" />
 
     <TextView
@@ -48,7 +45,6 @@
         android:layout_marginBottom="35dp"
         android:layout_marginLeft="35dp"
         android:text="Dare"
-        android:textColor="@android:color/black"
         android:textSize="25sp" />
 
     <ImageView
@@ -75,7 +71,6 @@
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="60dp"
         android:text="Swipe"
-        android:textColor="@android:color/black"
         android:textSize="25sp" />
 
 </FrameLayout>

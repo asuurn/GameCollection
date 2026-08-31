@@ -11,8 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New Game"
-        android:textSize="28sp"
-        android:textColor="?android:attr/textColorPrimary" />
+        android:textSize="28sp" />
 
     <TextView
         android:id="@+id/newGameMessage"
@@ -20,8 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="What would you like to do?"
-        android:textSize="17sp"
-        android:textColor="?android:attr/textColorSecondary" />
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/newGameMessage2"
@@ -29,8 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="New game will erase existing players and history"
-        android:textSize="17sp"
-        android:textColor="?android:attr/textColorSecondary" />
+        android:textSize="17sp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonNewGame"
