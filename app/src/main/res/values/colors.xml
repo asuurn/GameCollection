@@ -2,12 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="paranoiaButtonTextColour">#cbd7f4</color>
-    <color name="scoreBoardButtonTextColour">#f4cbcb</color>
-    <color name="truthOrDareButtonTextColour">#f4e1cb</color>
-    <color name="twisterButtonTextColour">#d7f4cb</color>
+
+    <color name="paranoiaButtonTextColour">#CBD7F4</color>
+    <color name="scoreBoardButtonTextColour">#F4CBCB</color>
+    <color name="truthOrDareButtonTextColour">#F4E1CB</color>
+    <color name="twisterButtonTextColour">#D7F4CB</color>
     <color name="cardGameButtonTextColour">#ECCBF4</color>
-    <color name="redTextColour">#ff0000</color>
-    <color name="mainTextColourLightMode">#292525</color>
-    <color name="mainTextColourDarkMode">#F2F2F2</color>
+    <color name="redTextColour">#FF0000</color>
+    <color name="mainTextColour">#292525</color>
+    <color name="paranoiaButtonGlow">#2448D8</color>
+    <color name="paranoiaButtonTop">#304BFF</color>
+    <color name="paranoiaButtonBottom">#0113AE</color>
+    <color name="paranoiaButtonOutline">#001064</color>
 </resources>

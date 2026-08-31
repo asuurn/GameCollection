@@ -19,19 +19,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonNewQuestion"
-        android:layout_width="151dp"
-        android:layout_height="82dp"
-        android:background="@drawable/paranoia_button"
-        android:text="New question"
-        android:textColor="@color/paranoiaButtonTextColour"
-        android:textSize="20sp"
+    <FrameLayout
+        android:id="@+id/buttonGlowContainer"
+        android:layout_width="215dp"
+        android:layout_height="146dp"
+        android:padding="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewCoin" />
+        app:layout_constraintTop_toBottomOf="@id/imageViewCoin">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonNewQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/paranoia_button"
+            android:text="New question"
+            android:textColor="@color/paranoiaButtonTextColour"
+            android:textSize="20sp" />
+
+    </FrameLayout>
 
     <TextView
         android:id="@+id/textViewFlipTheCoin"

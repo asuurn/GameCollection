@@ -8,9 +8,12 @@ import android.os.Bundle
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Button
+import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import ee.taltech.gamecollection.GlowDrawable
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 import kotlin.random.Random
@@ -24,6 +27,15 @@ class ParanoiaCoinFlipActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_paranoia_coin_flip)
+
+        val container = findViewById<FrameLayout>(R.id.buttonGlowContainer)
+
+        container.setLayerType(View.LAYER_TYPE_SOFTWARE, null)
+
+        container.background = GlowDrawable(
+            this,
+            ContextCompat.getColor(this, R.color.paranoiaButtonGlow)
+        )
 
         coinImage = findViewById(R.id.imageViewCoin)
 
