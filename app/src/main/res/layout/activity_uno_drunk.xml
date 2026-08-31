@@ -40,7 +40,7 @@
                 android:text="DRUNK UNO RULES"
                 android:textColor="#3F3A46"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                 />
 
             <Space
                 android:layout_width="40dp"
@@ -65,7 +65,7 @@
             android:text="Starting point"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold" />
+             />
 
         <LinearLayout
             android:layout_width="372dp"
@@ -93,7 +93,7 @@
             android:text="2X Drinks"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -126,7 +126,7 @@
                         android:text="2X Drinks"
                         android:textColor="#3F3A46"
                         android:textSize="34sp"
-                        android:textStyle="bold" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -146,7 +146,7 @@
             android:text="1X Player Chooses"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -179,7 +179,7 @@
                         android:text="1X Player Chooses"
                         android:textColor="#3F3A46"
                         android:textSize="30sp"
-                        android:textStyle="bold" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -199,7 +199,7 @@
             android:text="Wild card"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -232,7 +232,7 @@
                         android:text="Change the drinker"
                         android:textColor="#3F3A46"
                         android:textSize="28sp"
-                        android:textStyle="bold" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -252,7 +252,7 @@
             android:text="Skip card"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -285,7 +285,7 @@
                         android:text="Next player skips"
                         android:textColor="#3F3A46"
                         android:textSize="28sp"
-                        android:textStyle="bold" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -305,7 +305,7 @@
             android:text="Final rule"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold" />
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -338,7 +338,7 @@
                         android:text="3X Winner Chooses"
                         android:textColor="#3F3A46"
                         android:textSize="28sp"
-                        android:textStyle="bold" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"

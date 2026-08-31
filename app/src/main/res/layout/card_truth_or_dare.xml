@@ -18,7 +18,7 @@
         android:text="Truth or Dare"
         android:textColor="@android:color/black"
         android:textSize="28sp"
-        android:textStyle="bold" />
+         />
 
     <!-- Question -->
     <TextView

@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="Name"
-        android:textStyle="bold"
         android:textSize="18sp" />
 
     <TextView
@@ -41,8 +40,6 @@
         android:background="@drawable/card_game_button"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:fontFamily="serif"
         android:text="+"
         android:layout_marginEnd="8dp" />
 
@@ -53,8 +50,6 @@
         android:background="@drawable/card_game_button"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:fontFamily="serif"
         android:layout_marginEnd="8dp"
         android:text="-" />
 </LinearLayout>

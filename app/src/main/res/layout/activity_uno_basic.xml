@@ -34,7 +34,7 @@
                 android:text="BASIC UNO RULES"
                 android:textColor="#3F3A46"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                 />
 
             <Space
                 android:layout_width="40dp"
@@ -48,7 +48,6 @@
             android:text="Setup"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_marginBottom="8dp" />
 
         <TextView
@@ -66,7 +65,6 @@
             android:text="Gameplay"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_marginBottom="8dp" />
 
         <TextView
@@ -84,7 +82,6 @@
             android:text="Special Cards"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_marginBottom="8dp" />
 
         <LinearLayout
@@ -217,7 +214,6 @@
             android:text="UNO Rule"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_marginBottom="8dp" />
 
         <TextView
@@ -235,7 +231,6 @@
             android:text="Winning"
             android:textColor="#4A4453"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_marginBottom="8dp" />
 
         <TextView
