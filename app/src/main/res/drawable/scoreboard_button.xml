@@ -3,12 +3,12 @@
 
     <gradient
         android:angle="270"
-        android:startColor="@color/truthOrDareButtonTop"
-        android:endColor="@color/truthOrDareButtonBottom" />
+        android:startColor="@color/scoreboardButtonTop"
+        android:endColor="@color/scoreboardButtonBottom" />
 
     <stroke
         android:width="2dp"
-        android:color="@color/truthOrDareButtonOutline" />
+        android:color="@color/scoreboardButtonOutline" />
 
     <corners android:radius="25dp" />
 </shape>
