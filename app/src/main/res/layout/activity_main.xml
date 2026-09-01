@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,27 +8,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToParanoia"
+    <ee.taltech.gamecollection.GlowButtonContainer
+        android:id="@+id/buttonToParanoiaContainer"
         android:layout_width="0dp"
         android:layout_height="109dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/paranoia_button"
-        android:text="Paranoia"
-        android:textColor="@color/paranoiaButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonToScoreBoard"
+        app:glowColor="@color/paranoiaButtonGlow"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToScoreBoardContainer"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToParanoia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/paranoia_button"
+            android:text="Paranoia"
+            android:textColor="@color/paranoiaButtonTextColour"
+            android:textSize="20sp" />
+
+    </ee.taltech.gamecollection.GlowButtonContainer>
+
 
     <TextView
         android:id="@+id/textViewWelcome"
         android:layout_width="387dp"
         android:layout_height="146dp"
         android:layout_marginTop="90dp"
-        android:text="GAME\nCOLLECTION"
+        android:text="GAME&#10;COLLECTION"
         android:textAlignment="center"
         android:textSize="55sp"
         android:lineSpacingExtra="15dp"
@@ -35,6 +45,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textView2"
@@ -47,68 +58,102 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToScoreBoard"
+
+    <ee.taltech.gamecollection.GlowButtonContainer
+        android:id="@+id/buttonToScoreBoardContainer"
         android:layout_width="0dp"
         android:layout_height="109dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/scoreboard_button"
-        android:text="Scoreboard"
-        android:textColor="@color/scoreBoardButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonToTruthOrDare"
+        app:glowColor="@color/scoreboardButtonGlow"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToTruthOrDareContainer"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonToParanoia" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToParanoiaContainer">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToTwister"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToScoreBoard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/scoreboard_button"
+            android:text="Scoreboard"
+            android:textColor="@color/scoreBoardButtonTextColour"
+            android:textSize="20sp" />
+
+    </ee.taltech.gamecollection.GlowButtonContainer>
+
+
+    <ee.taltech.gamecollection.GlowButtonContainer
+        android:id="@+id/buttonToTwisterContainer"
         android:layout_width="0dp"
         android:layout_height="109dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/twister_button"
-        android:text="Twister"
-        android:textColor="@color/twisterButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonToCardGames"
+        app:glowColor="@color/twisterButtonGlow"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToCardGamesContainer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToCardGames"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToTwister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/twister_button"
+            android:text="Twister"
+            android:textColor="@color/twisterButtonTextColour"
+            android:textSize="20sp" />
+
+    </ee.taltech.gamecollection.GlowButtonContainer>
+
+
+    <ee.taltech.gamecollection.GlowButtonContainer
+        android:id="@+id/buttonToCardGamesContainer"
         android:layout_width="0dp"
         android:layout_height="109dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/card_game_button"
-        android:text="Card games"
-        android:textColor="@color/cardGameButtonTextColour"
-        android:textSize="20sp"
+        app:glowColor="@color/cardGamesButtonGlow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/buttonToTwister" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToTwisterContainer">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToTruthOrDare"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToCardGames"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_game_button"
+            android:text="Card games"
+            android:textColor="@color/cardGameButtonTextColour"
+            android:textSize="20sp" />
+
+    </ee.taltech.gamecollection.GlowButtonContainer>
+
+
+    <ee.taltech.gamecollection.GlowButtonContainer
+        android:id="@+id/buttonToTruthOrDareContainer"
         android:layout_width="0dp"
         android:layout_height="109dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/truth_or_dare_button"
-        android:text="Truth or
-        dare"
-        android:textColor="@color/truthOrDareButtonTextColour"
-        android:textSize="20sp"
+        app:glowColor="@color/truthOrDareButtonGlow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonToScoreBoard" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToScoreBoardContainer">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToTruthOrDare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/truth_or_dare_button"
+            android:text="Truth or&#10;dare"
+            android:textColor="@color/truthOrDareButtonTextColour"
+            android:textSize="20sp" />
+
+    </ee.taltech.gamecollection.GlowButtonContainer>
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
@@ -116,6 +161,5 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

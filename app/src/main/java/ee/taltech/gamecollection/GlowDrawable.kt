@@ -28,50 +28,54 @@ class GlowDrawable(
     }
 
     override fun draw(canvas: Canvas) {
-        val inset = 32f * density
+
+        val inset = 4f * density
 
         val rect = RectF(bounds).apply {
             inset(inset, inset)
         }
 
         paint.style = Paint.Style.FILL
-        paint.color = Color.rgb(1, 19, 174)
+        paint.color = Color.TRANSPARENT
 
-        // Wide, darker glow
         paint.setShadowLayer(
             24f * density,
             0f,
             0f,
             withAlpha(glowColor, 220)
         )
-        canvas.drawRoundRect(rect, 25f * density, 25f * density, paint)
 
-// Strong glow close to the button
-        paint.setShadowLayer(
-            8f * density,
-            0f,
-            0f,
-            withAlpha(glowColor, 255)
+        canvas.drawRoundRect(
+            rect,
+            25f * density,
+            25f * density,
+            paint
         )
-        canvas.drawRoundRect(rect, 25f * density, 25f * density, paint)
 
         paint.clearShadowLayer()
 
-// More visible edge
         paint.style = Paint.Style.STROKE
         paint.strokeWidth = 3f * density
         paint.color = withAlpha(glowColor, 255)
 
-        canvas.drawRoundRect(rect, 25f * density, 25f * density, paint)
+        canvas.drawRoundRect(
+            rect,
+            25f * density,
+            25f * density,
+            paint
+        )
 
-        paint.clearShadowLayer()
-
-        // Sharp luminous rim
-        paint.style = Paint.Style.STROKE
         paint.strokeWidth = 2f * density
         paint.color = withAlpha(glowColor, 230)
 
-        canvas.drawRoundRect(rect, 25f * density, 25f * density, paint)
+        canvas.drawRoundRect(
+            rect,
+            25f * density,
+            25f * density,
+            paint
+        )
+
+        paint.clearShadowLayer()
     }
 
     override fun setAlpha(alpha: Int) {
