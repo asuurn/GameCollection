@@ -41,8 +41,8 @@ class TruthOrDareActivity : AppCompatActivity() {
         }
 
         cards =
-            readFileAsLines(R.raw.truth, CardType.TRUTH) +
-                    readFileAsLines(R.raw.dare, CardType.DARE)
+            readFileAsLines(R.raw.truth_en, CardType.TRUTH) +
+                    readFileAsLines(R.raw.dare_en, CardType.DARE)
 
         inflater = LayoutInflater.from(this)
         cardStack = findViewById(R.id.cardStack)
