@@ -45,23 +45,23 @@
              />
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/total"
             android:textSize="16sp"
-            android:translationX="-8dp" />
+            android:translationX="-40dp" />
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/points"
             android:textSize="16sp"
-            android:translationX="-8dp" />
+            android:translationX="-24dp" />
 
         <TextView
-            android:layout_width="132dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/add_subtract"
@@ -155,7 +155,7 @@
         android:background="?attr/selectableItemBackground"
         android:gravity="center"
         android:padding="12dp"
-        android:text="@string/history"
+        android:text="@string/history_down"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/bottomButtons"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView2"

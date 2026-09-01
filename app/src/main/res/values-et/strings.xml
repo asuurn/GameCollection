@@ -42,7 +42,7 @@
     <string name="pick_a_game">Vali mäng</string>
     <string name="scoreboard">Edetabel</string>
     <string name="twister">Twister</string>
-    <string name="card_games">Kaardimängud</string>
+    <string name="card_games">Kaardi\n-mängud</string>
     <string name="truth_or_dare_newline">Tõde või\ntegu</string>
     <string name="new_question">Uus küsimus</string>
     <string name="flip_the_coin">Viska münti</string>
@@ -76,9 +76,14 @@
     <string name="add_subtract">Liida / lahuta</string>
     <string name="add_player">Lisa mängija</string>
     <string name="new_game">Uus mäng</string>
-    <string name="history">Ajalugu ▼</string>
+    <string name="history_down">Ajalugu ▼</string>
+    <string name="history_up">Ajalugu ▲</string>
+    <string name="add">Lisa</string>
+    <string name="new_player">Uus mängija</string>
+    <string name="enter_player_name">Sisesta mängija nimi</string>
     <string name="settings">Seaded</string>
-    <string name="spin_result">Keerutuse tulemus</string>
+    <string name="spin_result">Tulemus</string>
+    <string name="auto_mode">Automaatne keerutus</string>
     <string name="interval_10s">Intervall: 10 s</string>
     <string name="spin">Keeruta</string>
     <string name="drunk">JOOBES</string>
@@ -163,7 +168,7 @@
     <string name="enable_extra_questions_by_type">Luba lisaküsimused tüübi järgi</string>
     <string name="work_workplace">Töö / töökoht</string>
     <string name="relationship">Suhted</string>
-    <string name="spicy_sexual">Vürtsikas / seks</string>
+    <string name="spicy_sexual">Vürtsikas / seksikas</string>
     <string name="your_preferences_will_be_saved">Sinu eelistused salvestatakse</string>
 
     <string name="name">Nimi</string>

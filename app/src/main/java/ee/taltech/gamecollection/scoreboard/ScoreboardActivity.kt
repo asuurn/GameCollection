@@ -81,7 +81,7 @@ class ScoreboardActivity : AppCompatActivity() {
 
     private fun setHistoryOpen(open: Boolean) {
         historyOpen = open
-        historyHeader.text = if (open) "History ▲" else "History ▼"
+        historyHeader.text = if (open) getString(R.string.history_up) else getString(R.string.history_down)
         if (!open) {
             historyRecyclerView.visibility = View.GONE
             return
@@ -191,18 +191,18 @@ class ScoreboardActivity : AppCompatActivity() {
 
     private fun addPlayer() {
         val editText = EditText(this)
-        editText.hint = "Enter player name"
+        editText.hint = getString(R.string.enter_player_name)
 
         AlertDialog.Builder(this)
-            .setTitle("New Player")
+            .setTitle(getString(R.string.new_player))
             .setView(editText)
-            .setPositiveButton("Add") { _, _ ->
+            .setPositiveButton( getString(R.string.add)) { _, _ ->
                 val name = editText.text.toString().ifEmpty { "Player ${players.size + 1}" }
                 players.add(Player(name))
                 adapter.notifyItemInserted(players.size - 1)
                 savePlayers()
             }
-            .setNegativeButton("Cancel", null)
+            .setNegativeButton( getString(R.string.cancel), null)
             .show()
     }
 

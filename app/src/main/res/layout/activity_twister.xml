@@ -56,7 +56,9 @@
             android:id="@+id/switchAuto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Auto mode" />
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="16dp"
+            android:text="@string/auto_mode" />
 
         <TextView
             android:id="@+id/textInterval"

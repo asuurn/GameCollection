@@ -45,14 +45,13 @@
     </RadioGroup>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonCancel"
+        android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:text="@string/back"
-        android:textColor="@color/cardGameButtonTextColour"
         android:textSize="16sp"
          />
 
