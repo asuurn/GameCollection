@@ -14,6 +14,7 @@ import android.widget.FrameLayout
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
 import ee.taltech.gamecollection.R
 import kotlin.math.abs
@@ -51,24 +52,24 @@ class TruthOrDareActivity : AppCompatActivity() {
         }
 
         val settings = loadSettings()
-
+        val cardResources = getCardResources()
         val loadedCards = mutableListOf<CardData>()
 
-        loadedCards += readFileAsLines(R.raw.truth_en, CardType.TRUTH)
-        loadedCards += readFileAsLines(R.raw.dare_en, CardType.DARE)
+        loadedCards += readFileAsLines(cardResources.truth, CardType.TRUTH)
+        loadedCards += readFileAsLines(cardResources.dare, CardType.DARE)
 
         if (settings.workplace) {
-            loadedCards += readFileAsLines(R.raw.work_truth_en, CardType.TRUTH)
+            loadedCards += readFileAsLines(cardResources.workTruth, CardType.TRUTH)
         }
 
         if (settings.relationship) {
-            loadedCards += readFileAsLines(R.raw.relationship_truth_en, CardType.TRUTH)
-            loadedCards += readFileAsLines(R.raw.relationship_dare_en, CardType.DARE)
+            loadedCards += readFileAsLines(cardResources.relationshipTruth, CardType.TRUTH)
+            loadedCards += readFileAsLines(cardResources.relationshipDare, CardType.DARE)
         }
 
         if (settings.sexual) {
-            loadedCards += readFileAsLines(R.raw.sexual_truth_en, CardType.TRUTH)
-            loadedCards += readFileAsLines(R.raw.sexual_dare_en, CardType.DARE)
+            loadedCards += readFileAsLines(cardResources.sexualTruth, CardType.TRUTH)
+            loadedCards += readFileAsLines(cardResources.sexualDare, CardType.DARE)
         }
 
         cards = loadedCards
@@ -452,5 +453,42 @@ class TruthOrDareActivity : AppCompatActivity() {
                     .putBoolean("relationship", settings.relationship)
                     .putBoolean("sexual", settings.sexual)
             }
+    }
+
+    private fun getCardResources(): CardResources {
+
+        val language = AppCompatDelegate
+            .getApplicationLocales()
+            .get(0)
+            ?.language ?: "en"
+
+        return if (language == "et") {
+            CardResources(
+                truth = R.raw.truth_et,
+                dare = R.raw.dare_et,
+                workTruth = R.raw.work_truth_en,
+                relationshipTruth = R.raw.relationship_truth_en,
+                relationshipDare = R.raw.relationship_dare_en,
+                sexualTruth = R.raw.sexual_truth_en,
+                sexualDare = R.raw.sexual_dare_en
+                /**
+                workTruth = R.raw.work_truth_et,
+                relationshipTruth = R.raw.relationship_truth_et,
+                relationshipDare = R.raw.relationship_dare_et,
+                sexualTruth = R.raw.sexual_truth_et,
+                sexualDare = R.raw.sexual_dare_et
+                **/
+            )
+        } else {
+            CardResources(
+                truth = R.raw.truth_en,
+                dare = R.raw.dare_en,
+                workTruth = R.raw.work_truth_en,
+                relationshipTruth = R.raw.relationship_truth_en,
+                relationshipDare = R.raw.relationship_dare_en,
+                sexualTruth = R.raw.sexual_truth_en,
+                sexualDare = R.raw.sexual_dare_en
+            )
+        }
     }
 }

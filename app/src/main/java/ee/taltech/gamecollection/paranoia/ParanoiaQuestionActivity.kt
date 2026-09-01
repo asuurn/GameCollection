@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 
@@ -64,7 +65,19 @@ class ParanoiaQuestionActivity : AppCompatActivity() {
     private fun loadQuestions() {
         questions = mutableListOf()
 
-        resources.openRawResource(R.raw.paranoia_questions)
+        val currentLanguage = AppCompatDelegate
+            .getApplicationLocales()
+            .get(0)
+            ?.language
+
+        val resourceId =
+            if (currentLanguage == "et") {
+                R.raw.paranoia_et
+            } else {
+                R.raw.paranoia_en
+            }
+
+        resources.openRawResource(resourceId)
             .bufferedReader()
             .useLines { lines ->
                 for (line in lines) {
