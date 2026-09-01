@@ -49,7 +49,7 @@
     <string name="your_result">Sinu tulemus:</string>
     <string name="question">KÜSIMUS</string>
     <string name="question_field">Küsimuse väli</string>
-    <string name="decide_your_fate">Otsusta oma saatus</string>
+    <string name="decide_your_fate">Otsusta\noma saatus</string>
     <string name="rules">Reeglid</string>
     <string name="share_it_with_your_partner_and_discuss">Jaga seda oma paarilisega ja arutage</string>
     <string name="game_rules">MÄNGUREEGLID</string>
@@ -173,4 +173,5 @@
 
     <string name="name">Nimi</string>
     <string name="royal_flush">KUNINGLIK MASTIRIDA</string>
+    <string name="no_questions_available">Rohkem küsimusi pole</string>
 </resources>

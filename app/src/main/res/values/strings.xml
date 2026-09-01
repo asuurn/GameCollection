@@ -138,4 +138,5 @@
     <string name="_minus" translatable="false">-</string>
     <string name="royal_flush">ROYAL FLUSH</string>
     <string name="auto_mode">Auto mode</string>
+    <string name="no_questions_available">No questions available</string>
 </resources>

@@ -2,8 +2,6 @@ package ee.taltech.gamecollection.paranoia
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageButton
@@ -13,52 +11,92 @@ import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
 
 class ParanoiaQuestionActivity : AppCompatActivity() {
+
     private lateinit var question: TextView
-    private lateinit var dbHelper: ParanoiaDbHelper
+
+    private lateinit var questions: MutableList<String>
+    private var nextQuestionIndex = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_paranoia_question)
 
         question = findViewById(R.id.textViewQuestion)
-        dbHelper = ParanoiaDbHelper(this)
 
-        val isFirstLaunch = intent.getBooleanExtra("reset_questions", false)
-        if (isFirstLaunch) {
-            dbHelper.resetAskedQuestions()
-        }
+        loadQuestions()
         getNewQuestion()
 
-        val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
+        val bounceAnimation =
+            AnimationUtils.loadAnimation(this, R.anim.bounce)
 
-        val buttonCoinFlip: Button = findViewById(R.id.buttonCoinFlip)
+        val buttonCoinFlip: Button =
+            findViewById(R.id.buttonCoinFlip)
+
         buttonCoinFlip.setOnClickListener {
             it.startAnimation(bounceAnimation)
             onClickCoinFlip()
         }
 
-        val buttonRules: Button = findViewById(R.id.buttonRules)
+        val buttonRules: Button =
+            findViewById(R.id.buttonRules)
+
         buttonRules.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            intent = Intent(this, ParanoiaRulesActivity::class.java)
+
+            val intent =
+                Intent(this, ParanoiaRulesActivity::class.java)
+
             startActivity(intent)
         }
 
-        val button: ImageButton = findViewById(R.id.buttonBack)
-        button.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+        val buttonBack: ImageButton =
+            findViewById(R.id.buttonBack)
+
+        buttonBack.setOnClickListener {
+            val intent =
+                Intent(this, MainActivity::class.java)
+
             startActivity(intent)
             finish()
         }
     }
 
+    private fun loadQuestions() {
+        questions = mutableListOf()
+
+        resources.openRawResource(R.raw.paranoia_questions)
+            .bufferedReader()
+            .useLines { lines ->
+                for (line in lines) {
+                    if (line.isNotBlank()) {
+                        questions.add(line)
+                    }
+                }
+            }
+
+        questions.shuffle()
+        nextQuestionIndex = 0
+    }
+
     fun getNewQuestion() {
-        val newQuestion = dbHelper.getRandomUnaskedParanoiaQuestion()
-        question.text = newQuestion ?: "No questions left, restart the game"
+        if (questions.isEmpty()) {
+            question.text = getString(R.string.no_questions_available)
+            return
+        }
+
+        if (nextQuestionIndex >= questions.size) {
+            questions.shuffle()
+            nextQuestionIndex = 0
+        }
+
+        question.text = questions[nextQuestionIndex]
+        nextQuestionIndex++
     }
 
     fun onClickCoinFlip() {
-        intent = Intent(this, ParanoiaCoinFlipActivity::class.java)
+        val intent =
+            Intent(this, ParanoiaCoinFlipActivity::class.java)
+
         startActivity(intent)
     }
 }
