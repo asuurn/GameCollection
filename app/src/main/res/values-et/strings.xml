@@ -175,13 +175,30 @@
     <string name="interval">Intervall:</string>
 
     <string name="royal_flush">KUNINGLIK MASTIRIDA</string>
-    <string name="straight_flush" translatable="false">MASTIRIDA</string>
-    <string name="four_of_a_kind" translatable="false">NELIK</string>
-    <string name="full_house" translatable="false">TÄISMAJA</string>
+    <string name="straight_flush">MASTIRIDA</string>
+    <string name="four_of_a_kind">NELIK</string>
+    <string name="full_house">TÄISMAJA</string>
     <string name="flush">MAST</string>
     <string name="straight">RIDA</string>
     <string name="three_of_a_kind">KOLMIK</string>
     <string name="two_pair">KAKS PAARI</string>
     <string name="pair">PAAR</string>
     <string name="high_card">KÕRGE KAART</string>
+
+    <string name="left_hand_red">Vasak käsi punane</string>
+    <string name="left_hand_blue">Vasak käsi sinine</string>
+    <string name="left_hand_green">Vasak käsi roheline</string>
+    <string name="left_hand_yellow">Vasak käsi kollane</string>
+    <string name="left_leg_red">Vasak jalg punane</string>
+    <string name="left_leg_blue">Vasak jalg sinine</string>
+    <string name="left_leg_green">Vasak jalg roheline</string>
+    <string name="left_leg_yellow">Vasak jalg kollane</string>
+    <string name="right_hand_red">Parem käsi punane</string>
+    <string name="right_hand_blue">Parem käsi sinine</string>
+    <string name="right_hand_green">Parem käsi roheline</string>
+    <string name="right_hand_yellow">Parem käsi kollane</string>
+    <string name="right_leg_red">Parem jalg punane</string>
+    <string name="right_leg_blue">Parem jalg sinine</string>
+    <string name="right_leg_green">Parem jalg roheline</string>
+    <string name="right_leg_yellow">Parem jalg kollane</string>
 </resources>

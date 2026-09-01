@@ -140,13 +140,30 @@
     <string name="interval">Interval:</string>
 
     <string name="royal_flush">ROYAL FLUSH</string>
-    <string name="straight_flush" translatable="false">STRAIGHT FLUSH</string>
-    <string name="four_of_a_kind" translatable="false">FOUR OF A KIND</string>
-    <string name="full_house" translatable="false">FULL HOUSE</string>
+    <string name="straight_flush">STRAIGHT FLUSH</string>
+    <string name="four_of_a_kind">FOUR OF A KIND</string>
+    <string name="full_house">FULL HOUSE</string>
     <string name="flush">FLUSH</string>
     <string name="straight">STRAIGHT</string>
     <string name="three_of_a_kind">THREE OF A KIND</string>
     <string name="two_pair">TWO PAIR</string>
     <string name="pair">PAIR</string>
     <string name="high_card">HIGH CARD</string>
+
+    <string name="left_hand_red">Left Hand Red</string>
+    <string name="left_hand_blue">Left Hand Blue</string>
+    <string name="left_hand_green">Left Hand Green</string>
+    <string name="left_hand_yellow">Left Hand Yellow</string>
+    <string name="left_leg_red">Left Leg Red</string>
+    <string name="left_leg_blue">Left Leg Blue</string>
+    <string name="left_leg_green">Left Leg Green</string>
+    <string name="left_leg_yellow">Left Leg Yellow</string>
+    <string name="right_hand_red">Right Hand Red</string>
+    <string name="right_hand_blue">Right Hand Blue</string>
+    <string name="right_hand_green">Right Hand Green</string>
+    <string name="right_hand_yellow">Right Hand Yellow</string>
+    <string name="right_leg_red">Right Leg Red</string>
+    <string name="right_leg_blue">Right Leg Blue</string>
+    <string name="right_leg_green">Right Leg Green</string>
+    <string name="right_leg_yellow">Right Leg Yellow</string>
 </resources>
