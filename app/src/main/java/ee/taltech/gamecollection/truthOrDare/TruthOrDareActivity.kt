@@ -58,17 +58,17 @@ class TruthOrDareActivity : AppCompatActivity() {
         loadedCards += readFileAsLines(R.raw.dare_en, CardType.DARE)
 
         if (settings.workplace) {
-            loadedCards += readFileAsLines(R.raw.truth_workplace, CardType.TRUTH)
+            loadedCards += readFileAsLines(R.raw.work_truth_en, CardType.TRUTH)
         }
 
         if (settings.relationship) {
-            loadedCards += readFileAsLines(R.raw.truth_relationship, CardType.TRUTH)
-            loadedCards += readFileAsLines(R.raw.dare_relationship, CardType.DARE)
+            loadedCards += readFileAsLines(R.raw.relationship_truth_en, CardType.TRUTH)
+            loadedCards += readFileAsLines(R.raw.relationship_dare_en, CardType.DARE)
         }
 
         if (settings.sexual) {
-            loadedCards += readFileAsLines(R.raw.truth_sexual, CardType.TRUTH)
-            loadedCards += readFileAsLines(R.raw.dare_sexual, CardType.DARE)
+            loadedCards += readFileAsLines(R.raw.sexual_truth_en, CardType.TRUTH)
+            loadedCards += readFileAsLines(R.raw.sexual_dare_en, CardType.DARE)
         }
 
         cards = loadedCards
@@ -418,6 +418,7 @@ class TruthOrDareActivity : AppCompatActivity() {
             )
 
             dialog.dismiss()
+            recreate()
         }
 
         dialog.show()

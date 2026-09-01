@@ -11,6 +11,9 @@
     <color name="redTextColour">#FF0000</color>
     <color name="mainTextColour">#292525</color>
 
+    <color name="truthOrDareCardColour">#F2F2F2</color>
+    <color name="dialogBackgroundColor">#F2F2F2</color>
+
     <color name="paranoiaButtonGlow">#2448D8</color>
     <color name="paranoiaButtonTop">#304BFF</color>
     <color name="paranoiaButtonBottom">#0113AE</color>

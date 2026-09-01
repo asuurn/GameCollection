@@ -52,14 +52,15 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonBack"
+        android:layout_marginTop="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="16dp"
         android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        android:background="@drawable/truth_or_dare_button"
         android:text="Back"
-        android:textColor="@color/cardGameButtonTextColour"
-        android:textSize="16sp"
-         />
+        android:textColor="@color/truthOrDareButtonTextColour"
+        android:textSize="20sp" />
 
 </LinearLayout>
