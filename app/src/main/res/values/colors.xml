@@ -35,7 +35,7 @@
     <color name="scoreboardButtonOutline">#640000</color>
 
     <color name="truthOrDareButtonGlow">#D86A24</color>
-    <color name="truthOrDareButtonTop">#FF7830</color>
-    <color name="truthOrDareButtonBottom">#AE4501</color>
+    <color name="truthOrDareButtonTop">#FF8A4C</color>
+    <color name="truthOrDareButtonBottom">#C65102</color>
     <color name="truthOrDareButtonOutline">#642A00</color>
 </resources>
