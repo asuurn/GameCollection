@@ -165,9 +165,9 @@
 
     <string name="game_settings">Mängu seaded</string>
     <string name="enable_extra_questions_by_type">Luba lisaküsimused tüübi järgi</string>
-    <string name="work_workplace">Töö / töökoht</string>
+    <string name="work_workplace">Töökoht</string>
     <string name="relationship">Suhted</string>
-    <string name="spicy_sexual">Vürtsikas / seksikas</string>
+    <string name="spicy_sexual">Vürtsikas</string>
     <string name="your_preferences_will_be_saved">Sinu eelistused salvestatakse</string>
 
     <string name="name">Nimi</string>

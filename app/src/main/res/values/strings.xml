@@ -127,9 +127,9 @@
     <string name="cancel">Cancel</string>
     <string name="game_settings">Game Settings</string>
     <string name="enable_extra_questions_by_type">Enable extra questions by type</string>
-    <string name="work_workplace">Work / Workplace</string>
+    <string name="work_workplace">Workplace</string>
     <string name="relationship">Relationship</string>
-    <string name="spicy_sexual">Spicy / Sexual</string>
+    <string name="spicy_sexual">Spicy</string>
     <string name="your_preferences_will_be_saved">Your preferences will be saved</string>
     <string name="name">Name</string>
     <string name="_0" translatable="false">0</string>

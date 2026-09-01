@@ -53,14 +53,12 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonCancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/card_game_button"
         android:text="@string/cancel"
         android:textColor="@color/cardGameButtonTextColour"
-        android:textSize="16sp"
-         />
-
+        android:textSize="18sp"
+        />
 </LinearLayout>
