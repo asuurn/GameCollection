@@ -166,4 +166,7 @@
     <string name="right_leg_blue">Right Leg Blue</string>
     <string name="right_leg_green">Right Leg Green</string>
     <string name="right_leg_yellow">Right Leg Yellow</string>
+
+    <string name="truth_will_come_out">Truth will come out</string>
+    <string name="truth_will_stay_hidden">Truth will stay hidden</string>
 </resources>

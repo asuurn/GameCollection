@@ -65,10 +65,10 @@ class ParanoiaCoinFlipActivity : AppCompatActivity() {
             override fun onAnimationEnd(animation: Animator) {
                 isHeads = Random.nextBoolean()
                 if (isHeads) {
-                    resultText.text = "Truth will come out"
+                    resultText.text = getString(R.string.truth_will_come_out)
                     coinImage.setImageResource(R.drawable.heads)
                 } else {
-                    resultText.text = "Truth will stay hidden"
+                    resultText.text = getString(R.string.truth_will_stay_hidden)
                     coinImage.setImageResource(R.drawable.tails)
                 }
 

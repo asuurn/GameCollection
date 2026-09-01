@@ -201,4 +201,7 @@
     <string name="right_leg_blue">Parem jalg sinine</string>
     <string name="right_leg_green">Parem jalg roheline</string>
     <string name="right_leg_yellow">Parem jalg kollane</string>
+
+    <string name="truth_will_come_out">Tõde tuleb välja</string>
+    <string name="truth_will_stay_hidden">Tõde jääb varjatuks</string>
 </resources>
