@@ -12,23 +12,13 @@ import ee.taltech.gamecollection.R
 
 class PokerActivity : AppCompatActivity() {
 
-    private val pokerHands = listOf(
-        PokerHand("ROYAL FLUSH", listOf("A♦", "K♦", "Q♦", "J♦", "10♦")),
-        PokerHand("STRAIGHT FLUSH", listOf("J♠", "10♠", "9♠", "8♠", "7♠")),
-        PokerHand("FOUR OF A KIND", listOf("9♥", "9♣", "9♦", "9♠", " ")),
-        PokerHand("FULL HOUSE", listOf("A♥", "A♣", "A♦", "3♣", "3♥")),
-        PokerHand("FLUSH", listOf("K♣", "10♣", "8♣", "7♣", "5♣")),
-
-        PokerHand("STRAIGHT", listOf("10♥", "9♣", "8♦", "7♠", "6♥")),
-        PokerHand("THREE OF A KIND", listOf("7♥", "7♣", "7♠", " ", " ")),
-        PokerHand("TWO PAIR", listOf("J♥", "J♣", "5♠", "5♣", " ")),
-        PokerHand("PAIR", listOf("A♥", "A♣", " ", " ", " ")),
-        PokerHand("HIGH CARD", listOf("K♥", " ", " ", " ", " "))
-    )
+    private lateinit var pokerHands: List<PokerHand>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_poker)
+
+        createPokerHands()
 
         val customButton: ImageButton = findViewById(R.id.buttonBack)
         customButton.setOnClickListener {
@@ -85,6 +75,21 @@ class PokerActivity : AppCompatActivity() {
 
             handsContainer.addView(handView)
         }
+    }
+
+    fun createPokerHands() {
+        pokerHands = listOf(
+            PokerHand(getString(R.string.royal_flush), listOf("A♦", "K♦", "Q♦", "J♦", "10♦")),
+            PokerHand(getString(R.string.straight_flush), listOf("J♠", "10♠", "9♠", "8♠", "7♠")),
+            PokerHand(getString(R.string.four_of_a_kind), listOf("9♥", "9♣", "9♦", "9♠", " ")),
+            PokerHand(getString(R.string.full_house), listOf("A♥", "A♣", "A♦", "3♣", "3♥")),
+            PokerHand(getString(R.string.flush), listOf("K♣", "10♣", "8♣", "7♣", "5♣")),
+            PokerHand(getString(R.string.straight), listOf("10♥", "9♣", "8♦", "7♠", "6♥")),
+            PokerHand(getString(R.string.three_of_a_kind), listOf("7♥", "7♣", "7♠", " ", " ")),
+            PokerHand(getString(R.string.two_pair), listOf("J♥", "J♣", "5♠", "5♣", " ")),
+            PokerHand(getString(R.string.pair), listOf("A♥", "A♣", " ", " ", " ")),
+            PokerHand(getString(R.string.high_card), listOf("K♥", " ", " ", " ", " "))
+        )
     }
 }
 

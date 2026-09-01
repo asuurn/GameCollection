@@ -70,7 +70,7 @@ class TwisterActivity : AppCompatActivity() {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 val seconds = 10 + progress   // 10..120
                 intervalMs = seconds * 1000L
-                intervalText.text = "Interval: ${seconds}s"
+                intervalText.text = getString(R.string.interval) + " ${seconds}s"
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {}

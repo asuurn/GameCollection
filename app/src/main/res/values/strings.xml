@@ -52,7 +52,6 @@
     <string name="paranoia_description_3">When answering, be vague or misleading. Hint around the question instead of being direct. This keeps others guessing and increases the paranoia.</string>
     <string name="why_paranoia">Why paranoia?</string>
     <string name="paranoia_description_4">The mix of questions makes players overthink everything. Do they like me? Hate me? Think I\'m weird or funny? That\'s what creates the paranoia.</string>
-    <string name="poker_rules">POKER RULES</string>
     <string name="player_name">Player name</string>
     <string name="total">Total</string>
     <string name="points">Points</string>
@@ -136,7 +135,18 @@
     <string name="_0" translatable="false">0</string>
     <string name="_plus" translatable="false">+</string>
     <string name="_minus" translatable="false">-</string>
-    <string name="royal_flush">ROYAL FLUSH</string>
     <string name="auto_mode">Auto mode</string>
     <string name="no_questions_available">No questions available</string>
+    <string name="interval">Interval:</string>
+
+    <string name="royal_flush">ROYAL FLUSH</string>
+    <string name="straight_flush" translatable="false">STRAIGHT FLUSH</string>
+    <string name="four_of_a_kind" translatable="false">FOUR OF A KIND</string>
+    <string name="full_house" translatable="false">FULL HOUSE</string>
+    <string name="flush">FLUSH</string>
+    <string name="straight">STRAIGHT</string>
+    <string name="three_of_a_kind">THREE OF A KIND</string>
+    <string name="two_pair">TWO PAIR</string>
+    <string name="pair">PAIR</string>
+    <string name="high_card">HIGH CARD</string>
 </resources>

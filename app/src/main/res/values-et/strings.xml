@@ -69,7 +69,6 @@
 
     <string name="paranoia_description_4">Küsimuste segu paneb mängijad kõige üle mõtlema. Kas nad meeldivad mulle? Kas nad vihkavad mind? Kas nad peavad mind imelikuks või naljakaks? Just see tekitab paranoia.</string>
 
-    <string name="poker_rules">POKKERI REEGLID</string>
     <string name="player_name">Mängija nimi</string>
     <string name="total">Kokku</string>
     <string name="points">Punktid</string>
@@ -172,6 +171,17 @@
     <string name="your_preferences_will_be_saved">Sinu eelistused salvestatakse</string>
 
     <string name="name">Nimi</string>
-    <string name="royal_flush">KUNINGLIK MASTIRIDA</string>
     <string name="no_questions_available">Rohkem küsimusi pole</string>
+    <string name="interval">Intervall:</string>
+
+    <string name="royal_flush">KUNINGLIK MASTIRIDA</string>
+    <string name="straight_flush" translatable="false">MASTIRIDA</string>
+    <string name="four_of_a_kind" translatable="false">NELIK</string>
+    <string name="full_house" translatable="false">TÄISMAJA</string>
+    <string name="flush">MAST</string>
+    <string name="straight">RIDA</string>
+    <string name="three_of_a_kind">KOLMIK</string>
+    <string name="two_pair">KAKS PAARI</string>
+    <string name="pair">PAAR</string>
+    <string name="high_card">KÕRGE KAART</string>
 </resources>
