@@ -41,12 +41,12 @@
         <activity
             android:name=".cardgames.croatianPick.CroatianPickRules"
             android:exported="false"
-            android:parentActivityName=".scoreboard.Scoreboard"
+            android:parentActivityName=".scoreboard.ScoreboardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameCollection"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".scoreboard.Scoreboard"
+            android:name=".scoreboard.ScoreboardActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"

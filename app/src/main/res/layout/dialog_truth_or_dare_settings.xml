@@ -22,28 +22,36 @@
         android:textSize="17sp" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/workplace"
+        android:id="@+id/workplaceSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Work/Workplace"
         android:textSize="20sp" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/relationship"
+        android:id="@+id/relationshipSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Relationship"
         android:textSize="20sp" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/sexual"
+        android:id="@+id/sexualSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Spicy/Sexual"
         android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/savePreferencesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your preferences will be saved"
+        android:textSize="17sp" />
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonCancel"
+        android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

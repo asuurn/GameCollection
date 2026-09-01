@@ -7,7 +7,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.cardgames.CardGamesActivity
 import ee.taltech.gamecollection.paranoia.ParanoiaQuestionActivity
-import ee.taltech.gamecollection.scoreboard.Scoreboard
+import ee.taltech.gamecollection.scoreboard.ScoreboardActivity
 import ee.taltech.gamecollection.truthOrDare.TruthOrDareActivity
 import ee.taltech.gamecollection.twister.TwisterActivity
 
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val buttonToBaila: Button = findViewById(R.id.buttonToScoreBoard)
         buttonToBaila.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            val intent = Intent(this, Scoreboard::class.java)
+            val intent = Intent(this, ScoreboardActivity::class.java)
             startActivity(intent)
         }
 

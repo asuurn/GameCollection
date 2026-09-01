@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
-import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,7 +17,7 @@ import ee.taltech.gamecollection.R
 import org.json.JSONArray
 import org.json.JSONObject
 
-class Scoreboard : AppCompatActivity() {
+class ScoreboardActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: PlayerAdapter

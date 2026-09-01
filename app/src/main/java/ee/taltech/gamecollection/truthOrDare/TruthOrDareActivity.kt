@@ -1,5 +1,6 @@
 package ee.taltech.gamecollection.truthOrDare
 
+import android.app.Dialog
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -7,12 +8,16 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.ViewConfiguration
 import android.view.ViewGroup
+import android.view.WindowManager
+import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SwitchCompat
 import ee.taltech.gamecollection.R
 import kotlin.math.abs
+import androidx.core.content.edit
 
 class TruthOrDareActivity : AppCompatActivity() {
 
@@ -40,9 +45,33 @@ class TruthOrDareActivity : AppCompatActivity() {
             finish()
         }
 
-        cards =
-            readFileAsLines(R.raw.truth_en, CardType.TRUTH) +
-                    readFileAsLines(R.raw.dare_en, CardType.DARE)
+        val buttonSettings: ImageButton = findViewById(R.id.buttonSettings)
+        buttonSettings.setOnClickListener {
+            showSettingsDialog()
+        }
+
+        val settings = loadSettings()
+
+        val loadedCards = mutableListOf<CardData>()
+
+        loadedCards += readFileAsLines(R.raw.truth_en, CardType.TRUTH)
+        loadedCards += readFileAsLines(R.raw.dare_en, CardType.DARE)
+
+        if (settings.workplace) {
+            loadedCards += readFileAsLines(R.raw.truth_workplace, CardType.TRUTH)
+        }
+
+        if (settings.relationship) {
+            loadedCards += readFileAsLines(R.raw.truth_relationship, CardType.TRUTH)
+            loadedCards += readFileAsLines(R.raw.dare_relationship, CardType.DARE)
+        }
+
+        if (settings.sexual) {
+            loadedCards += readFileAsLines(R.raw.truth_sexual, CardType.TRUTH)
+            loadedCards += readFileAsLines(R.raw.dare_sexual, CardType.DARE)
+        }
+
+        cards = loadedCards
 
         inflater = LayoutInflater.from(this)
         cardStack = findViewById(R.id.cardStack)
@@ -359,5 +388,68 @@ class TruthOrDareActivity : AppCompatActivity() {
         }
         cards.shuffle()
         return cards
+    }
+
+    private fun showSettingsDialog() {
+
+        val dialog = Dialog(this)
+
+        dialog.setContentView(R.layout.dialog_truth_or_dare_settings)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.dialog_background)
+
+        val workplaceSwitch: SwitchCompat = dialog.findViewById(R.id.workplaceSwitch)
+        val relationshipSwitch: SwitchCompat = dialog.findViewById(R.id.relationshipSwitch)
+        val sexualSwitch: SwitchCompat = dialog.findViewById(R.id.sexualSwitch)
+        val buttonCancel: Button = dialog.findViewById(R.id.buttonBack)
+
+        val settings = loadSettings()
+
+        workplaceSwitch.isChecked = settings.workplace
+        relationshipSwitch.isChecked = settings.relationship
+        sexualSwitch.isChecked = settings.sexual
+
+        buttonCancel.setOnClickListener {
+            saveSettings(
+                TruthOrDareSettings(
+                    workplace = workplaceSwitch.isChecked,
+                    relationship = relationshipSwitch.isChecked,
+                    sexual = sexualSwitch.isChecked
+                )
+            )
+
+            dialog.dismiss()
+        }
+
+        dialog.show()
+
+        dialog.window?.setLayout(
+            (resources.displayMetrics.widthPixels * 0.90).toInt(),
+            WindowManager.LayoutParams.WRAP_CONTENT
+        )
+    }
+
+    private fun loadSettings(): TruthOrDareSettings {
+        val preferences = getSharedPreferences(
+            "truth_or_dare_settings",
+            MODE_PRIVATE
+        )
+
+        return TruthOrDareSettings(
+            workplace = preferences.getBoolean("workplace", false),
+            relationship = preferences.getBoolean("relationship", false),
+            sexual = preferences.getBoolean("sexual", false)
+        )
+    }
+
+    private fun saveSettings(settings: TruthOrDareSettings) {
+        getSharedPreferences(
+            "truth_or_dare_settings",
+            MODE_PRIVATE
+        )
+            .edit {
+                putBoolean("workplace", settings.workplace)
+                    .putBoolean("relationship", settings.relationship)
+                    .putBoolean("sexual", settings.sexual)
+            }
     }
 }
