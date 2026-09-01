@@ -10,14 +10,14 @@
         android:id="@+id/settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Switch language"
+        android:text="@string/switch_language"
         android:textSize="28sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Language"
+        android:text="@string/language"
         android:textSize="17sp" />
 
     <RadioGroup
@@ -31,7 +31,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="English"
+            android:text="@string/english"
             android:textSize="18sp" />
 
         <RadioButton
@@ -39,7 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Estonian"
+            android:text="@string/estonian"
             android:textSize="18sp" />
 
     </RadioGroup>
@@ -51,7 +51,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:text="Back"
+        android:text="@string/back"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="16sp"
          />

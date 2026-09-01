@@ -10,7 +10,7 @@
         android:id="@+id/newGameTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Game"
+        android:text="@string/new_game"
         android:textSize="28sp" />
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="What would you like to do?"
+        android:text="@string/what_would_you_like_to_do"
         android:textSize="17sp" />
 
     <TextView
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="New game will erase existing players and history"
+        android:text="@string/new_game_will_erase_existing_players_and_history"
         android:textSize="17sp" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -35,7 +35,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/card_game_button"
-        android:text="New game"
+        android:text="@string/new_game"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="18sp"
          />
@@ -46,7 +46,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/card_game_button"
-        android:text="Same players"
+        android:text="@string/same_players"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="18sp"
          />
@@ -58,7 +58,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:text="Cancel"
+        android:text="@string/cancel"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="16sp"
          />

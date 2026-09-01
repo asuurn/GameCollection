@@ -21,7 +21,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Back"
+                android:contentDescription="@string/back"
                 android:padding="8dp"
                 android:src="@drawable/arrow_back" />
 
@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="ADVANCED UNO"
+                android:text="@string/advanced_uno"
                 android:textSize="30sp"
                 />
 
@@ -45,14 +45,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="All the basic rules apply with some added fun."
+            android:text="@string/basic_rules_apply_uno"
             android:textSize="14sp"/>
 
         <!-- Stacking -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stacking"
+            android:text="@string/stacking"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Draw Two and Wild Draw Four cards can be stacked, increasing the total penalty."
+                android:text="@string/uno_advanced_description_1"
                 android:textSize="16sp"
                 android:lineSpacingExtra="4dp"/>
         </LinearLayout>
@@ -82,7 +82,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jump-in rule"
+            android:text="@string/jump_in_rule"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -103,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="If you have the exact same card as the top card, you can play it instantly out of turn. Play continues from you."
+                android:text="@string/uno_advanced_description_2"
                 android:textSize="16sp"
                 android:lineSpacingExtra="4dp"/>
         </LinearLayout>
@@ -111,7 +111,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Seven-O rule"
+            android:text="@string/seven_o_rule"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -132,7 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Playing a 7 lets you swap hands with another player. Playing a 0 makes everyone pass their hand in the current direction."
+                android:text="@string/uno_advanced_description_3"
                 android:textSize="16sp"
                 android:lineSpacingExtra="4dp"/>
         </LinearLayout>
@@ -140,7 +140,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Draw Until You Can Play"
+            android:text="@string/draw_until_you_can_play"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"/>
 
@@ -161,7 +161,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="If you cannot play, keep drawing cards until you get one you can play."
+                android:text="@string/uno_advanced_description_4"
                 android:textSize="16sp"
                 android:lineSpacingExtra="4dp"/>
         </LinearLayout>

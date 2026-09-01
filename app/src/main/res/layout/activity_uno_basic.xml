@@ -21,7 +21,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Back"
+                android:contentDescription="@string/back"
                 android:padding="8dp"
                 android:src="@drawable/arrow_back" />
 
@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="BASIC UNO RULES"
+                android:text="@string/basic_uno_rules"
                 android:textSize="30sp"
                  />
 
@@ -44,7 +44,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Setup"
+            android:text="@string/setup"
             android:textSize="20sp"
             android:layout_marginBottom="8dp" />
 
@@ -52,14 +52,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="14dp"
-            android:text="Each player gets 7 cards. The top card of the remaining deck starts the discard pile."
+            android:text="@string/uno_basic_description_1"
             android:textSize="16sp"
             android:layout_marginBottom="18dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gameplay"
+            android:text="@string/gameplay"
             android:textSize="20sp"
             android:layout_marginBottom="8dp" />
 
@@ -67,14 +67,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="14dp"
-            android:text="Players take turns clockwise. Match the top card by color, number, or symbol. If you cannot play, draw a card."
+            android:text="@string/uno_basic_description_2"
             android:textSize="16sp"
             android:layout_marginBottom="18dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Special Cards"
+            android:text="@string/special_cards"
             android:textSize="20sp"
             android:layout_marginBottom="8dp" />
 
@@ -107,7 +107,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Change color"
+                        android:text="@string/change_color"
                         android:textSize="14sp"
                         android:gravity="center" />
                 </LinearLayout>
@@ -127,7 +127,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="+4 and choose color"
+                        android:text="@string/_4_and_choose_color"
                         android:textSize="14sp"
                         android:gravity="center" />
                 </LinearLayout>
@@ -155,7 +155,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="+2 cards"
+                        android:text="@string/_2_cards"
                         android:textSize="14sp"
                         android:gravity="center" />
                 </LinearLayout>
@@ -175,7 +175,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Skip turn"
+                        android:text="@string/skip_turn"
                         android:textSize="14sp"
                         android:gravity="center" />
                 </LinearLayout>
@@ -195,7 +195,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Reverse direction"
+                        android:text="@string/reverse_direction"
                         android:textSize="14sp"
                         android:gravity="center" />
                 </LinearLayout>
@@ -205,7 +205,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UNO Rule"
+            android:text="@string/uno_rule"
             android:textSize="20sp"
             android:layout_marginBottom="8dp" />
 
@@ -213,14 +213,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="14dp"
-            android:text="When you have one card left, you must say 'UNO'. If caught not saying it, draw 2 cards."
+            android:text="@string/uno_basic_description_3"
             android:textSize="16sp"
             android:layout_marginBottom="18dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Winning"
+            android:text="@string/winning"
             android:textSize="20sp"
             android:layout_marginBottom="8dp" />
 
@@ -228,7 +228,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="14dp"
-            android:text="The round ends when a player plays their last card and wins."
+            android:text="@string/uno_basic_description_4"
             android:textSize="16sp"
             android:layout_marginBottom="24dp" />
 

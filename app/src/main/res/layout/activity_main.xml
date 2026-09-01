@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/paranoia_button"
-            android:text="Paranoia"
+            android:text="@string/paranoia"
             android:textColor="@color/paranoiaButtonTextColour"
             android:textSize="20sp" />
 
@@ -37,7 +37,7 @@
         android:layout_width="387dp"
         android:layout_height="146dp"
         android:layout_marginTop="90dp"
-        android:text="GAME&#10;COLLECTION"
+        android:text="@string/game_10_collection"
         android:textAlignment="center"
         android:textSize="55sp"
         android:lineSpacingExtra="15dp"
@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Pick a game"
+        android:text="@string/pick_a_game"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/scoreboard_button"
-            android:text="Scoreboard"
+            android:text="@string/scoreboard"
             android:textColor="@color/scoreBoardButtonTextColour"
             android:textSize="20sp" />
 
@@ -100,7 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/twister_button"
-            android:text="Twister"
+            android:text="@string/twister"
             android:textColor="@color/twisterButtonTextColour"
             android:textSize="20sp" />
 
@@ -124,7 +124,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/card_game_button"
-            android:text="Card games"
+            android:text="@string/card_games"
             android:textColor="@color/cardGameButtonTextColour"
             android:textSize="20sp" />
 
@@ -148,7 +148,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/truth_or_dare_button"
-            android:text="Truth or&#10;dare"
+            android:text="@string/truth_or_dare_newline"
             android:textColor="@color/truthOrDareButtonTextColour"
             android:textSize="20sp" />
 

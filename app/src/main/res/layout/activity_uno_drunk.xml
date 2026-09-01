@@ -28,7 +28,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Back"
+                android:contentDescription="@string/back"
                 android:padding="8dp"
                 android:src="@drawable/arrow_back" />
 
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="DRUNK UNO RULES"
+                android:text="@string/drunk_uno_rules"
                 android:textSize="30sp"
                  />
 
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="Start with one drink each!"
+            android:text="@string/start_with_one_drink_each"
             android:textSize="16sp" />
 
         <!-- Rule 1 -->
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Starting point"
+            android:text="@string/starting_point"
             android:textSize="20sp"
              />
 
@@ -77,7 +77,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:lineSpacingExtra="4dp"
-                android:text="Everyone begins with one drink."
+                android:text="@string/everyone_begins_with_one_drink"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="2X Drinks"
+            android:text="@string/_2x_drinks"
             android:textSize="20sp"
              />
 
@@ -118,14 +118,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2X Drinks"
+                        android:text="@string/_2x_drinks"
                         android:textSize="34sp"
                          />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Drink twice."
+                        android:text="@string/drink_twice"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -136,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="1X Player Chooses"
+            android:text="@string/_1x_player_chooses"
             android:textSize="20sp"
              />
 
@@ -168,14 +168,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1X Player Chooses"
+                        android:text="@string/_1x_player_chooses"
                         android:textSize="30sp"
                          />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="The player chooses who drinks."
+                        android:text="@string/the_player_chooses_who_drinks"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -186,7 +186,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Wild card"
+            android:text="@string/wild_card"
             android:textSize="20sp"
              />
 
@@ -218,14 +218,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Change the drinker"
+                        android:text="@string/change_the_drinker"
                         android:textSize="28sp"
                          />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pick a new player to drink."
+                        android:text="@string/pick_a_new_player_to_drink"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -236,7 +236,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Skip card"
+            android:text="@string/skip_card"
             android:textSize="20sp"
              />
 
@@ -268,14 +268,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Next player skips"
+                        android:text="@string/next_player_skips"
                         android:textSize="28sp"
                          />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="The next player does not drink."
+                        android:text="@string/the_next_player_does_not_drink"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -286,7 +286,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Final rule"
+            android:text="@string/final_rule"
             android:textSize="20sp"
              />
 
@@ -318,14 +318,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="3X Winner Chooses"
+                        android:text="@string/_3x_winner_chooses"
                         android:textSize="28sp"
                          />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="The winner decides what happens."
+                        android:text="@string/the_winner_decides_what_happens"
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>

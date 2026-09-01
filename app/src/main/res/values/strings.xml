@@ -1,45 +1,136 @@
 <resources>
     <string name="app_name">GameCollection</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
+    <string name="baila">BAILA</string>
+    <string name="_2_drink_two">2 - Drink two</string>
+    <string name="_3_drink_one_give_one">3 - Drink one, give one</string>
+    <string name="_4_hand_on_table">4 - Hand on table</string>
+    <string name="_5_next_one_drinks">5 - Next one drinks</string>
+    <string name="_6_everybody_drinks">6 - Everybody drinks</string>
+    <string name="_7_count_to_seven">7 - Count to seven</string>
+    <string name="_8_sentence_building">8 - Sentence building</string>
+    <string name="_9_waterfall_rhyme">9 - Waterfall / Rhyme</string>
+    <string name="a_make_up_a_rule">A - Make up a rule</string>
+    <string name="k_hand_under_chin">K - Hand under chin</string>
+    <string name="j_question_king">J - Question king</string>
+    <string name="q_pick_who_drinks">Q - Pick who drinks</string>
+    <string name="_10_pick_company_brand_topic">10 - Pick company/brand/topic</string>
+    <string name="croatian_pick">Croatian pick</string>
+    <string name="uno">Uno</string>
+    <string name="assortment_of_card_games">Assortment of card games</string>
+    <string name="poker">Poker</string>
+    <string name="cards_not_included">Cards not included</string>
+    <string name="back">Back</string>
+    <string name="setup">Setup</string>
+    <string name="croatian_pick_description_1">• Each player starts with 5 cards\n• The remaining cards form the draw pile\n• One card starts in the discard pile\n\nCard values:\n• Ace = 1\n• Number cards = face value\n• J, Q, K = 10</string>
+    <string name="on_your_turn">On Your Turn</string>
+    <string name="croatian_pick_description_2">• Take a card from the discard pile\n• Or draw from the deck, then discard 1 card\n\nYou must discard at least 1 card.\nYou may discard:\n• 2+ cards of the same rank\n• 3+ consecutive cards of the same suit</string>
+    <string name="scoring">Scoring</string>
+    <string name="croatian_pick_description_3">• If your hand value is 7 or less, wait 1 round\n• Then you may call at the start of your turn\n• All players reveal and total their cards\n• The lowest score wins the round\n• If someone has a score equal to or lower than the caller, they win and score 0</string>
+    <string name="winning_losing">Winning / Losing</string>
+    <string name="croatian_pick_description_4">• The game is played over multiple rounds\n• A player loses if they reach 100 points\n• Special rule: if a player reaches exactly 99 points, their score resets to 50</string>
+    <string name="paranoia">Paranoia</string>
+    <string name="game_10_collection">GAME\nCOLLECTION</string>
+    <string name="pick_a_game">Pick a game</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="twister">Twister</string>
+    <string name="card_games">Card games</string>
+    <string name="truth_or_dare_newline">Truth or\ndare</string>
+    <string name="new_question">New question</string>
+    <string name="flip_the_coin">Flip the coin</string>
+    <string name="your_result">Your result:</string>
+    <string name="question">QUESTION</string>
+    <string name="question_field">Question field</string>
+    <string name="decide_your_fate">Decide your fate</string>
+    <string name="rules">Rules</string>
+    <string name="share_it_with_your_partner_and_discuss">Share it with your partner and discuss</string>
+    <string name="game_rules">Game Rules</string>
+    <string name="how_to_play">How to play</string>
+    <string name="paranoia_description_1">The host starts as the \'answerer\' and the player to their right is the \'partner in crime\'. A question is shown only to them. They may discuss it, but the answerer gives the final answer. The chosen person must be someone from the group.</string>
+    <string name="reveal_round">Reveal round</string>
+    <string name="paranoia_description_2">After revealing the name, press \'Reveal your fate\'. A coin flip decides whether the question is revealed. If yes, the answerer shares it. If not, it stays secret. Then pass the device left and continue.</string>
+    <string name="add_some_spice">Add some spice</string>
+    <string name="paranoia_description_3">When answering, be vague or misleading. Hint around the question instead of being direct. This keeps others guessing and increases the paranoia.</string>
+    <string name="why_paranoia">Why paranoia?</string>
+    <string name="paranoia_description_4">The mix of questions makes players overthink everything. Do they like me? Hate me? Think I\'m weird or funny? That\'s what creates the paranoia.</string>
+    <string name="poker_rules">POKER RULES</string>
+    <string name="player_name">Player name</string>
+    <string name="total">Total</string>
+    <string name="points">Points</string>
+    <string name="add_subtract">Add / subtract</string>
+    <string name="add_player">Add player</string>
+    <string name="new_game">New game</string>
+    <string name="history">History ▼</string>
+    <string name="settings">Settings</string>
+    <string name="spin_result">Spin result</string>
+    <string name="interval_10s">Interval: 10s</string>
+    <string name="spin">Spin</string>
+    <string name="drunk">DRUNK</string>
+    <string name="basic">Basic</string>
+    <string name="advanced">ADVANCED</string>
+    <string name="rules_hub">RULES HUB</string>
+    <string name="advanced_uno">ADVANCED UNO</string>
+    <string name="basic_rules_apply_uno">All the basic rules apply with some added fun.</string>
+    <string name="stacking">Stacking</string>
+    <string name="uno_advanced_description_1">Draw Two and Wild Draw Four cards can be stacked, increasing the total penalty.</string>
+    <string name="jump_in_rule">Jump-in rule</string>
+    <string name="uno_advanced_description_2">If you have the exact same card as the top card, you can play it instantly out of turn. Play continues from you.</string>
+    <string name="seven_o_rule">Seven-O rule</string>
+    <string name="uno_advanced_description_3">Playing a 7 lets you swap hands with another player. Playing a 0 makes everyone pass their hand in the current direction.</string>
+    <string name="draw_until_you_can_play">Draw Until You Can Play</string>
+    <string name="uno_advanced_description_4">If you cannot play, keep drawing cards until you get one you can play.</string>
+    <string name="basic_uno_rules">BASIC UNO RULES</string>
+    <string name="uno_basic_description_1">Each player gets 7 cards. The top card of the remaining deck starts the discard pile.</string>
+    <string name="gameplay">Gameplay</string>
+    <string name="uno_basic_description_2">Players take turns clockwise. Match the top card by color, number, or symbol. If you cannot play, draw a card.</string>
+    <string name="special_cards">Special Cards</string>
+    <string name="change_color">Change color</string>
+    <string name="_4_and_choose_color">+4 and choose color</string>
+    <string name="_2_cards">+2 cards</string>
+    <string name="skip_turn">Skip turn</string>
+    <string name="reverse_direction">Reverse direction</string>
+    <string name="uno_rule">UNO Rule</string>
+    <string name="uno_basic_description_3">When you have one card left, you must say \'UNO\'. If caught not saying it, draw 2 cards.</string>
+    <string name="winning">Winning</string>
+    <string name="uno_basic_description_4">The round ends when a player plays their last card and wins.</string>
+    <string name="drunk_uno_rules">DRUNK UNO RULES</string>
+    <string name="start_with_one_drink_each">Start with one drink each!</string>
+    <string name="starting_point">Starting point</string>
+    <string name="everyone_begins_with_one_drink">Everyone begins with one drink.</string>
+    <string name="_2x_drinks">2X Drinks</string>
+    <string name="drink_twice">Drink twice.</string>
+    <string name="_1x_player_chooses">1X Player Chooses</string>
+    <string name="the_player_chooses_who_drinks">The player chooses who drinks.</string>
+    <string name="wild_card">Wild card</string>
+    <string name="change_the_drinker">Change the drinker</string>
+    <string name="pick_a_new_player_to_drink">Pick a new player to drink.</string>
+    <string name="skip_card">Skip card</string>
+    <string name="next_player_skips">Next player skips</string>
+    <string name="the_next_player_does_not_drink">The next player does not drink.</string>
+    <string name="final_rule">Final rule</string>
+    <string name="_3x_winner_chooses">3X Winner Chooses</string>
+    <string name="the_winner_decides_what_happens">The winner decides what happens.</string>
+    <string name="truth_or_dare">Truth or Dare</string>
+    <string name="what_is_your_biggest_secret">What is your biggest secret?</string>
+    <string name="truth">Truth</string>
+    <string name="dare">Dare</string>
+    <string name="swipe">Swipe</string>
+    <string name="switch_language">Switch language</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="estonian">Estonian</string>
+    <string name="what_would_you_like_to_do">What would you like to do?</string>
+    <string name="new_game_will_erase_existing_players_and_history">New game will erase existing players and history</string>
+    <string name="same_players">Same players</string>
+    <string name="cancel">Cancel</string>
+    <string name="game_settings">Game Settings</string>
+    <string name="enable_extra_questions_by_type">Enable extra questions by type</string>
+    <string name="work_workplace">Work / Workplace</string>
+    <string name="relationship">Relationship</string>
+    <string name="spicy_sexual">Spicy / Sexual</string>
+    <string name="your_preferences_will_be_saved">Your preferences will be saved</string>
+    <string name="name">Name</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="_plus" translatable="false">+</string>
+    <string name="_minus" translatable="false">-</string>
+    <string name="royal_flush">ROYAL FLUSH</string>
 </resources>

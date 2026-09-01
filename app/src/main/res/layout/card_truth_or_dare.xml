@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top|center_horizontal"
         android:layout_marginTop="35dp"
-        android:text="Truth or Dare"
+        android:text="@string/truth_or_dare"
         android:textSize="28sp"
          />
 
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="What is your biggest secret?"
+        android:text="@string/what_is_your_biggest_secret"
         android:textSize="25sp" />
 
     <TextView
@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="35dp"
-        android:layout_marginRight="35dp"
-        android:text="Truth"
+        android:layout_marginEnd="35dp"
+        android:text="@string/truth"
         android:textSize="25sp" />
 
     <TextView
@@ -43,8 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
         android:layout_marginBottom="35dp"
-        android:layout_marginLeft="35dp"
-        android:text="Dare"
+        android:layout_marginStart="35dp"
+        android:text="@string/dare"
         android:textSize="25sp" />
 
     <ImageView
@@ -52,7 +52,7 @@
         android:layout_width="70dp"
         android:layout_height="65dp"
         android:layout_gravity="bottom|start"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginBottom="70dp"
         app:srcCompat="@drawable/turn_left_tilt" />
 
@@ -61,7 +61,7 @@
         android:layout_width="70dp"
         android:layout_height="65dp"
         android:layout_gravity="bottom|end"
-        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="70dp"
         app:srcCompat="@drawable/turn_right_tilt" />
 
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="60dp"
-        android:text="Swipe"
+        android:text="@string/swipe"
         android:textSize="25sp" />
 
 </FrameLayout>

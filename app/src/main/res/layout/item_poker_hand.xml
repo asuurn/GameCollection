@@ -10,7 +10,7 @@
         android:id="@+id/handName"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="ROYAL FLUSH"
+        android:text="@string/royal_flush"
         android:textSize="14sp"
          />
 

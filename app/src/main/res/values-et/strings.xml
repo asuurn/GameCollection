@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">Mängu kollektsioon</string>
+    <string name="baila">BAILA</string>
+    <string name="_2_drink_two">2 - Joo kaks</string>
+    <string name="_3_drink_one_give_one">3 - Joo üks, anna üks</string>
+    <string name="_4_hand_on_table">4 - Käsi lauale</string>
+    <string name="_5_next_one_drinks">5 - Järgmine joob</string>
+    <string name="_6_everybody_drinks">6 - Kõik joovad</string>
+    <string name="_7_count_to_seven">7 - Loe seitsmeni</string>
+    <string name="_8_sentence_building">8 - Lauseehitus</string>
+    <string name="_9_waterfall_rhyme">9 - Juga / Riim</string>
+    <string name="a_make_up_a_rule">A - Mõtle reegel välja</string>
+    <string name="k_hand_under_chin">K - Käsi lõua alla</string>
+    <string name="j_question_king">J - Küsimuste kuningas</string>
+    <string name="q_pick_who_drinks">Q - Vali, kes joob</string>
+    <string name="_10_pick_company_brand_topic">10 - Vali firma/bränd/teema</string>
+
+    <string name="croatian_pick">Horvaatia valik</string>
+    <string name="uno">Uno</string>
+    <string name="assortment_of_card_games">Valik kaardimänge</string>
+    <string name="poker">Pokker</string>
+    <string name="cards_not_included">Kaardid ei ole kaasas</string>
+    <string name="back">Tagasi</string>
+    <string name="setup">Ettevalmistus</string>
+
+    <string name="croatian_pick_description_1">• Iga mängija alustab 5 kaardiga\n• Ülejäänud kaardid moodustavad tõmbepaki\n• Üks kaart asetatakse äraviskepakki\n\nKaartide väärtused:\n• Äss = 1\n• Numbrikaardid = kaardil olev number\n• J, Q, K = 10</string>
+
+    <string name="on_your_turn">Sinu kord</string>
+
+    <string name="croatian_pick_description_2">• Võta kaart äraviskepakist\n• Või tõmba pakist ja viska seejärel 1 kaart ära\n\nÄra tuleb visata vähemalt 1 kaart.\nVõid ära visata:\n• 2 või enam sama väärtusega kaarti\n• 3 või enam järjestikust sama masti kaarti</string>
+
+    <string name="scoring">Punktiarvestus</string>
+
+    <string name="croatian_pick_description_3">• Kui sinu käe väärtus on 7 või vähem, oota 1 voor\n• Seejärel võid oma käigu alguses hõigata\n• Kõik mängijad näitavad oma kaarte ja liidavad punktid kokku\n• Vooru võidab madalaima skooriga mängija\n• Kui kellelgi on hõikajaga võrdne või madalam skoor, võidab tema ja saab 0 punkti</string>
+
+    <string name="winning_losing">Võit / kaotus</string>
+
+    <string name="croatian_pick_description_4">• Mäng koosneb mitmest voorust\n• Mängija kaotab, kui jõuab 100 punktini\n• Erireegel: täpselt 99 punktini jõudes langeb skoor tagasi 50 peale</string>
+
+    <string name="paranoia">Paranoia</string>
+    <string name="game_10_collection">MÄNGU\nKOGUMIK</string>
+    <string name="pick_a_game">Vali mäng</string>
+    <string name="scoreboard">Edetabel</string>
+    <string name="twister">Twister</string>
+    <string name="card_games">Kaardimängud</string>
+    <string name="truth_or_dare_newline">Tõde või\ntegu</string>
+    <string name="new_question">Uus küsimus</string>
+    <string name="flip_the_coin">Viska münti</string>
+    <string name="your_result">Sinu tulemus:</string>
+    <string name="question">KÜSIMUS</string>
+    <string name="question_field">Küsimuse väli</string>
+    <string name="decide_your_fate">Otsusta oma saatus</string>
+    <string name="rules">Reeglid</string>
+    <string name="share_it_with_your_partner_and_discuss">Jaga seda oma paarilisega ja arutage</string>
+    <string name="game_rules">MÄNGUREEGLID</string>
+    <string name="how_to_play">Kuidas mängida</string>
+
+    <string name="paranoia_description_1">Mängujuht alustab vastajana ja temast paremal olev mängija on kuriteokaaslane. Küsimust näidatakse ainult neile kahele. Nad võivad selle üle arutada, kuid lõpliku vastuse annab vastaja. Valitud inimene peab olema grupi liige.</string>
+
+    <string name="reveal_round">Avalikustamise voor</string>
+
+    <string name="paranoia_description_2">Pärast nime avalikustamist vajuta „Avalikusta oma saatus“. Mündivise otsustab, kas küsimus avalikustatakse. Kui jah, jagab vastaja seda teistega. Kui ei, jääb see saladuseks. Seejärel anna seade vasakule ja jätka.</string>
+
+    <string name="add_some_spice">Lisa vürtsi</string>
+
+    <string name="paranoia_description_3">Vastates ole ebamäärane või eksitav. Selle asemel, et küsimusele otse vastata, vihja sellele. See paneb teised arvama ja suurendab paranoiat.</string>
+
+    <string name="why_paranoia">Miks paranoia?</string>
+
+    <string name="paranoia_description_4">Küsimuste segu paneb mängijad kõige üle mõtlema. Kas nad meeldivad mulle? Kas nad vihkavad mind? Kas nad peavad mind imelikuks või naljakaks? Just see tekitab paranoia.</string>
+
+    <string name="poker_rules">POKKERI REEGLID</string>
+    <string name="player_name">Mängija nimi</string>
+    <string name="total">Kokku</string>
+    <string name="points">Punktid</string>
+    <string name="add_subtract">Liida / lahuta</string>
+    <string name="add_player">Lisa mängija</string>
+    <string name="new_game">Uus mäng</string>
+    <string name="history">Ajalugu ▼</string>
+    <string name="settings">Seaded</string>
+    <string name="spin_result">Keerutuse tulemus</string>
+    <string name="interval_10s">Intervall: 10 s</string>
+    <string name="spin">Keeruta</string>
+    <string name="drunk">JOOBES</string>
+    <string name="basic">Põhireeglid</string>
+    <string name="advanced">TÄIENDATUD</string>
+    <string name="rules_hub">REEGLITE KESKUS</string>
+    <string name="advanced_uno">TÄIENDATUD UNO</string>
+    <string name="basic_rules_apply_uno">Kõik põhireeglid kehtivad, lisaks mõned lõbusad reeglid.</string>
+
+    <string name="stacking">Ladumine</string>
+    <string name="uno_advanced_description_1">+2 ja +4 kaarte saab laduda, suurendades järgmist karistust.</string>
+
+    <string name="jump_in_rule">Vahelehüppamine</string>
+    <string name="uno_advanced_description_2">Kui sul on täpselt sama kaart nagu paki pealmine kaart, võid selle kohe väljaspool oma korda mängida. Mäng jätkub sinust.</string>
+
+    <string name="seven_o_rule">Seitsme-null reegel</string>
+    <string name="uno_advanced_description_3">7 mängides võid vahetada oma kaardid teise mängija kaartidega. 0 mängides annavad kõik oma kaardid mängusuunas järgmisele mängijale.</string>
+
+    <string name="draw_until_you_can_play">Tõmba kuni saad mängida</string>
+    <string name="uno_advanced_description_4">Kui sa ei saa mängida, tõmba kaarte seni, kuni saad mängida.</string>
+
+    <string name="basic_uno_rules">UNO PÕHIREEGLID</string>
+    <string name="uno_basic_description_1">Iga mängija saab 7 kaarti. Ülejäänud paki pealmine kaart alustab äraviskepakki.</string>
+
+    <string name="gameplay">Mängukäik</string>
+    <string name="uno_basic_description_2">Mängijad käivad päripäeva. Sobita pealmise kaardiga värvi, numbrit või sümbolit. Kui sa ei saa mängida, tõmba kaart.</string>
+
+    <string name="special_cards">Erikaardid</string>
+    <string name="change_color">Värvi muutmine</string>
+    <string name="_4_and_choose_color">+4 ja vali värv</string>
+    <string name="_2_cards">+2 kaarti</string>
+    <string name="skip_turn">Jäta käik vahele</string>
+    <string name="reverse_direction">Suuna muutmine</string>
+
+    <string name="uno_rule">UNO reegel</string>
+    <string name="uno_basic_description_3">Kui sul on üks kaart jäänud, pead ütlema „UNO“. Kui sind tabatakse seda ütlemata, tõmba 2 kaarti.</string>
+
+    <string name="winning">Võit</string>
+    <string name="uno_basic_description_4">Voor lõpeb, kui mängija mängib oma viimase kaardi ja võidab.</string>
+
+    <string name="drunk_uno_rules">JOOBES UNO REEGLID</string>
+    <string name="start_with_one_drink_each">Alustage kõik ühe joogiga!</string>
+
+    <string name="starting_point">Algus</string>
+    <string name="everyone_begins_with_one_drink">Kõik alustavad ühe joogiga.</string>
+
+    <string name="_2x_drinks">2X jooki</string>
+    <string name="drink_twice">Joo kaks korda.</string>
+
+    <string name="_1x_player_chooses">1X mängija valib</string>
+    <string name="the_player_chooses_who_drinks">Mängija valib, kes joob.</string>
+
+    <string name="wild_card">Vaba kaart</string>
+    <string name="change_the_drinker">Vaheta joojat</string>
+    <string name="pick_a_new_player_to_drink">Vali uus mängija, kes joob.</string>
+
+    <string name="skip_card">Vahelejätmise kaart</string>
+    <string name="next_player_skips">Järgmine jätab vahele</string>
+    <string name="the_next_player_does_not_drink">Järgmine mängija ei joo.</string>
+
+    <string name="final_rule">Viimane reegel</string>
+    <string name="_3x_winner_chooses">3X võitja valib</string>
+    <string name="the_winner_decides_what_happens">Võitja otsustab, mis juhtub.</string>
+
+    <string name="truth_or_dare">Tõde või tegu</string>
+    <string name="what_is_your_biggest_secret">Mis on sinu suurim saladus?</string>
+    <string name="truth">Tõde</string>
+    <string name="dare">Tegu</string>
+    <string name="swipe">Libista</string>
+
+    <string name="switch_language">Vaheta keelt</string>
+    <string name="language">Keel</string>
+    <string name="english">Inglise</string>
+    <string name="estonian">Eesti</string>
+
+    <string name="what_would_you_like_to_do">Mida soovid teha?</string>
+    <string name="new_game_will_erase_existing_players_and_history">Uus mäng kustutab olemasolevad mängijad ja ajaloo</string>
+    <string name="same_players">Samad mängijad</string>
+    <string name="cancel">Tühista</string>
+
+    <string name="game_settings">Mängu seaded</string>
+    <string name="enable_extra_questions_by_type">Luba lisaküsimused tüübi järgi</string>
+    <string name="work_workplace">Töö / töökoht</string>
+    <string name="relationship">Suhted</string>
+    <string name="spicy_sexual">Vürtsikas / seks</string>
+    <string name="your_preferences_will_be_saved">Sinu eelistused salvestatakse</string>
+
+    <string name="name">Nimi</string>
+    <string name="royal_flush">KUNINGLIK MASTIRIDA</string>
+</resources>
