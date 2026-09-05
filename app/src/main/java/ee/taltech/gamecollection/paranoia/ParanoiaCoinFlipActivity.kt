@@ -28,15 +28,6 @@ class ParanoiaCoinFlipActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_paranoia_coin_flip)
 
-        val container = findViewById<FrameLayout>(R.id.buttonGlowContainer)
-
-        container.setLayerType(View.LAYER_TYPE_SOFTWARE, null)
-
-        container.background = GlowDrawable(
-            this,
-            ContextCompat.getColor(this, R.color.paranoiaButtonGlow)
-        )
-
         coinImage = findViewById(R.id.imageViewCoin)
 
         coinImage.setOnClickListener {
