@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="mainTextColour">#F2F2F2</color>
-    <color name="paranoiaButtonGlow">#6C8CFF</color>
-    <color name="paranoiaButtonOutline">#7894FF</color>
+
     <color name="truthOrDareCardColour">#0E0E3B</color>
     <color name="dialogBackgroundColor">#0E0E3B</color>
+
+    <color name="paranoiaButtonOutline">#7894FF</color>
+    <color name="twisterButtonOutline">#78FFC0</color>
+    <color name="cardGamesButtonOutline">#FF78D2</color>
+    <color name="scoreboardButtonOutline">#FF7878</color>
+    <color name="truthOrDareButtonOutline">#FFA378</color>
 </resources>
