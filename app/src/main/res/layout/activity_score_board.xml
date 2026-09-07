@@ -26,47 +26,48 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
+        android:gravity="center_vertical"
         android:paddingStart="8dp"
         android:paddingTop="8dp"
         android:paddingEnd="8dp"
         android:paddingBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView2"
+        app:layout_constraintBottom_toTopOf="@id/recyclerView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ScoreboardTextView">
+        app:layout_constraintTop_toBottomOf="@id/ScoreboardTextView">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="start|center_vertical"
             android:text="@string/player_name"
-            android:textSize="16sp"
-             />
+            android:textSize="16sp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/total"
             android:textSize="16sp"
-            android:translationX="-40dp" />
+            android:translationX="-8dp"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="68dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
             android:gravity="center"
             android:text="@string/points"
-            android:textSize="16sp"
-            android:translationX="-24dp" />
+            android:textSize="16sp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="128dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
             android:gravity="center"
             android:text="@string/add_subtract"
-            android:textSize="16sp"
-             />
+            android:textSize="16sp" />
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

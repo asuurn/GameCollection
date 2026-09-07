@@ -32,7 +32,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/game_rules"
-                android:textSize="30sp"
+                android:textSize="28sp"
                  />
 
             <Space

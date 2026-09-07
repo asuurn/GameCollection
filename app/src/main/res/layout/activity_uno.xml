@@ -10,7 +10,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonUnoDrunk"
         android:layout_width="172dp"
-        android:layout_height="78dp"
+        android:layout_height="100dp"
         android:background="@drawable/truth_or_dare_button"
         android:text="@string/drunk"
         android:textColor="@color/truthOrDareButtonTextColour"
@@ -24,7 +24,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonUnoBasic"
         android:layout_width="172dp"
-        android:layout_height="78dp"
+        android:layout_height="100dp"
         android:background="@drawable/truth_or_dare_button"
         android:text="@string/basic"
         android:textColor="@color/truthOrDareButtonTextColour"
@@ -38,7 +38,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonUnoAdvanced"
         android:layout_width="172dp"
-        android:layout_height="78dp"
+        android:layout_height="100dp"
         android:background="@drawable/truth_or_dare_button"
         android:text="@string/advanced"
         android:textColor="@color/truthOrDareButtonTextColour"
