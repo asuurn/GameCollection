@@ -169,4 +169,6 @@
 
     <string name="truth_will_come_out">Truth will come out</string>
     <string name="truth_will_stay_hidden">Truth will stay hidden</string>
+    <string name="heads">Heads</string>
+    <string name="tails">Tails</string>
 </resources>

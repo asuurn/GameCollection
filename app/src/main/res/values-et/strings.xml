@@ -204,4 +204,6 @@
 
     <string name="truth_will_come_out">Tõde tuleb välja</string>
     <string name="truth_will_stay_hidden">Tõde jääb varjatuks</string>
+    <string name="heads">Kull</string>
+    <string name="tails">Kiri</string>
 </resources>

@@ -18,6 +18,7 @@ class ParanoiaCoinFlipActivity : AppCompatActivity() {
     private var isHeads = true
     private var hasFlipped = false
     private lateinit var resultText: TextView
+    private lateinit var resultCoinFace: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +35,7 @@ class ParanoiaCoinFlipActivity : AppCompatActivity() {
 
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
         resultText = findViewById(R.id.textViewResult)
+        resultCoinFace = findViewById(R.id.coinFaceTextView)
 
         val buttonNewQuestion: Button = findViewById(R.id.buttonNewQuestion)
         buttonNewQuestion.isEnabled = false
@@ -53,9 +55,11 @@ class ParanoiaCoinFlipActivity : AppCompatActivity() {
                 if (isHeads) {
                     resultText.text = getString(R.string.truth_will_come_out)
                     coinImage.setImageResource(R.drawable.heads)
+                    resultCoinFace.text = getString(R.string.heads)
                 } else {
                     resultText.text = getString(R.string.truth_will_stay_hidden)
                     coinImage.setImageResource(R.drawable.tails)
+                    resultCoinFace.text = getString(R.string.tails)
                 }
 
                 val buttonNewQuestion: Button = findViewById(R.id.buttonNewQuestion)
