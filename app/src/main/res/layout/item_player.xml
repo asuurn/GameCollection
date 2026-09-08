@@ -22,8 +22,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/_0"
-        android:textSize="18sp"
-        android:translationX="-16dp"/>
+        android:textSize="18sp"/>
 
     <EditText
         android:id="@+id/scoreAmountInput"

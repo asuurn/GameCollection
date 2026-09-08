@@ -18,7 +18,7 @@
     <string name="uno">Uno</string>
     <string name="assortment_of_card_games">Assortment of card games</string>
     <string name="poker">Poker</string>
-    <string name="cards_not_included">Cards not included</string>
+    <string name="cards_not_included">Cards sold separately :)</string>
     <string name="back">Back</string>
     <string name="setup">Setup</string>
     <string name="croatian_pick_description_1">• Each player starts with 5 cards\n• The remaining cards form the draw pile\n• One card starts in the discard pile\n\nCard values:\n• Ace = 1\n• Number cards = face value\n• J, Q, K = 10</string>
