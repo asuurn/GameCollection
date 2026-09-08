@@ -21,12 +21,17 @@ class ScoreboardActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: PlayerAdapter
+
     private val players = mutableListOf<Player>()
     private val historyEntries = mutableListOf<HistoryEntry>()
+
     private lateinit var historyAdapter: HistoryAdapter
     private lateinit var historyHeader: TextView
     private lateinit var historyRecyclerView: RecyclerView
+    private lateinit var historyPanel: View
+
     private var historyOpen = false
+
     private val prefsName = "croatian_pick_prefs"
     private val playersKey = "players"
     private val historyKey = "history"
@@ -51,7 +56,8 @@ class ScoreboardActivity : AppCompatActivity() {
         )
         recyclerView.adapter = adapter
 
-        val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
+        val bounceAnimation =
+            AnimationUtils.loadAnimation(this, R.anim.bounce)
 
         val buttonNewGame: Button = findViewById(R.id.buttonNewGame)
         buttonNewGame.setOnClickListener {
@@ -69,65 +75,60 @@ class ScoreboardActivity : AppCompatActivity() {
             addPlayer()
         }
 
+        historyPanel = findViewById(R.id.historyPanel)
+        historyHeader = findViewById(R.id.historyHeader)
         historyRecyclerView = findViewById(R.id.historyRecyclerView)
+
         historyRecyclerView.layoutManager = LinearLayoutManager(this)
         historyAdapter = HistoryAdapter(historyEntries)
         historyRecyclerView.adapter = historyAdapter
-        historyHeader = findViewById(R.id.historyHeader)
+
         historyHeader.setOnClickListener {
             setHistoryOpen(!historyOpen)
         }
+
+        setHistoryOpen(false)
     }
 
     private fun setHistoryOpen(open: Boolean) {
         historyOpen = open
-        historyHeader.text = if (open) getString(R.string.history_up) else getString(R.string.history_down)
-        if (!open) {
-            historyRecyclerView.visibility = View.GONE
-            return
+
+        historyHeader.text = getString(
+            if (open) R.string.history_up else R.string.history_down
+        )
+
+        historyPanel.visibility =
+            if (open) View.VISIBLE else View.GONE
+
+        if (open) {
+            historyRecyclerView.post {
+                scrollHistoryToBottom()
+            }
         }
-        historyRecyclerView.visibility = View.VISIBLE
-        historyHeader.post { updateHistoryListHeight() }
-    }
-
-    private fun updateHistoryListHeight() {
-        if (!historyOpen) return
-
-        val headerLocation = IntArray(2)
-        historyHeader.getLocationOnScreen(headerLocation)
-        val headerBottomY = headerLocation[1] + historyHeader.height
-        val screenHeight = resources.displayMetrics.heightPixels
-        val marginPx = (24 * resources.displayMetrics.density).toInt()
-        val listHeight = (screenHeight - headerBottomY - marginPx).coerceAtLeast(0)
-
-        historyRecyclerView.layoutParams.height = listHeight
-        historyRecyclerView.requestLayout()
-        scrollHistoryToBottom()
     }
 
     private fun scrollHistoryToBottom() {
         if (historyEntries.isEmpty()) return
-        historyRecyclerView.scrollToPosition(historyEntries.size - 1)
+
+        historyRecyclerView.scrollToPosition(historyEntries.lastIndex)
     }
 
     private fun showNewGameDialog() {
-
         val dialog = Dialog(this)
-
         dialog.setContentView(R.layout.dialog_new_game)
 
         dialog.window?.setBackgroundDrawableResource(
             R.drawable.dialog_background
         )
 
-        dialog.window?.setLayout(
-            (resources.displayMetrics.widthPixels * 0.90).toInt(),
-            WindowManager.LayoutParams.WRAP_CONTENT
-        )
+        val buttonNewGame: Button =
+            dialog.findViewById(R.id.buttonNewGame)
 
-        val buttonNewGame: Button = dialog.findViewById(R.id.buttonNewGame)
-        val buttonSamePlayers: Button = dialog.findViewById(R.id.buttonSamePlayers)
-        val buttonCancel: Button = dialog.findViewById(R.id.buttonCancel)
+        val buttonSamePlayers: Button =
+            dialog.findViewById(R.id.buttonSamePlayers)
+
+        val buttonCancel: Button =
+            dialog.findViewById(R.id.buttonCancel)
 
         buttonNewGame.setOnClickListener {
             newGameFully()
@@ -183,9 +184,13 @@ class ScoreboardActivity : AppCompatActivity() {
         val index = historyEntries.size
         historyEntries.add(HistoryEntry(text))
         historyAdapter.notifyItemInserted(index)
+
         saveHistory()
+
         if (historyOpen) {
-            historyHeader.post { scrollHistoryToBottom() }
+            historyRecyclerView.post {
+                scrollHistoryToBottom()
+            }
         }
     }
 
@@ -196,13 +201,16 @@ class ScoreboardActivity : AppCompatActivity() {
         AlertDialog.Builder(this)
             .setTitle(getString(R.string.new_player))
             .setView(editText)
-            .setPositiveButton( getString(R.string.add)) { _, _ ->
-                val name = editText.text.toString().ifEmpty { "Player ${players.size + 1}" }
+            .setPositiveButton(getString(R.string.add)) { _, _ ->
+                val name = editText.text.toString().ifEmpty {
+                    "Player ${players.size + 1}"
+                }
+
                 players.add(Player(name))
-                adapter.notifyItemInserted(players.size - 1)
+                adapter.notifyItemInserted(players.lastIndex)
                 savePlayers()
             }
-            .setNegativeButton( getString(R.string.cancel), null)
+            .setNegativeButton(getString(R.string.cancel), null)
             .show()
     }
 
@@ -217,7 +225,9 @@ class ScoreboardActivity : AppCompatActivity() {
             jsonArray.put(obj)
         }
 
-        prefs.edit().putString(playersKey, jsonArray.toString()).apply()
+        prefs.edit()
+            .putString(playersKey, jsonArray.toString())
+            .apply()
     }
 
     private fun loadPlayers() {
@@ -226,8 +236,10 @@ class ScoreboardActivity : AppCompatActivity() {
         val jsonArray = JSONArray(jsonString)
 
         players.clear()
+
         for (i in 0 until jsonArray.length()) {
             val obj = jsonArray.getJSONObject(i)
+
             players.add(
                 Player(
                     name = obj.optString("name", "Player ${i + 1}"),
@@ -247,7 +259,9 @@ class ScoreboardActivity : AppCompatActivity() {
             jsonArray.put(obj)
         }
 
-        prefs.edit().putString(historyKey, jsonArray.toString()).apply()
+        prefs.edit()
+            .putString(historyKey, jsonArray.toString())
+            .apply()
     }
 
     private fun loadHistory() {
@@ -256,8 +270,10 @@ class ScoreboardActivity : AppCompatActivity() {
         val jsonArray = JSONArray(jsonString)
 
         historyEntries.clear()
+
         for (i in 0 until jsonArray.length()) {
             val obj = jsonArray.getJSONObject(i)
+
             historyEntries.add(
                 HistoryEntry(text = obj.optString("text", ""))
             )

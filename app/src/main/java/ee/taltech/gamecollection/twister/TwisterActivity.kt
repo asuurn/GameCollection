@@ -2,13 +2,17 @@ package ee.taltech.gamecollection.twister
 
 import android.os.Bundle
 import android.os.Handler
+import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.widget.ImageButton
 import android.widget.SeekBar
 import android.widget.Switch
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import androidx.core.os.ConfigurationCompat
 import ee.taltech.gamecollection.R
+import java.util.Locale
 
 class TwisterActivity : AppCompatActivity() {
 
@@ -44,12 +48,32 @@ class TwisterActivity : AppCompatActivity() {
         val seekBar = findViewById<SeekBar>(R.id.seekBarInterval)
         val intervalText = findViewById<TextView>(R.id.textInterval)
 
-        tts = android.speech.tts.TextToSpeech(this) { status ->
-            if (status == android.speech.tts.TextToSpeech.SUCCESS) {
-                val result = tts.setLanguage(java.util.Locale.UK)
+        tts = TextToSpeech(this) { status ->
+            if (status == TextToSpeech.SUCCESS) {
+                val appLocale = ConfigurationCompat
+                    .getLocales(resources.configuration)
+                    .get(0) ?: Locale.UK
 
-                ttsReady = result != android.speech.tts.TextToSpeech.LANG_MISSING_DATA &&
-                        result != android.speech.tts.TextToSpeech.LANG_NOT_SUPPORTED
+                val speechLocale = if (appLocale.language == "et") {
+                    Locale.forLanguageTag("et-EE")
+                } else {
+                    Locale.UK
+                }
+
+                val languageResult = tts.setLanguage(speechLocale)
+
+                ttsReady = languageResult >= TextToSpeech.LANG_AVAILABLE
+
+                if (!ttsReady) {
+                    Log.w(
+                        "TwisterTTS",
+                        "Voice unavailable for ${speechLocale.toLanguageTag()}: " +
+                                "result=$languageResult"
+                    )
+                }
+            } else {
+                ttsReady = false
+                Log.w("TwisterTTS", "TTS initialization failed: $status")
             }
         }
 
