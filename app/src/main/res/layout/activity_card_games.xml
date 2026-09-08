@@ -1,91 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/CroatianPickTextView"
-        android:layout_width="356dp"
-        android:layout_height="101dp"
-        android:layout_marginTop="90dp"
-        android:text="@string/assortment_of_card_games"
-        android:textAlignment="center"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToPoker"
-        android:layout_width="172dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/card_game_button"
-        android:text="@string/poker"
-        android:textColor="@color/cardGameButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/CardsNotIncluded"
-        app:layout_constraintBottom_toTopOf="@id/buttonToTruthOrDare"
-        app:layout_constraintVertical_chainStyle="spread" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToTruthOrDare"
-        android:layout_width="172dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/card_game_button"
-        android:text="@string/uno"
-        android:textColor="@color/cardGameButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonToPoker"
-        app:layout_constraintBottom_toTopOf="@id/buttonToBaila" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToBaila"
-        android:layout_width="172dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/card_game_button"
-        android:text="@string/baila"
-        android:textColor="@color/cardGameButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonToTruthOrDare"
-        app:layout_constraintBottom_toTopOf="@id/buttonToCroatianPick" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToCroatianPick"
-        android:layout_width="172dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/card_game_button"
-        android:text="@string/croatian_pick"
-        android:textColor="@color/cardGameButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonToBaila"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
-    <TextView
-        android:id="@+id/CardsNotIncluded"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/cards_not_included"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CroatianPickTextView" />
 
     <ImageButton
         android:id="@+id/buttonBack"
@@ -100,11 +19,106 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/CroatianPickTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/assortment_of_card_games"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="24sp"
+        app:autoSizeMaxTextSize="40sp"
+        app:autoSizeStepGranularity="1sp"
+        app:layout_constraintHeight_percent="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonBack" />
+
+    <TextView
+        android:id="@+id/CardsNotIncluded"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/cards_not_included"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CroatianPickTextView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToPoker"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/card_game_button"
+        android:text="@string/poker"
+        android:textColor="@color/cardGameButtonTextColour"
+        android:textSize="20sp"
+        app:layout_constraintWidth_percent="0.55"
+        app:layout_constraintHeight_max="90dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CardsNotIncluded"
+        app:layout_constraintBottom_toTopOf="@id/buttonToTruthOrDare" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToTruthOrDare"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/card_game_button"
+        android:text="@string/uno"
+        android:textColor="@color/cardGameButtonTextColour"
+        android:textSize="20sp"
+        app:layout_constraintWidth_percent="0.55"
+        app:layout_constraintHeight_max="90dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonToPoker"
+        app:layout_constraintBottom_toTopOf="@id/buttonToBaila" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToBaila"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/card_game_button"
+        android:text="@string/baila"
+        android:textColor="@color/cardGameButtonTextColour"
+        android:textSize="20sp"
+        app:layout_constraintWidth_percent="0.55"
+        app:layout_constraintHeight_max="90dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonToTruthOrDare"
+        app:layout_constraintBottom_toTopOf="@id/buttonToCroatianPick" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonToCroatianPick"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_game_button"
+        android:text="@string/croatian_pick"
+        android:textColor="@color/cardGameButtonTextColour"
+        android:textSize="20sp"
+        app:layout_constraintWidth_percent="0.55"
+        app:layout_constraintHeight_max="90dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonToBaila"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

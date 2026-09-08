@@ -3,6 +3,8 @@ package ee.taltech.gamecollection
 import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.view.ViewGroup
 import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.Button
@@ -24,6 +26,27 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        findViewById<ViewGroup>(R.id.main).scaleContentToFit(
+            findViewById<View>(R.id.scaledContent)
+        )
+
+        val root = findViewById<android.view.View>(R.id.main)
+
+        root.post {
+            val density = resources.displayMetrics.density
+
+            val widthDp =
+                (root.width - root.paddingLeft - root.paddingRight) / density
+
+            val heightDp =
+                (root.height - root.paddingTop - root.paddingBottom) / density
+
+            android.util.Log.d(
+                "LayoutSize",
+                "width=${widthDp}dp, height=${heightDp}dp"
+            )
+        }
 
         val buttonSettings: ImageButton = findViewById(R.id.buttonSettings)
         buttonSettings.setOnClickListener {

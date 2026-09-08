@@ -43,7 +43,6 @@
     <string name="decide_your_fate">Decide your fate</string>
     <string name="rules">Rules</string>
     <string name="share_it_with_your_partner_and_discuss">Share it with your partner and discuss</string>
-    <string name="game_rules">Game Rules</string>
     <string name="how_to_play">How to play</string>
     <string name="paranoia_description_1">The host starts as the \'answerer\' and the player to their right is the \'partner in crime\'. A question is shown only to them. They may discuss it, but the answerer gives the final answer. The chosen person must be someone from the group.</string>
     <string name="reveal_round">Reveal round</string>

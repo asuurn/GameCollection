@@ -5,20 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/ScoreboardTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:maxLines="1"
         android:text="@string/scoreboard"
-        android:textAlignment="center"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/headerRow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="18sp"
+        app:autoSizeMaxTextSize="40sp"
+        app:autoSizeStepGranularity="1sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread_inside" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/headerRow"
@@ -31,7 +34,6 @@
         android:paddingTop="8dp"
         android:paddingEnd="8dp"
         android:paddingBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@id/recyclerView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ScoreboardTextView">
@@ -44,21 +46,28 @@
             android:text="@string/player_name"
             android:textSize="16sp" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="60dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:gravity="center"
+            android:maxLines="1"
             android:text="@string/total"
-            android:textSize="16sp"
-            android:translationX="-8dp"/>
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeStepGranularity="1sp" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="68dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginEnd="8dp"
             android:gravity="center"
+            android:maxLines="1"
             android:text="@string/points"
-            android:textSize="16sp" />
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeStepGranularity="1sp" />
 
         <TextView
             android:layout_width="128dp"
@@ -73,12 +82,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"
         android:layout_width="0dp"
-        android:layout_height="320dp"
-        app:layout_constraintBottom_toTopOf="@+id/historyHeader"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/headerRow"
+        app:layout_constraintBottom_toTopOf="@id/historyHeader"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headerRow" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:id="@+id/bottomButtons"
@@ -150,17 +158,17 @@
 
     <TextView
         android:id="@+id/historyHeader"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="8dp"
         android:background="?attr/selectableItemBackground"
         android:gravity="center"
         android:padding="12dp"
         android:text="@string/history_down"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomButtons"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintBottom_toTopOf="@id/bottomButtons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
         android:id="@+id/buttonBack"

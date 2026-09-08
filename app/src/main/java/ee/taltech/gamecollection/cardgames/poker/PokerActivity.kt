@@ -3,11 +3,13 @@ package ee.taltech.gamecollection.cardgames.poker
 import android.content.res.Resources
 import android.graphics.Color
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.Gravity
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.TextViewCompat
 import ee.taltech.gamecollection.R
 
 class PokerActivity : AppCompatActivity() {
@@ -45,16 +47,15 @@ class PokerActivity : AppCompatActivity() {
             handName.text = hand.name
 
             hand.cards.forEach { cardText ->
-
-                val card = TextView(this)
+                val card = androidx.appcompat.widget.AppCompatTextView(this)
 
                 card.text = cardText
-                card.textSize = 16f
                 card.gravity = Gravity.CENTER
+                card.maxLines = 1
+                card.setPadding(0, 0, 0, 0)
 
                 card.setTextColor(
-                    if (cardText.contains("♥") ||
-                        cardText.contains("♦")) {
+                    if (cardText.contains("♥") || cardText.contains("♦")) {
                         Color.RED
                     } else {
                         Color.BLACK
@@ -63,13 +64,39 @@ class PokerActivity : AppCompatActivity() {
 
                 card.setBackgroundResource(R.drawable.poker_card)
 
-                val params = LinearLayout.LayoutParams(
-                    42.dp,
-                    60.dp
+                // Each card receives an equal share of the available width.
+                card.layoutParams = LinearLayout.LayoutParams(
+                    0,
+                    60.dp,
+                    1f
+                ).apply {
+                    setMargins(2.dp, 0, 2.dp, 0)
+                }
+
+                TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(
+                    card,
+                    10,
+                    16,
+                    1,
+                    TypedValue.COMPLEX_UNIT_SP
                 )
 
-                params.setMargins(2.dp, 0, 2.dp, 0)
-                card.layoutParams = params
+                // Keep the original 42:60 proportions as the width changes.
+                card.addOnLayoutChangeListener { view, left, _, right, _, _, _, _, _ ->
+                    val cardWidth = right - left
+
+                    if (cardWidth > 0) {
+                        val targetHeight =
+                            (cardWidth * 60f / 42f).toInt().coerceAtLeast(1)
+
+                        if (view.layoutParams.height != targetHeight) {
+                            view.layoutParams = view.layoutParams.apply {
+                                height = targetHeight
+                            }
+                        }
+                    }
+                }
+
                 cardsContainer.addView(card)
             }
 

@@ -27,12 +27,12 @@
 
     <EditText
         android:id="@+id/scoreAmountInput"
-        android:layout_width="60dp"
+        android:layout_width="68dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:hint="@string/_0"
         android:inputType="number"
-        android:gravity="center"
-        android:layout_marginEnd="8dp" />
+        android:gravity="center" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addScoreButton"

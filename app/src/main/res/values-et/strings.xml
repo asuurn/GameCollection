@@ -13,7 +13,7 @@
     <string name="k_hand_under_chin">K - Käsi lõua alla</string>
     <string name="j_question_king">J - Küsimuste kuningas</string>
     <string name="q_pick_who_drinks">Q - Vali, kes joob</string>
-    <string name="_10_pick_company_brand_topic">10 - Vali firma/bränd/teema</string>
+    <string name="_10_pick_company_brand_topic">10 - Firma/bränd/teema</string>
 
     <string name="croatian_pick">Horvaatia valik</string>
     <string name="uno">Uno</string>
@@ -52,7 +52,6 @@
     <string name="decide_your_fate">Otsusta\noma saatus</string>
     <string name="rules">Reeglid</string>
     <string name="share_it_with_your_partner_and_discuss">Jaga seda oma paarilisega ja arutage</string>
-    <string name="game_rules">MÄNGUREEGLID</string>
     <string name="how_to_play">Kuidas mängida</string>
 
     <string name="paranoia_description_1">Mängujuht alustab vastajana ja temast paremal olev mängija on kuriteokaaslane. Küsimust näidatakse ainult neile kahele. Nad võivad selle üle arutada, kuid lõpliku vastuse annab vastaja. Valitud inimene peab olema grupi liige.</string>

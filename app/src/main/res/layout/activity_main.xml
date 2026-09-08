@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,124 +8,130 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToParanoia"
-        android:layout_width="0dp"
-        android:layout_height="109dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/paranoia_button"
-        android:text="@string/paranoia"
-        android:textColor="@color/paranoiaButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonToScoreBoard"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scaledContent"
+        android:layout_width="411dp"
+        android:layout_height="866dp"
+        android:layout_gravity="top|start">
 
-    <ImageButton
-        android:id="@+id/buttonSettings"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="@string/settings"
-        android:padding="8dp"
-        android:src="@drawable/settings_logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToParanoia"
+            android:layout_width="0dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/paranoia_button"
+            android:text="@string/paranoia"
+            android:textColor="@color/paranoiaButtonTextColour"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonToScoreBoard"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <TextView
-        android:id="@+id/textViewWelcome"
-        android:layout_width="387dp"
-        android:layout_height="146dp"
-        android:layout_marginTop="90dp"
-        android:text="@string/game_10_collection"
-        android:textAlignment="center"
-        android:textSize="55sp"
-        android:lineSpacingExtra="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/buttonSettings"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/settings"
+            android:padding="8dp"
+            android:src="@drawable/settings_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/pick_a_game"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="387dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="90dp"
+            android:lineSpacingExtra="15dp"
+            android:text="@string/game_10_collection"
+            android:textAlignment="center"
+            android:textSize="55sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToScoreBoard"
-        android:layout_width="0dp"
-        android:layout_height="109dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/scoreboard_button"
-        android:text="@string/scoreboard"
-        android:textColor="@color/scoreBoardButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonToTruthOrDare"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonToParanoia"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pick_a_game"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToTwister"
-        android:layout_width="0dp"
-        android:layout_height="109dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/twister_button"
-        android:text="@string/twister"
-        android:textColor="@color/twisterButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonToCardGames"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToScoreBoard"
+            android:layout_width="0dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/scoreboard_button"
+            android:text="@string/scoreboard"
+            android:textColor="@color/scoreBoardButtonTextColour"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonToTruthOrDare"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonToParanoia" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToCardGames"
-        android:layout_width="0dp"
-        android:layout_height="109dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/card_game_button"
-        android:text="@string/card_games"
-        android:textColor="@color/cardGameButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/buttonToTwister"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToTwister"
+            android:layout_width="0dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/twister_button"
+            android:text="@string/twister"
+            android:textColor="@color/twisterButtonTextColour"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonToCardGames"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToTruthOrDare"
-        android:layout_width="0dp"
-        android:layout_height="109dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/truth_or_dare_button"
-        android:text="@string/truth_or_dare_newline"
-        android:textColor="@color/truthOrDareButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonToScoreBoard"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToCardGames"
+            android:layout_width="0dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/card_game_button"
+            android:text="@string/card_games"
+            android:textColor="@color/cardGameButtonTextColour"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/buttonToTwister" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToTruthOrDare"
+            android:layout_width="0dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/truth_or_dare_button"
+            android:text="@string/truth_or_dare_newline"
+            android:textColor="@color/truthOrDareButtonTextColour"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonToScoreBoard" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

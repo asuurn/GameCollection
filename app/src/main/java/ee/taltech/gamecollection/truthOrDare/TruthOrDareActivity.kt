@@ -37,6 +37,9 @@ class TruthOrDareActivity : AppCompatActivity() {
 
     private lateinit var cards: List<CardData>
 
+    private val stackStep: Float
+        get() = 8f * resources.displayMetrics.density
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_truth_or_dare)
@@ -94,14 +97,19 @@ class TruthOrDareActivity : AppCompatActivity() {
         )
 
         backCard = createCard(
-            -40F,
-            -40F,
+            -2f * stackStep,
+            -2f * stackStep,
             thirdCard
         )
 
         cardStack.addView(backCard)
         cardStack.addView(middleCard)
         cardStack.addView(topCard)
+
+        cardStack.addOnLayoutChangeListener { _, _, _, _, _, _, _, _, _ ->
+            resizeCards()
+        }
+        cardStack.post { resizeCards() }
 
         setupSwipe(topCard)
     }
@@ -320,8 +328,8 @@ class TruthOrDareActivity : AppCompatActivity() {
                     getPreviewCard(CardType.TRUTH, 1)
                 )
 
-                backCard.translationX = -40F
-                backCard.translationY = -40F
+                backCard.translationX = -2f * stackStep
+                backCard.translationY = -2f * stackStep
                 backCard.rotation = 0F
 
                 cardStack.removeView(backCard)
@@ -339,15 +347,15 @@ class TruthOrDareActivity : AppCompatActivity() {
                     .start()
 
                 middleCard.animate()
-                    .translationX(-20F)
-                    .translationY(-20F)
+                    .translationX(-stackStep)
+                    .translationY(-stackStep)
                     .rotation(0F)
                     .setDuration(200)
                     .start()
 
                 backCard.animate()
-                    .translationX(-40F)
-                    .translationY(-40F)
+                    .translationX(-2f * stackStep)
+                    .translationY(-2f * stackStep)
                     .rotation(0F)
                     .setDuration(200)
                     .start()
@@ -372,8 +380,8 @@ class TruthOrDareActivity : AppCompatActivity() {
             getPreviewCard(CardType.TRUTH)
         )
 
-        middleCard.translationX = -20F
-        middleCard.translationY = -20F
+        middleCard.translationX = -stackStep
+        middleCard.translationY = -stackStep
         middleCard.rotation = 0F
     }
 
@@ -489,6 +497,43 @@ class TruthOrDareActivity : AppCompatActivity() {
                 sexualTruth = R.raw.sexual_truth_en,
                 sexualDare = R.raw.sexual_dare_en
             )
+        }
+    }
+
+    private fun resizeCards() {
+        val density = resources.displayMetrics.density
+
+        val inset = (24f * density).toInt()
+
+        val availableWidth =
+            cardStack.width - cardStack.paddingLeft -
+                    cardStack.paddingRight - inset * 2
+
+        val availableHeight =
+            cardStack.height - cardStack.paddingTop -
+                    cardStack.paddingBottom - inset * 2
+
+        if (availableWidth <= 0 || availableHeight <= 0) return
+
+        val cardWidth = minOf(
+            availableWidth.toFloat(),
+            availableHeight * 340f / 500f,
+            340f * density
+        ).toInt()
+
+        val cardHeight = (cardWidth * 500f / 340f).toInt()
+
+        listOf(topCard, middleCard, backCard).forEach { card ->
+            if (
+                card.layoutParams.width != cardWidth ||
+                card.layoutParams.height != cardHeight
+            ) {
+                card.layoutParams = FrameLayout.LayoutParams(
+                    cardWidth,
+                    cardHeight,
+                    Gravity.CENTER
+                )
+            }
         }
     }
 }

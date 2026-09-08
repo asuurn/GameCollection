@@ -1,76 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="340dp"
-    android:layout_height="500dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/card_background" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|center_horizontal"
-        android:layout_marginTop="35dp"
-        android:text="@string/truth_or_dare"
-        android:textSize="28sp"
-         />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-    <!-- Question -->
-    <TextView
-        android:id="@+id/questionText"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@string/what_is_your_biggest_secret"
-        android:textSize="25sp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cardTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/truth_or_dare"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="16sp"
+            app:autoSizeMaxTextSize="28sp"
+            app:autoSizeStepGranularity="1sp"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="35dp"
-        android:layout_marginEnd="35dp"
-        android:text="@string/truth"
-        android:textSize="25sp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/questionText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/what_is_your_biggest_secret"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="14sp"
+            app:autoSizeMaxTextSize="25sp"
+            app:autoSizeStepGranularity="1sp"
+            app:layout_constraintTop_toBottomOf="@id/cardTitle"
+            app:layout_constraintBottom_toTopOf="@id/swipeArea"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|start"
-        android:layout_marginBottom="35dp"
-        android:layout_marginStart="35dp"
-        android:text="@string/dare"
-        android:textSize="25sp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/swipeArea"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="70dp"
-        android:layout_height="65dp"
-        android:layout_gravity="bottom|start"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="70dp"
-        app:srcCompat="@drawable/turn_left_tilt" />
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/turn_left_tilt"
+                app:layout_constraintWidth_percent="0.2"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="70dp"
-        android:layout_height="65dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="70dp"
-        app:srcCompat="@drawable/turn_right_tilt" />
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/turn_right_tilt"
+                app:layout_constraintWidth_percent="0.2"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="60dp"
-        android:text="@string/swipe"
-        android:textSize="25sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/swipe"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="25sp"
+                app:autoSizeStepGranularity="1sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/imageView6"
+                app:layout_constraintStart_toEndOf="@id/imageView6"
+                app:layout_constraintEnd_toStartOf="@id/imageView7" />
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:text="@string/dare"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="14sp"
+                app:autoSizeMaxTextSize="25sp"
+                app:autoSizeStepGranularity="1sp"
+                app:layout_constraintWidth_percent="0.45"
+                app:layout_constraintTop_toBottomOf="@id/imageView6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="end|center_vertical"
+                android:maxLines="1"
+                android:text="@string/truth"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="14sp"
+                app:autoSizeMaxTextSize="25sp"
+                app:autoSizeStepGranularity="1sp"
+                app:layout_constraintWidth_percent="0.45"
+                app:layout_constraintTop_toBottomOf="@id/imageView7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

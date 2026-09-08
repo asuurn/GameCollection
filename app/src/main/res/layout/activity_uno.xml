@@ -1,77 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".cardgames.uno.UnoActivity">
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonUnoDrunk"
-        android:layout_width="172dp"
-        android:layout_height="100dp"
-        android:background="@drawable/truth_or_dare_button"
-        android:text="@string/drunk"
-        android:textColor="@color/truthOrDareButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonUnoAdvanced" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonUnoBasic"
-        android:layout_width="172dp"
-        android:layout_height="100dp"
-        android:background="@drawable/truth_or_dare_button"
-        android:text="@string/basic"
-        android:textColor="@color/truthOrDareButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonUnoAdvanced"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonUnoAdvanced"
-        android:layout_width="172dp"
-        android:layout_height="100dp"
-        android:background="@drawable/truth_or_dare_button"
-        android:text="@string/advanced"
-        android:textColor="@color/truthOrDareButtonTextColour"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonUnoDrunk"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonUnoBasic" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="194dp"
-        android:layout_height="134dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/uno" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/rules_hub"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <ImageButton
         android:id="@+id/buttonBack"
@@ -85,4 +20,94 @@
         android:src="@drawable/arrow_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/uno"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintDimensionRatio="W,194:134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonBack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/rules_hub"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="22sp"
+        app:autoSizeMaxTextSize="34sp"
+        app:autoSizeStepGranularity="1sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUnoBasic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/truth_or_dare_button"
+        android:padding="8dp"
+        android:text="@string/basic"
+        android:textColor="@color/truthOrDareButtonTextColour"
+        android:textSize="20sp"
+        app:layout_constraintWidth_percent="0.55"
+        app:layout_constraintWidth_max="240dp"
+        app:layout_constraintHeight_max="100dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView15"
+        app:layout_constraintBottom_toTopOf="@id/buttonUnoAdvanced" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUnoAdvanced"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/truth_or_dare_button"
+        android:padding="8dp"
+        android:text="@string/advanced"
+        android:textColor="@color/truthOrDareButtonTextColour"
+        android:textSize="20sp"
+        app:layout_constraintWidth_percent="0.55"
+        app:layout_constraintWidth_max="240dp"
+        app:layout_constraintHeight_max="100dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonUnoBasic"
+        app:layout_constraintBottom_toTopOf="@id/buttonUnoDrunk" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUnoDrunk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/truth_or_dare_button"
+        android:padding="8dp"
+        android:text="@string/drunk"
+        android:textColor="@color/truthOrDareButtonTextColour"
+        android:textSize="20sp"
+        app:layout_constraintWidth_percent="0.55"
+        app:layout_constraintWidth_max="240dp"
+        app:layout_constraintHeight_max="100dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonUnoAdvanced"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
