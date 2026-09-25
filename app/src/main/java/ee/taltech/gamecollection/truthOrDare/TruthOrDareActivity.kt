@@ -61,10 +61,6 @@ class TruthOrDareActivity : AppCompatActivity() {
         loadedCards += readFileAsLines(cardResources.truth, CardType.TRUTH)
         loadedCards += readFileAsLines(cardResources.dare, CardType.DARE)
 
-        if (settings.workplace) {
-            loadedCards += readFileAsLines(cardResources.workTruth, CardType.TRUTH)
-        }
-
         if (settings.relationship) {
             loadedCards += readFileAsLines(cardResources.relationshipTruth, CardType.TRUTH)
             loadedCards += readFileAsLines(cardResources.relationshipDare, CardType.DARE)
@@ -406,21 +402,18 @@ class TruthOrDareActivity : AppCompatActivity() {
         dialog.setContentView(R.layout.dialog_truth_or_dare_settings)
         dialog.window?.setBackgroundDrawableResource(R.drawable.dialog_background)
 
-        val workplaceSwitch: SwitchCompat = dialog.findViewById(R.id.workplaceSwitch)
         val relationshipSwitch: SwitchCompat = dialog.findViewById(R.id.relationshipSwitch)
         val sexualSwitch: SwitchCompat = dialog.findViewById(R.id.sexualSwitch)
         val buttonCancel: Button = dialog.findViewById(R.id.buttonBack)
 
         val settings = loadSettings()
 
-        workplaceSwitch.isChecked = settings.workplace
         relationshipSwitch.isChecked = settings.relationship
         sexualSwitch.isChecked = settings.sexual
 
         buttonCancel.setOnClickListener {
             saveSettings(
                 TruthOrDareSettings(
-                    workplace = workplaceSwitch.isChecked,
                     relationship = relationshipSwitch.isChecked,
                     sexual = sexualSwitch.isChecked
                 )
@@ -445,7 +438,6 @@ class TruthOrDareActivity : AppCompatActivity() {
         )
 
         return TruthOrDareSettings(
-            workplace = preferences.getBoolean("workplace", false),
             relationship = preferences.getBoolean("relationship", false),
             sexual = preferences.getBoolean("sexual", false)
         )
@@ -457,8 +449,7 @@ class TruthOrDareActivity : AppCompatActivity() {
             MODE_PRIVATE
         )
             .edit {
-                putBoolean("workplace", settings.workplace)
-                    .putBoolean("relationship", settings.relationship)
+                putBoolean("relationship", settings.relationship)
                     .putBoolean("sexual", settings.sexual)
             }
     }
@@ -474,13 +465,11 @@ class TruthOrDareActivity : AppCompatActivity() {
             CardResources(
                 truth = R.raw.truth_et,
                 dare = R.raw.dare_et,
-                workTruth = R.raw.work_truth_en,
                 relationshipTruth = R.raw.relationship_truth_en,
                 relationshipDare = R.raw.relationship_dare_en,
                 sexualTruth = R.raw.sexual_truth_en,
                 sexualDare = R.raw.sexual_dare_en
                 /**
-                workTruth = R.raw.work_truth_et,
                 relationshipTruth = R.raw.relationship_truth_et,
                 relationshipDare = R.raw.relationship_dare_et,
                 sexualTruth = R.raw.sexual_truth_et,
@@ -491,7 +480,6 @@ class TruthOrDareActivity : AppCompatActivity() {
             CardResources(
                 truth = R.raw.truth_en,
                 dare = R.raw.dare_en,
-                workTruth = R.raw.work_truth_en,
                 relationshipTruth = R.raw.relationship_truth_en,
                 relationshipDare = R.raw.relationship_dare_en,
                 sexualTruth = R.raw.sexual_truth_en,
