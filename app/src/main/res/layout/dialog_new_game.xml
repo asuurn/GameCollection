@@ -10,7 +10,7 @@
         android:id="@+id/newGameTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/new_game"
+        android:text="@string/new_players"
         android:textSize="28sp" />
 
     <TextView
@@ -18,7 +18,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/what_would_you_like_to_do"
         android:textSize="17sp" />
 
     <TextView
@@ -35,7 +34,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/card_game_button"
-        android:text="@string/new_game"
+        android:text="@string/new_players"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="18sp"
          />

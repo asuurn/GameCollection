@@ -14,24 +14,25 @@
     <string name="j_question_king">J - Question king</string>
     <string name="q_pick_who_drinks">Q - Pick who drinks</string>
     <string name="_10_pick_company_brand_topic">10 - Pick company/brand/topic</string>
-    <string name="croatian_pick">Croatian pick</string>
+    <string name="dutch_ship">Dutch Ship</string>
     <string name="uno">Uno</string>
     <string name="assortment_of_card_games">Assortment of card games</string>
     <string name="poker">Poker</string>
     <string name="cards_not_included">Cards sold separately :)</string>
     <string name="back">Back</string>
     <string name="setup">Setup</string>
-    <string name="croatian_pick_description_1">• Each player starts with 5 cards\n• The remaining cards form the draw pile\n• One card starts in the discard pile\n\nCard values:\n• Ace = 1\n• Number cards = face value\n• J, Q, K = 10</string>
+    <string name="dutch_ship_description_1">• Each player starts with 5 cards\n• The remaining cards form the draw pile\n• One card starts in the discard pile\n\nCard values:\n• Ace = 1\n• Number cards = face value\n• J, Q, K = 10</string>
     <string name="on_your_turn">On Your Turn</string>
-    <string name="croatian_pick_description_2">• Take a card from the discard pile\n• Or draw from the deck, then discard 1 card\n\nYou must discard at least 1 card.\nYou may discard:\n• 2+ cards of the same rank\n• 3+ consecutive cards of the same suit</string>
+    <string name="dutch_ship_description_2">• Take a card from the discard pile\n• Or draw from the deck, then discard 1 card\n\nYou must discard at least 1 card.\nYou may discard:\n• 2+ cards of the same rank\n• 3+ consecutive cards of the same suit</string>
     <string name="scoring">Scoring</string>
-    <string name="croatian_pick_description_3">• If your hand value is 7 or less, wait 1 round\n• Then you may call at the start of your turn\n• All players reveal and total their cards\n• The lowest score wins the round\n• If someone has a score equal to or lower than the caller, they win and score 0</string>
+    <string name="dutch_ship_description_3">• If your hand value is 7 or less, wait 1 round\n• Then you may call at the start of your turn\n• All players reveal and total their cards\n• The lowest score wins the round\n• If someone has a score equal to or lower than the caller, they win and score 0</string>
     <string name="winning_losing">Winning / Losing</string>
-    <string name="croatian_pick_description_4">• The game is played over multiple rounds\n• A player loses if they reach 100 points\n• Special rule: if a player reaches exactly 99 points, their score resets to 50</string>
+    <string name="dutch_ship_description_4">• The game is played over multiple rounds\n• A player loses if they reach 100 points\n• Special rule: if a player reaches exactly 99 points, their score resets to 50</string>
     <string name="paranoia">Paranoia</string>
     <string name="game_10_collection">GAME\nCOLLECTION</string>
     <string name="pick_a_game">Pick a game</string>
     <string name="scoreboard">Scoreboard</string>
+    <string name="scoreboard_alt">Scoreboard</string>
     <string name="twister">Twister</string>
     <string name="card_games">Card games</string>
     <string name="truth_or_dare_newline">Truth or\ndare</string>
@@ -57,6 +58,7 @@
     <string name="add_subtract">Add / subtract</string>
     <string name="add_player">Add player</string>
     <string name="new_game">New game</string>
+    <string name="new_players">New players</string>
     <string name="history_down">History ▼</string>
     <string name="history_up">History ▲</string>
     <string name="add">Add</string>

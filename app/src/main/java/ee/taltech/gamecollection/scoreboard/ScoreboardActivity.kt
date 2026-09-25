@@ -11,6 +11,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ee.taltech.gamecollection.R
@@ -32,7 +33,7 @@ class ScoreboardActivity : AppCompatActivity() {
 
     private var historyOpen = false
 
-    private val prefsName = "croatian_pick_prefs"
+    private val prefsName = "scoreboard_prefs"
     private val playersKey = "players"
     private val historyKey = "history"
 
@@ -88,6 +89,15 @@ class ScoreboardActivity : AppCompatActivity() {
         }
 
         setHistoryOpen(false)
+
+        val scoreboard = findViewById<AppCompatTextView>(R.id.ScoreboardTextView)
+
+        scoreboard.setOnClickListener {
+            val language = resources.configuration.locales[0].language
+            if (language == "et") {
+                scoreboard.setText(R.string.scoreboard_alt)
+            }
+        }
     }
 
     private fun setHistoryOpen(open: Boolean) {

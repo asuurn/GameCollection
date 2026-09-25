@@ -8,7 +8,7 @@ import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import ee.taltech.gamecollection.R
 import ee.taltech.gamecollection.cardgames.baila.BailaActivity
-import ee.taltech.gamecollection.cardgames.croatianPick.CroatianPickRules
+import ee.taltech.gamecollection.cardgames.dutchShip.DutchShip
 import ee.taltech.gamecollection.cardgames.poker.PokerActivity
 import ee.taltech.gamecollection.cardgames.uno.UnoActivity
 
@@ -18,8 +18,8 @@ class CardGamesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_card_games)
 
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
-        val buttonCroatianPick: Button = findViewById(R.id.buttonToBaila)
-        buttonCroatianPick.setOnClickListener {
+        val buttonToBaila: Button = findViewById(R.id.buttonToBaila)
+        buttonToBaila.setOnClickListener {
             it.startAnimation(bounceAnimation)
             intent = Intent(this, BailaActivity::class.java)
             startActivity(intent)
@@ -39,10 +39,10 @@ class CardGamesActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonToCroatianPick: Button = findViewById(R.id.buttonToCroatianPick)
-        buttonToCroatianPick.setOnClickListener {
+        val buttonToDutchShip: Button = findViewById(R.id.buttonToDutchShip)
+        buttonToDutchShip.setOnClickListener {
             it.startAnimation(bounceAnimation)
-            intent = Intent(this, CroatianPickRules::class.java)
+            intent = Intent(this, DutchShip::class.java)
             startActivity(intent)
         }
 

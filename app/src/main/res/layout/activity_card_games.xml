@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/CroatianPickTextView"
+        android:id="@+id/CardGamesTextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
@@ -49,7 +49,7 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/CroatianPickTextView" />
+        app:layout_constraintTop_toBottomOf="@id/CardGamesTextView" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonToPoker"
@@ -101,16 +101,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonToTruthOrDare"
-        app:layout_constraintBottom_toTopOf="@id/buttonToCroatianPick" />
+        app:layout_constraintBottom_toTopOf="@id/buttonToDutchShip" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonToCroatianPick"
+        android:id="@+id/buttonToDutchShip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/card_game_button"
-        android:text="@string/croatian_pick"
+        android:text="@string/dutch_ship"
         android:textColor="@color/cardGameButtonTextColour"
         android:textSize="20sp"
         app:layout_constraintWidth_percent="0.55"
