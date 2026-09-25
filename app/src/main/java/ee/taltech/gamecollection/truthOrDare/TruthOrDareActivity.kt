@@ -465,16 +465,10 @@ class TruthOrDareActivity : AppCompatActivity() {
             CardResources(
                 truth = R.raw.truth_et,
                 dare = R.raw.dare_et,
-                relationshipTruth = R.raw.relationship_truth_en,
-                relationshipDare = R.raw.relationship_dare_en,
-                sexualTruth = R.raw.sexual_truth_en,
-                sexualDare = R.raw.sexual_dare_en
-                /**
                 relationshipTruth = R.raw.relationship_truth_et,
                 relationshipDare = R.raw.relationship_dare_et,
                 sexualTruth = R.raw.sexual_truth_et,
                 sexualDare = R.raw.sexual_dare_et
-                **/
             )
         } else {
             CardResources(
