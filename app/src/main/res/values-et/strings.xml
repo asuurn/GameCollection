@@ -23,7 +23,7 @@
     <string name="setup">Ettevalmistus</string>
     <string name="dutch_ship_description_1">• Iga mängija alustab 5 kaardiga\n• Ülejäänud kaardid moodustavad tõmbepaki\n• Üks kaart asetatakse äraviskepakki\n\nKaartide väärtused:\n• Äss = 1\n• Numbrikaardid = kaardil olev number\n• J, Q, K = 10</string>
     <string name="on_your_turn">Sinu kord</string>
-    <string name="dutch_ship_description_2">• Võta kaart äraviskepakist\n• Või tõmba pakist ja viska seejärel 1 kaart ära\n\nÄra tuleb visata vähemalt 1 kaart.\nVõid ära visata:\n• 2 või enam sama väärtusega kaarti\n• 3 või enam järjestikust sama masti kaarti</string>
+    <string name="dutch_ship_description_2">• Asenda kaart äraviskepakis ühe oma kaardiga\n• Või tõmba pakist ja viska seejärel 1 kaart ära\n\nÄra tuleb visata vähemalt 1 kaart.\nVõid ära visata:\n• 2 või enam sama väärtusega kaarti\n• 3 või enam järjestikust sama masti kaarti</string>
     <string name="scoring">Punktiarvestus</string>
     <string name="dutch_ship_description_3">• Kui sinu käe väärtus on 7 või vähem, oota 1 voor\n• Seejärel võid oma käigu alguses hõigata\n• Kõik mängijad näitavad oma kaarte ja liidavad punktid kokku\n• Vooru võidab madalaima skooriga mängija\n• Kui kellelgi on hõikajaga võrdne või madalam skoor, võidab tema ja saab 0 punkti</string>
     <string name="winning_losing">Võit / kaotus</string>
@@ -100,7 +100,7 @@
     <string name="uno_basic_description_1">Iga mängija saab 7 kaarti. Ülejäänud paki pealmine kaart alustab äraviskepakki.</string>
 
     <string name="gameplay">Mängukäik</string>
-    <string name="uno_basic_description_2">Mängijad käivad päripäeva. Sobita pealmise kaardiga värvi, numbrit või sümbolit. Kui sa ei saa mängida, tõmba kaart.</string>
+    <string name="uno_basic_description_2">Mäng käib päripäeva. Mängija peab äreviskepaki peale asetama kaardi sama värvi, numbri või sümboliga. Kui sa ei saa mängida, tõmba kaart.</string>
 
     <string name="special_cards">Erikaardid</string>
     <string name="change_color">Värvi muutmine</string>
@@ -110,7 +110,7 @@
     <string name="reverse_direction">Suuna muutmine</string>
 
     <string name="uno_rule">UNO reegel</string>
-    <string name="uno_basic_description_3">Kui sul on üks kaart jäänud, pead ütlema „UNO“. Kui sind tabatakse seda ütlemata, tõmba 2 kaarti.</string>
+    <string name="uno_basic_description_3">Kui sul on üks kaart jäänud, pead ütlema „UNO“. Kui sind tabatakse seda ütlemast, tõmba 2 kaarti.</string>
 
     <string name="winning">Võit</string>
     <string name="uno_basic_description_4">Voor lõpeb, kui mängija mängib oma viimase kaardi ja võidab.</string>

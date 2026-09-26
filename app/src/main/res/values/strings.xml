@@ -23,7 +23,7 @@
     <string name="setup">Setup</string>
     <string name="dutch_ship_description_1">• Each player starts with 5 cards\n• The remaining cards form the draw pile\n• One card starts in the discard pile\n\nCard values:\n• Ace = 1\n• Number cards = face value\n• J, Q, K = 10</string>
     <string name="on_your_turn">On Your Turn</string>
-    <string name="dutch_ship_description_2">• Take a card from the discard pile\n• Or draw from the deck, then discard 1 card\n\nYou must discard at least 1 card.\nYou may discard:\n• 2+ cards of the same rank\n• 3+ consecutive cards of the same suit</string>
+    <string name="dutch_ship_description_2">• Switch a card from the discard pile with your own\n• Or draw from the deck, then discard 1 card\n\nYou must discard at least 1 card.\nYou may discard:\n• 2+ cards of the same rank\n• 3+ consecutive cards of the same suit</string>
     <string name="scoring">Scoring</string>
     <string name="dutch_ship_description_3">• If your hand value is 7 or less, wait 1 round\n• Then you may call at the start of your turn\n• All players reveal and total their cards\n• The lowest score wins the round\n• If someone has a score equal to or lower than the caller, they win and score 0</string>
     <string name="winning_losing">Winning / Losing</string>

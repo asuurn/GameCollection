@@ -47,14 +47,6 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:text="@string/start_with_one_drink_each"
-            android:textSize="16sp" />
-
         <!-- Rule 1 -->
         <TextView
             android:layout_width="wrap_content"
