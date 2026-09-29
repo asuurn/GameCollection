@@ -9,13 +9,11 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
 import androidx.core.content.edit
+import androidx.core.os.ConfigurationCompat
 import ee.taltech.gamecollection.MainActivity
 import ee.taltech.gamecollection.R
-import ee.taltech.gamecollection.truthOrDare.CardData
-import ee.taltech.gamecollection.truthOrDare.TruthOrDareSettings
 
 class ParanoiaQuestionActivity : AppCompatActivity() {
 
@@ -130,10 +128,10 @@ class ParanoiaQuestionActivity : AppCompatActivity() {
     }
 
     private fun loadQuestions(settings: ParanoiaSettings) {
-        val language = AppCompatDelegate
-            .getApplicationLocales()
+        val language = ConfigurationCompat
+            .getLocales(resources.configuration)
             .get(0)
-            ?.language ?: "en"
+            ?.language
 
         val questions = mutableListOf<String>()
 

@@ -14,11 +14,11 @@ import android.widget.FrameLayout
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
 import ee.taltech.gamecollection.R
 import kotlin.math.abs
 import androidx.core.content.edit
+import androidx.core.os.ConfigurationCompat
 
 class TruthOrDareActivity : AppCompatActivity() {
 
@@ -456,10 +456,10 @@ class TruthOrDareActivity : AppCompatActivity() {
 
     private fun getCardResources(): CardResources {
 
-        val language = AppCompatDelegate
-            .getApplicationLocales()
+        val language = ConfigurationCompat
+            .getLocales(resources.configuration)
             .get(0)
-            ?.language ?: "en"
+            ?.language
 
         return if (language == "et") {
             CardResources(
