@@ -1,0 +1,33 @@
+-/- Replace the back buttons
+-/-/-/- Base changes
+-/-/-/- Fix landscapes aswell
+-/-/-/- Add back buttons to the rules
+-/-/-/- Back buttons dont change colour in darkmode (black on black)
+-/- Switch uno under card games
+-/- Add poker rules
+-/- Remove Paranoia extra screen - rules to main page
+
+-/- Scoreboard
+-/-/-/- Back button not erasing Croatian (New game, same players; New game, new players; cancel)
+-/-/-/- Scoreboard moving back doesnt delete history
+
+-/- Add truth or dare
+-/-/-/- Randomizer
+-/-/-/- Filters for relationship, sex, work?
+-/-/-/- Add questions
+
+-/- General style
+-/-/-/- Fix background style
+-/-/-/- Unify (funify) title style
+-/-/-/- Fix back button routing
+-/-/-/- Back button also black
+-/-/-/- Paranoia coin text colouring
+-/-/-/- Fix buttons + glow
+-/-/-/- Take heads and tails out
+-/-/-/- History fix
+-/-/-/- Twister lang fix
+-/-/-/- Coin flip page fix
+
+-/- Change logo
+
+-/- Estonian lang toggle
