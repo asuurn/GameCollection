@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
 import androidx.core.content.edit
+import androidx.core.os.ConfigurationCompat
 import androidx.core.os.LocaleListCompat
 import ee.taltech.gamecollection.cardgames.CardGamesActivity
 import ee.taltech.gamecollection.paranoia.ParanoiaQuestionActivity
@@ -103,9 +104,10 @@ class MainActivity : AppCompatActivity() {
         val languageEstonian: RadioButton = dialog.findViewById(R.id.languageEstonian)
         val buttonBack: Button = dialog.findViewById(R.id.buttonBack)
 
-        val currentLanguage = AppCompatDelegate.getApplicationLocales()
-                .get(0)
-                ?.language
+        val currentLanguage = ConfigurationCompat
+            .getLocales(resources.configuration)
+            .get(0)
+            ?.language
 
         if (currentLanguage == "et") {
             languageEstonian.isChecked = true
